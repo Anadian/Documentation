@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<title>Category:Pages with unreviewed noexcept template - cppreference.com</title>
+<meta charset="UTF-8" />
+<meta name="generator" content="MediaWiki 1.21.2" />
+<link rel="alternate" type="application/x-wiki" title="Edit" href="http://en.cppreference.com/mwiki/index.php?title=Category:Pages_with_unreviewed_noexcept_template&amp;action=edit" />
+<link rel="edit" title="Edit" href="http://en.cppreference.com/mwiki/index.php?title=Category:Pages_with_unreviewed_noexcept_template&amp;action=edit" />
+<link rel="shortcut icon" href="http://en.cppreference.com/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://en.cppreference.com/mwiki/opensearch_desc.php" title="cppreference.com (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="http://en.cppreference.com/mwiki/api.php?action=rsd" />
+<link rel="alternate" type="application/atom+xml" title="cppreference.com Atom feed" href="http://en.cppreference.com/mwiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="http://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.ColiruCompiler%7Cext.rtlcite%7Cmediawiki.legacy.commonPrint%2Cshared%7Cskins.cppreference2&amp;only=styles&amp;skin=cppreference2&amp;*" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="http://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=cppreference2&amp;*" />
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
+
+<script src="http://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"Category","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":14,"wgPageName":"Category:Pages_with_unreviewed_noexcept_template","wgTitle":"Pages with unreviewed noexcept template","wgCurRevisionId":91315,"wgArticleId":16228,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Hidden categories"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Category:Pages_with_unreviewed_noexcept_template","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:ca03345b1e2c4d90a25d968753a73b92 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-14 ns-subject page-Category_Pages_with_unreviewed_noexcept_template skin-cppreference2 action-view">
+        <!-- header -->
+        <div id="mw-head" class="noprint">
+            <div id="cpp-head-first-base">
+                <div id="cpp-head-first">
+                    <h5><a href="http://en.cppreference.com/">
+                        cppreference.com                        </a></h5>
+                    <div id="cpp-head-search">
+                        
+<!-- 0 -->
+<div id="p-search">
+	<h5><label for="searchInput">Search</label></h5>
+	<form action="http://en.cppreference.com/mwiki/index.php" id="searchform">
+		<input type='hidden' name="title" value="Special:Search"/>
+				<div id="simpleSearch">
+						<input name="search" title="Search cppreference.com [f]" accesskey="f" id="searchInput" />						<button type="submit" name="button" title="Search the pages for this text" id="searchButton"><img src="http://en.cppreference.com/mwiki/skins/cppreference2/images/search-ltr.png?303" alt="Search" /></button>					</div>
+			</form>
+</div>
+
+<!-- /0 -->
+                    </div>
+                    <div id="cpp-head-personal">
+                        
+<!-- 0 -->
+<div id="p-personal" class="">
+<span id="pt-createaccount"><a href="http://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=Category%3APages+with+unreviewed+noexcept+template&amp;type=signup">Create account</a></span>	<div class="menu">
+        <ul>
+<li id="pt-login"><a href="http://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=Category%3APages+with+unreviewed+noexcept+template" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>        </ul>
+    </div>
+</div>
+
+<!-- /0 -->
+                    </div>
+
+                </div>
+            </div>
+            <div id="cpp-head-second-base">
+                <div id="cpp-head-second">
+                    <div id="cpp-head-tools-left">
+                        
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>Namespaces</h5>
+	<ul>
+					<li  id="ca-nstab-category" class="selected"><span><a href="Category:Pages_with_unreviewed_noexcept_template"  title="View the category page [c]" accesskey="c">Category</a></span></li>
+					<li  id="ca-talk" class="new"><span><a href="http://en.cppreference.com/mwiki/index.php?title=Category_talk:Pages_with_unreviewed_noexcept_template&amp;action=edit&amp;redlink=1"  title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+		<h5><span>Variants</span><a href="Category:Pages_with_unreviewed_noexcept_template#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+                    </div>
+                    <div id="cpp-head-tools-right">
+                        
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>Views</h5>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="Category:Pages_with_unreviewed_noexcept_template" >View</a></span></li>
+					<li id="ca-edit"><span><a href="http://en.cppreference.com/mwiki/index.php?title=Category:Pages_with_unreviewed_noexcept_template&amp;action=edit"  title="You can edit this page. Please use the preview button before saving [e]" accesskey="e">Edit</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="http://en.cppreference.com/mwiki/index.php?title=Category:Pages_with_unreviewed_noexcept_template&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">History</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>Actions</span><a href="Category:Pages_with_unreviewed_noexcept_template#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /header -->
+        <!-- content -->
+        <div id="cpp-content-base">
+            <div id="content">
+                <a id="top"></a>
+                <div id="mw-js-message" style="display:none;"></div>
+                                <!-- firstHeading -->
+                <h1 id="firstHeading" class="firstHeading">Category:Pages with unreviewed noexcept template</h1>
+                <!-- /firstHeading -->
+                <!-- bodyContent -->
+                <div id="bodyContent">
+                                        <!-- tagline -->
+                    <div id="siteSub">From cppreference.com</div>
+                    <!-- /tagline -->
+                                        <!-- subtitle -->
+                    <div id="contentSub"></div>
+                    <!-- /subtitle -->
+                                                            <!-- bodycontent -->
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>This is a hidden tracking category for pages with unreviewed noexcept templates. Pages containing &#123;&#123;<a href="Template:unreviewed_noexcept" title="Template:unreviewed noexcept">unreviewed noexcept</a>&#125;&#125; are automatically placed into this category.
+</p><p><br />
+</p>
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 33/1000000
+Preprocessor generated node count: 291/1000000
+Post‐expand include size: 95/2097152 bytes
+Template argument size: 57/2097152 bytes
+Highest expansion depth: 3/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:16228-0!*!0!*!*!*!* and timestamp 20170331202408 -->
+<div lang="en" dir="ltr"><div id="mw-subcategories">
+<h2>Subcategories</h2>
+<p>This category has the following 2 subcategories, out of 2 total.
+</p><div lang="en" dir="ltr" class="mw-content-ltr"><h3>P</h3>
+<ul><li><a href="http://en.cppreference.com/w/Category:Pages_with_unreviewed_conditional_noexcept_template" title="Category:Pages with unreviewed conditional noexcept template">Pages with unreviewed conditional noexcept template</a></li><li><a href="http://en.cppreference.com/w/Category:Pages_with_unreviewed_unconditional_noexcept_template" title="Category:Pages with unreviewed unconditional noexcept template">Pages with unreviewed unconditional noexcept template</a></li></ul></div>
+</div><div id="mw-pages">
+<h2>Pages in category "Pages with unreviewed noexcept template"</h2>
+<p>The following 200 pages are in this category, out of 797 total.
+</p>(previous 200) (<a href="http://en.cppreference.com/mwiki/index.php?title=Category:Pages_with_unreviewed_noexcept_template&amp;pagefrom=cpp%2Fcontainer%2Fvector%2Fempty#mw-pages" title="Category:Pages with unreviewed noexcept template">next 200</a>)<div lang="en" dir="ltr" class="mw-content-ltr"><table style="width: 100%;"><tr style="vertical-align: top;"><td style="width: 33.3%;"><h3>C</h3>
+<ul><li><a href="http://en.cppreference.com/w/cpp/algorithm/swap" title="cpp/algorithm/swap">cpp/algorithm/swap</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/atomic/atomic_compare_exchange" title="cpp/atomic/atomic compare exchange">cpp/atomic/atomic compare exchange</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/atomic/atomic_exchange" title="cpp/atomic/atomic exchange">cpp/atomic/atomic exchange</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/atomic/atomic_fetch_add" title="cpp/atomic/atomic fetch add">cpp/atomic/atomic fetch add</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/atomic/atomic_fetch_and" title="cpp/atomic/atomic fetch and">cpp/atomic/atomic fetch and</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/atomic/atomic_fetch_or" title="cpp/atomic/atomic fetch or">cpp/atomic/atomic fetch or</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/atomic/atomic_fetch_sub" title="cpp/atomic/atomic fetch sub">cpp/atomic/atomic fetch sub</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/atomic/atomic_fetch_xor" title="cpp/atomic/atomic fetch xor">cpp/atomic/atomic fetch xor</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/atomic/atomic_flag_clear" title="cpp/atomic/atomic flag clear">cpp/atomic/atomic flag clear</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/atomic/atomic_flag_test_and_set" title="cpp/atomic/atomic flag test and set">cpp/atomic/atomic flag test and set</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/atomic/atomic_flag/atomic_flag" title="cpp/atomic/atomic flag/atomic flag">cpp/atomic/atomic flag/atomic flag</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/atomic/atomic_flag/clear" title="cpp/atomic/atomic flag/clear">cpp/atomic/atomic flag/clear</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/atomic/atomic_flag/test_and_set" title="cpp/atomic/atomic flag/test and set">cpp/atomic/atomic flag/test and set</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/atomic/atomic_init" title="cpp/atomic/atomic init">cpp/atomic/atomic init</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/atomic/atomic_is_lock_free" title="cpp/atomic/atomic is lock free">cpp/atomic/atomic is lock free</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/atomic/atomic_load" title="cpp/atomic/atomic load">cpp/atomic/atomic load</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/atomic/atomic_signal_fence" title="cpp/atomic/atomic signal fence">cpp/atomic/atomic signal fence</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/atomic/atomic_store" title="cpp/atomic/atomic store">cpp/atomic/atomic store</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/atomic/atomic_thread_fence" title="cpp/atomic/atomic thread fence">cpp/atomic/atomic thread fence</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/atomic/atomic/atomic" title="cpp/atomic/atomic/atomic">cpp/atomic/atomic/atomic</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/atomic/atomic/compare_exchange" title="cpp/atomic/atomic/compare exchange">cpp/atomic/atomic/compare exchange</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/atomic/atomic/exchange" title="cpp/atomic/atomic/exchange">cpp/atomic/atomic/exchange</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/atomic/atomic/fetch_add" title="cpp/atomic/atomic/fetch add">cpp/atomic/atomic/fetch add</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/atomic/atomic/fetch_and" title="cpp/atomic/atomic/fetch and">cpp/atomic/atomic/fetch and</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/atomic/atomic/fetch_or" title="cpp/atomic/atomic/fetch or">cpp/atomic/atomic/fetch or</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/atomic/atomic/fetch_sub" title="cpp/atomic/atomic/fetch sub">cpp/atomic/atomic/fetch sub</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/atomic/atomic/fetch_xor" title="cpp/atomic/atomic/fetch xor">cpp/atomic/atomic/fetch xor</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/atomic/atomic/is_lock_free" title="cpp/atomic/atomic/is lock free">cpp/atomic/atomic/is lock free</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/atomic/atomic/load" title="cpp/atomic/atomic/load">cpp/atomic/atomic/load</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/atomic/atomic/operator_arith" title="cpp/atomic/atomic/operator arith">cpp/atomic/atomic/operator arith</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/atomic/atomic/operator_arith2" title="cpp/atomic/atomic/operator arith2">cpp/atomic/atomic/operator arith2</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/atomic/atomic/operator_T" title="cpp/atomic/atomic/operator T">cpp/atomic/atomic/operator T</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/atomic/atomic/operator%3D" title="cpp/atomic/atomic/operator=">cpp/atomic/atomic/operator=</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/atomic/atomic/store" title="cpp/atomic/atomic/store">cpp/atomic/atomic/store</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/atomic/kill_dependency" title="cpp/atomic/kill dependency">cpp/atomic/kill dependency</a></li>
+<li><a href="http://en.cppreference.com/w/Template:cpp/chrono/clock/now" title="Template:cpp/chrono/clock/now">Template:cpp/chrono/clock/now</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/chrono/high_resolution_clock/now" title="cpp/chrono/high resolution clock/now">cpp/chrono/high resolution clock/now</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/chrono/steady_clock/now" title="cpp/chrono/steady clock/now">cpp/chrono/steady clock/now</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/chrono/system_clock/from_time_t" title="cpp/chrono/system clock/from time t">cpp/chrono/system clock/from time t</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/chrono/system_clock/now" title="cpp/chrono/system clock/now">cpp/chrono/system clock/now</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/chrono/system_clock/to_time_t" title="cpp/chrono/system clock/to time t">cpp/chrono/system clock/to time t</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/array/begin" title="cpp/container/array/begin">cpp/container/array/begin</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/array/data" title="cpp/container/array/data">cpp/container/array/data</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/array/empty" title="cpp/container/array/empty">cpp/container/array/empty</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/array/end" title="cpp/container/array/end">cpp/container/array/end</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/array/get" title="cpp/container/array/get">cpp/container/array/get</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/array/max_size" title="cpp/container/array/max size">cpp/container/array/max size</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/array/rbegin" title="cpp/container/array/rbegin">cpp/container/array/rbegin</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/array/rend" title="cpp/container/array/rend">cpp/container/array/rend</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/array/size" title="cpp/container/array/size">cpp/container/array/size</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/array/swap" title="cpp/container/array/swap">cpp/container/array/swap</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/array/swap2" title="cpp/container/array/swap2">cpp/container/array/swap2</a></li>
+<li><a href="http://en.cppreference.com/w/Template:cpp/container/begin" title="Template:cpp/container/begin">Template:cpp/container/begin</a></li>
+<li><a href="http://en.cppreference.com/w/Template:cpp/container/capacity" title="Template:cpp/container/capacity">Template:cpp/container/capacity</a></li>
+<li><a href="http://en.cppreference.com/w/Template:cpp/container/clear" title="Template:cpp/container/clear">Template:cpp/container/clear</a></li>
+<li><a href="http://en.cppreference.com/w/Template:cpp/container/data" title="Template:cpp/container/data">Template:cpp/container/data</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/deque/begin" title="cpp/container/deque/begin">cpp/container/deque/begin</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/deque/clear" title="cpp/container/deque/clear">cpp/container/deque/clear</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/deque/empty" title="cpp/container/deque/empty">cpp/container/deque/empty</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/deque/end" title="cpp/container/deque/end">cpp/container/deque/end</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/deque/max_size" title="cpp/container/deque/max size">cpp/container/deque/max size</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/deque/operator%3D" title="cpp/container/deque/operator=">cpp/container/deque/operator=</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/deque/rbegin" title="cpp/container/deque/rbegin">cpp/container/deque/rbegin</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/deque/rend" title="cpp/container/deque/rend">cpp/container/deque/rend</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/deque/size" title="cpp/container/deque/size">cpp/container/deque/size</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/deque/swap" title="cpp/container/deque/swap">cpp/container/deque/swap</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/deque/swap2" title="cpp/container/deque/swap2">cpp/container/deque/swap2</a></li></ul></td>
+<td style="width: 33.3%;"><h3>C cont.</h3>
+<ul><li><a href="http://en.cppreference.com/w/cpp/container/dynarray/begin" title="cpp/container/dynarray/begin">cpp/container/dynarray/begin</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/dynarray/data" title="cpp/container/dynarray/data">cpp/container/dynarray/data</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/dynarray/empty" title="cpp/container/dynarray/empty">cpp/container/dynarray/empty</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/dynarray/end" title="cpp/container/dynarray/end">cpp/container/dynarray/end</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/dynarray/max_size" title="cpp/container/dynarray/max size">cpp/container/dynarray/max size</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/dynarray/rbegin" title="cpp/container/dynarray/rbegin">cpp/container/dynarray/rbegin</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/dynarray/rend" title="cpp/container/dynarray/rend">cpp/container/dynarray/rend</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/dynarray/size" title="cpp/container/dynarray/size">cpp/container/dynarray/size</a></li>
+<li><a href="http://en.cppreference.com/w/Template:cpp/container/empty" title="Template:cpp/container/empty">Template:cpp/container/empty</a></li>
+<li><a href="http://en.cppreference.com/w/Template:cpp/container/end" title="Template:cpp/container/end">Template:cpp/container/end</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/forward_list/before_begin" title="cpp/container/forward list/before begin">cpp/container/forward list/before begin</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/forward_list/begin" title="cpp/container/forward list/begin">cpp/container/forward list/begin</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/forward_list/clear" title="cpp/container/forward list/clear">cpp/container/forward list/clear</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/forward_list/empty" title="cpp/container/forward list/empty">cpp/container/forward list/empty</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/forward_list/end" title="cpp/container/forward list/end">cpp/container/forward list/end</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/forward_list/max_size" title="cpp/container/forward list/max size">cpp/container/forward list/max size</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/forward_list/operator%3D" title="cpp/container/forward list/operator=">cpp/container/forward list/operator=</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/forward_list/reverse" title="cpp/container/forward list/reverse">cpp/container/forward list/reverse</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/forward_list/swap" title="cpp/container/forward list/swap">cpp/container/forward list/swap</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/forward_list/swap2" title="cpp/container/forward list/swap2">cpp/container/forward list/swap2</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/list/begin" title="cpp/container/list/begin">cpp/container/list/begin</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/list/clear" title="cpp/container/list/clear">cpp/container/list/clear</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/list/empty" title="cpp/container/list/empty">cpp/container/list/empty</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/list/end" title="cpp/container/list/end">cpp/container/list/end</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/list/max_size" title="cpp/container/list/max size">cpp/container/list/max size</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/list/operator%3D" title="cpp/container/list/operator=">cpp/container/list/operator=</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/list/rbegin" title="cpp/container/list/rbegin">cpp/container/list/rbegin</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/list/rend" title="cpp/container/list/rend">cpp/container/list/rend</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/list/reverse" title="cpp/container/list/reverse">cpp/container/list/reverse</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/list/size" title="cpp/container/list/size">cpp/container/list/size</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/list/swap" title="cpp/container/list/swap">cpp/container/list/swap</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/list/swap2" title="cpp/container/list/swap2">cpp/container/list/swap2</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/map/begin" title="cpp/container/map/begin">cpp/container/map/begin</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/map/clear" title="cpp/container/map/clear">cpp/container/map/clear</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/map/empty" title="cpp/container/map/empty">cpp/container/map/empty</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/map/end" title="cpp/container/map/end">cpp/container/map/end</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/map/max_size" title="cpp/container/map/max size">cpp/container/map/max size</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/map/operator%3D" title="cpp/container/map/operator=">cpp/container/map/operator=</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/map/rbegin" title="cpp/container/map/rbegin">cpp/container/map/rbegin</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/map/rend" title="cpp/container/map/rend">cpp/container/map/rend</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/map/size" title="cpp/container/map/size">cpp/container/map/size</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/map/swap" title="cpp/container/map/swap">cpp/container/map/swap</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/map/swap2" title="cpp/container/map/swap2">cpp/container/map/swap2</a></li>
+<li><a href="http://en.cppreference.com/w/Template:cpp/container/max_size" title="Template:cpp/container/max size">Template:cpp/container/max size</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/multimap/begin" title="cpp/container/multimap/begin">cpp/container/multimap/begin</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/multimap/clear" title="cpp/container/multimap/clear">cpp/container/multimap/clear</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/multimap/empty" title="cpp/container/multimap/empty">cpp/container/multimap/empty</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/multimap/end" title="cpp/container/multimap/end">cpp/container/multimap/end</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/multimap/max_size" title="cpp/container/multimap/max size">cpp/container/multimap/max size</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/multimap/operator%3D" title="cpp/container/multimap/operator=">cpp/container/multimap/operator=</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/multimap/rbegin" title="cpp/container/multimap/rbegin">cpp/container/multimap/rbegin</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/multimap/rend" title="cpp/container/multimap/rend">cpp/container/multimap/rend</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/multimap/size" title="cpp/container/multimap/size">cpp/container/multimap/size</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/multimap/swap" title="cpp/container/multimap/swap">cpp/container/multimap/swap</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/multimap/swap2" title="cpp/container/multimap/swap2">cpp/container/multimap/swap2</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/multiset/begin" title="cpp/container/multiset/begin">cpp/container/multiset/begin</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/multiset/clear" title="cpp/container/multiset/clear">cpp/container/multiset/clear</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/multiset/empty" title="cpp/container/multiset/empty">cpp/container/multiset/empty</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/multiset/end" title="cpp/container/multiset/end">cpp/container/multiset/end</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/multiset/max_size" title="cpp/container/multiset/max size">cpp/container/multiset/max size</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/multiset/operator%3D" title="cpp/container/multiset/operator=">cpp/container/multiset/operator=</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/multiset/rbegin" title="cpp/container/multiset/rbegin">cpp/container/multiset/rbegin</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/multiset/rend" title="cpp/container/multiset/rend">cpp/container/multiset/rend</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/multiset/size" title="cpp/container/multiset/size">cpp/container/multiset/size</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/multiset/swap" title="cpp/container/multiset/swap">cpp/container/multiset/swap</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/multiset/swap2" title="cpp/container/multiset/swap2">cpp/container/multiset/swap2</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/node_handle" title="cpp/container/node handle">cpp/container/node handle</a></li></ul></td>
+<td style="width: 33.3%;"><h3>C cont.</h3>
+<ul><li><a href="http://en.cppreference.com/w/Template:cpp/container/noexcept" title="Template:cpp/container/noexcept">Template:cpp/container/noexcept</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/priority_queue/swap" title="cpp/container/priority queue/swap">cpp/container/priority queue/swap</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/priority_queue/swap2" title="cpp/container/priority queue/swap2">cpp/container/priority queue/swap2</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/queue/swap" title="cpp/container/queue/swap">cpp/container/queue/swap</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/queue/swap2" title="cpp/container/queue/swap2">cpp/container/queue/swap2</a></li>
+<li><a href="http://en.cppreference.com/w/Template:cpp/container/rbegin" title="Template:cpp/container/rbegin">Template:cpp/container/rbegin</a></li>
+<li><a href="http://en.cppreference.com/w/Template:cpp/container/rend" title="Template:cpp/container/rend">Template:cpp/container/rend</a></li>
+<li><a href="http://en.cppreference.com/w/Template:cpp/container/reverse" title="Template:cpp/container/reverse">Template:cpp/container/reverse</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/set/begin" title="cpp/container/set/begin">cpp/container/set/begin</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/set/clear" title="cpp/container/set/clear">cpp/container/set/clear</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/set/empty" title="cpp/container/set/empty">cpp/container/set/empty</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/set/end" title="cpp/container/set/end">cpp/container/set/end</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/set/max_size" title="cpp/container/set/max size">cpp/container/set/max size</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/set/operator%3D" title="cpp/container/set/operator=">cpp/container/set/operator=</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/set/rbegin" title="cpp/container/set/rbegin">cpp/container/set/rbegin</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/set/rend" title="cpp/container/set/rend">cpp/container/set/rend</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/set/size" title="cpp/container/set/size">cpp/container/set/size</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/set/swap" title="cpp/container/set/swap">cpp/container/set/swap</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/set/swap2" title="cpp/container/set/swap2">cpp/container/set/swap2</a></li>
+<li><a href="http://en.cppreference.com/w/Template:cpp/container/size" title="Template:cpp/container/size">Template:cpp/container/size</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/stack/swap" title="cpp/container/stack/swap">cpp/container/stack/swap</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/stack/swap2" title="cpp/container/stack/swap2">cpp/container/stack/swap2</a></li>
+<li><a href="http://en.cppreference.com/w/Template:cpp/container/swap_ad" title="Template:cpp/container/swap ad">Template:cpp/container/swap ad</a></li>
+<li><a href="http://en.cppreference.com/w/Template:cpp/container/swap2" title="Template:cpp/container/swap2">Template:cpp/container/swap2</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/unordered_map/begin" title="cpp/container/unordered map/begin">cpp/container/unordered map/begin</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/unordered_map/clear" title="cpp/container/unordered map/clear">cpp/container/unordered map/clear</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/unordered_map/empty" title="cpp/container/unordered map/empty">cpp/container/unordered map/empty</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/unordered_map/end" title="cpp/container/unordered map/end">cpp/container/unordered map/end</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/unordered_map/max_size" title="cpp/container/unordered map/max size">cpp/container/unordered map/max size</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/unordered_map/operator%3D" title="cpp/container/unordered map/operator=">cpp/container/unordered map/operator=</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/unordered_map/size" title="cpp/container/unordered map/size">cpp/container/unordered map/size</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/unordered_map/swap" title="cpp/container/unordered map/swap">cpp/container/unordered map/swap</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/unordered_map/swap2" title="cpp/container/unordered map/swap2">cpp/container/unordered map/swap2</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/unordered_multimap/begin" title="cpp/container/unordered multimap/begin">cpp/container/unordered multimap/begin</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/unordered_multimap/clear" title="cpp/container/unordered multimap/clear">cpp/container/unordered multimap/clear</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/unordered_multimap/empty" title="cpp/container/unordered multimap/empty">cpp/container/unordered multimap/empty</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/unordered_multimap/end" title="cpp/container/unordered multimap/end">cpp/container/unordered multimap/end</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/unordered_multimap/max_size" title="cpp/container/unordered multimap/max size">cpp/container/unordered multimap/max size</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/unordered_multimap/operator%3D" title="cpp/container/unordered multimap/operator=">cpp/container/unordered multimap/operator=</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/unordered_multimap/size" title="cpp/container/unordered multimap/size">cpp/container/unordered multimap/size</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/unordered_multimap/swap" title="cpp/container/unordered multimap/swap">cpp/container/unordered multimap/swap</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/unordered_multimap/swap2" title="cpp/container/unordered multimap/swap2">cpp/container/unordered multimap/swap2</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/unordered_multiset/begin" title="cpp/container/unordered multiset/begin">cpp/container/unordered multiset/begin</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/unordered_multiset/clear" title="cpp/container/unordered multiset/clear">cpp/container/unordered multiset/clear</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/unordered_multiset/empty" title="cpp/container/unordered multiset/empty">cpp/container/unordered multiset/empty</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/unordered_multiset/end" title="cpp/container/unordered multiset/end">cpp/container/unordered multiset/end</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/unordered_multiset/max_size" title="cpp/container/unordered multiset/max size">cpp/container/unordered multiset/max size</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/unordered_multiset/operator%3D" title="cpp/container/unordered multiset/operator=">cpp/container/unordered multiset/operator=</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/unordered_multiset/size" title="cpp/container/unordered multiset/size">cpp/container/unordered multiset/size</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/unordered_multiset/swap" title="cpp/container/unordered multiset/swap">cpp/container/unordered multiset/swap</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/unordered_multiset/swap2" title="cpp/container/unordered multiset/swap2">cpp/container/unordered multiset/swap2</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/unordered_set/begin" title="cpp/container/unordered set/begin">cpp/container/unordered set/begin</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/unordered_set/clear" title="cpp/container/unordered set/clear">cpp/container/unordered set/clear</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/unordered_set/empty" title="cpp/container/unordered set/empty">cpp/container/unordered set/empty</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/unordered_set/end" title="cpp/container/unordered set/end">cpp/container/unordered set/end</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/unordered_set/max_size" title="cpp/container/unordered set/max size">cpp/container/unordered set/max size</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/unordered_set/operator%3D" title="cpp/container/unordered set/operator=">cpp/container/unordered set/operator=</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/unordered_set/size" title="cpp/container/unordered set/size">cpp/container/unordered set/size</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/unordered_set/swap" title="cpp/container/unordered set/swap">cpp/container/unordered set/swap</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/unordered_set/swap2" title="cpp/container/unordered set/swap2">cpp/container/unordered set/swap2</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/vector_bool/reference" title="cpp/container/vector bool/reference">cpp/container/vector bool/reference</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/vector_bool/vector_bool" title="cpp/container/vector bool/vector bool">cpp/container/vector bool/vector bool</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/vector/begin" title="cpp/container/vector/begin">cpp/container/vector/begin</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/vector/capacity" title="cpp/container/vector/capacity">cpp/container/vector/capacity</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/vector/clear" title="cpp/container/vector/clear">cpp/container/vector/clear</a></li>
+<li><a href="http://en.cppreference.com/w/cpp/container/vector/data" title="cpp/container/vector/data">cpp/container/vector/data</a></li></ul></td>
+</tr></table></div>(previous 200) (<a href="http://en.cppreference.com/mwiki/index.php?title=Category:Pages_with_unreviewed_noexcept_template&amp;pagefrom=cpp%2Fcontainer%2Fvector%2Fempty#mw-pages" title="Category:Pages with unreviewed noexcept template">next 200</a>)
+</div></div></div>                    <!-- /bodycontent -->
+                                        <!-- printfooter -->
+                    <div class="printfooter">
+                    Retrieved from "<a href="http://en.cppreference.com/mwiki/index.php?title=Category:Pages_with_unreviewed_noexcept_template&amp;oldid=91315">http://en.cppreference.com/mwiki/index.php?title=Category:Pages_with_unreviewed_noexcept_template&amp;oldid=91315</a>"                    </div>
+                    <!-- /printfooter -->
+                                                            <!-- catlinks -->
+                    <div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="http://en.cppreference.com/mwiki/index.php?title=Category:Hidden_categories&amp;action=edit&amp;redlink=1" class="new" title="Category:Hidden categories (page does not exist)">Hidden categories</a></li></ul></div></div>                    <!-- /catlinks -->
+                                                            <div class="visualClear"></div>
+                    <!-- debughtml -->
+                                        <!-- /debughtml -->
+                </div>
+                <!-- /bodyContent -->
+            </div>
+        </div>
+        <!-- /content -->
+        <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul>
+<li id="n-Support-us"><a href="http://www.cppreference.com/support" rel="nofollow">Support us</a></li><li id="n-recentchanges"><a href="Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-FAQ"><a href="Cppreference:FAQ">FAQ</a></li><li id="n-Offline-version"><a href="Cppreference:Archives">Offline version</a></li>            </ul>
+        </div>
+                        <div id="cpp-toolbox">
+            <h5><span>Toolbox</span><a href="Category:Pages_with_unreviewed_noexcept_template#"></a></h5>
+            <ul>
+<li id="t-whatlinkshere"><a href="http://en.cppreference.com/w/Special:WhatLinksHere/Category:Pages_with_unreviewed_noexcept_template" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="http://en.cppreference.com/w/Special:RecentChangesLinked/Category:Pages_with_unreviewed_noexcept_template" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="http://upload.cppreference.com/w/Special:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="http://en.cppreference.com/mwiki/index.php?title=Category:Pages_with_unreviewed_noexcept_template&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="http://en.cppreference.com/mwiki/index.php?title=Category:Pages_with_unreviewed_noexcept_template&amp;oldid=91315" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="http://en.cppreference.com/mwiki/index.php?title=Category:Pages_with_unreviewed_noexcept_template&amp;action=info">Page information</a></li>            </ul>
+        </div>
+                            <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 31 March 2017, at 12:09.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 10 times.</li>
+                            </ul>
+                    <ul id="footer-places">
+                                    <li id="footer-places-privacy"><a href="Cppreference:Privacy_policy" title="Cppreference:Privacy policy">Privacy policy</a></li>
+                                    <li id="footer-places-about"><a href="Cppreference:FAQ" title="Cppreference:About">About cppreference.com</a></li>
+                                    <li id="footer-places-disclaimer"><a href="Cppreference:General_disclaimer" title="Cppreference:General disclaimer">Disclaimers</a></li>
+                            </ul>
+                                    <ul id="footer-icons" class="noprint">
+                                    <li id="footer-poweredbyico">
+                                            <a href="http://www.mediawiki.org/"><img src="http://en.cppreference.com/mwiki/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>                                            <a href="http://qbnz.com/highlighter/"><img src="http://upload.cppreference.com/mwiki/images/2/2b/powered_by_geshi_88x31.png" alt="Powered by GeSHi" height="31" width="88" /></a>                                            <a href="http://www.tigertech.net/referral/cppreference.com"><img src="http://upload.cppreference.com/mwiki/images/9/94/powered_by_tigertech_88x31.png" alt="Hosted by Tiger Technologies" height="31" width="88" /></a>                                        </li>
+                                </ul>
+                        <div style="clear:both">
+            </div>
+            </div>
+        </div>
+        <!-- /footer -->
+        <script>if(window.mw){
+mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
+}</script>
+<script src="http://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=skins.cppreference2&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler"], null, true);
+}</script>
+<script src="http://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-2828341-1']);
+_gaq.push(['_setDomainName', 'cppreference.com']);
+_gaq.push(['_trackPageview']);
+</script><!-- Served in 0.112 secs. -->
+	</body>
+<!-- Cached 20170331202748 -->
+</html>

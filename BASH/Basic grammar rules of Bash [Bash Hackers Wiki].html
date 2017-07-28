@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" dir="ltr" class="js" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Basic grammar rules of Bash [Bash Hackers Wiki]</title>
+  <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="shortcut icon" href="http://wiki.bash-hackers.org/lib/tpl/bootstrap3/images/favicon.ico">
+<link rel="apple-touch-icon" href="http://wiki.bash-hackers.org/lib/tpl/bootstrap3/images/apple-touch-icon.png">
+      <style class="anchorjs"></style><link type="text/css" rel="stylesheet" href="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/font-awesome.css">
+  <meta name="generator" content="DokuWiki">
+<meta name="robots" content="index,follow">
+<meta name="keywords" content="syntax,basicgrammar,bash,shell,scripting,grammar,syntax,language">
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.bash-hackers.org/lib/exe/opensearch.php" title="Bash Hackers Wiki">
+<link rel="start" href="http://wiki.bash-hackers.org/">
+<link rel="contents" href="http://wiki.bash-hackers.org/syntax/basicgrammar?do=index" title="Sitemap">
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="http://wiki.bash-hackers.org/feed.php">
+<link rel="alternate" type="application/rss+xml" title="Current namespace" href="http://wiki.bash-hackers.org/feed.php?mode=list&amp;ns=syntax">
+<link rel="alternate" type="text/html" title="Plain HTML" href="http://wiki.bash-hackers.org/_export/xhtml/syntax/basicgrammar">
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="http://wiki.bash-hackers.org/_export/raw/syntax/basicgrammar">
+<link rel="canonical" href="http://wiki.bash-hackers.org/syntax/basicgrammar">
+<link rel="stylesheet" type="text/css" href="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/css.css">
+<script type="text/javascript">/*<![CDATA[*/var NS='syntax';var JSINFO = {"id":"syntax:basicgrammar","namespace":"syntax","updatable":1,"isadmin":0,"isauth":0,"bootstrap3":{"tableFullWidth":1,"tableStyle":["striped","condensed","responsive"],"tagsOnTop":1,"useAnchorJS":1}};
+/*!]]>*/</script>
+<script type="text/javascript" charset="utf-8" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/js.php"></script><style id="iris-css">.iris-picker{display:block;position:relative}.iris-picker,.iris-picker *{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input+.iris-picker{margin-top:4px}.iris-error{background-color:#ffafaf}.iris-border{border-radius:3px;border:1px solid #aaa;width:200px;background-color:#fff}.iris-picker-inner{position:absolute;top:0;right:0;left:0;bottom:0}.iris-border .iris-picker-inner{top:10px;right:10px;left:10px;bottom:10px}.iris-picker .iris-square-inner{position:absolute;left:0;right:0;top:0;bottom:0}.iris-picker .iris-square,.iris-picker .iris-slider,.iris-picker .iris-square-inner,.iris-picker .iris-palette{border-radius:3px;box-shadow:inset 0 0 5px rgba(0,0,0,.4);height:100%;width:12.5%;float:left;margin-right:5%}.iris-picker .iris-square{width:76%;margin-right:10%;position:relative}.iris-picker .iris-square-inner{width:auto;margin:0}.iris-ie-9 .iris-square,.iris-ie-9 .iris-slider,.iris-ie-9 .iris-square-inner,.iris-ie-9 .iris-palette{box-shadow:none;border-radius:0}.iris-ie-9 .iris-square,.iris-ie-9 .iris-slider,.iris-ie-9 .iris-palette{outline:1px solid rgba(0,0,0,.1)}.iris-ie-lt9 .iris-square,.iris-ie-lt9 .iris-slider,.iris-ie-lt9 .iris-square-inner,.iris-ie-lt9 .iris-palette{outline:1px solid #aaa}.iris-ie-lt9 .iris-square .ui-slider-handle{outline:1px solid #aaa;background-color:#fff;-ms-filter:"alpha(Opacity=30)"}.iris-ie-lt9 .iris-square .iris-square-handle{background:0;border:3px solid #fff;-ms-filter:"alpha(Opacity=50)"}.iris-picker .iris-strip{margin-right:0;position:relative}.iris-picker .iris-strip .ui-slider-handle{position:absolute;background:0;margin:0;right:-3px;left:-3px;border:4px solid #aaa;border-width:4px 3px;width:auto;height:6px;border-radius:4px;box-shadow:0 1px 2px rgba(0,0,0,.2);opacity:.9;z-index:5;cursor:ns-resize}.iris-strip .ui-slider-handle:before{content:" ";position:absolute;left:-2px;right:-2px;top:-3px;bottom:-3px;border:2px solid #fff;border-radius:3px}.iris-picker .iris-slider-offset{position:absolute;top:11px;left:0;right:0;bottom:-3px;width:auto;height:auto;background:transparent;border:0;border-radius:0}.iris-picker .iris-square-handle{background:transparent;border:5px solid #aaa;border-radius:50%;border-color:rgba(128,128,128,.5);box-shadow:none;width:12px;height:12px;position:absolute;left:-10px;top:-10px;cursor:move;opacity:1;z-index:10}.iris-picker .ui-state-focus .iris-square-handle{opacity:.8}.iris-picker .iris-square-handle:hover{border-color:#999}.iris-picker .iris-square-value:focus .iris-square-handle{box-shadow:0 0 2px rgba(0,0,0,.75);opacity:.8}.iris-picker .iris-square-handle:hover::after{border-color:#fff}.iris-picker .iris-square-handle::after{position:absolute;bottom:-4px;right:-4px;left:-4px;top:-4px;border:3px solid #f9f9f9;border-color:rgba(255,255,255,.8);border-radius:50%;content:" "}.iris-picker .iris-square-value{width:8px;height:8px;position:absolute}.iris-ie-lt9 .iris-square-value,.iris-mozilla .iris-square-value{width:1px;height:1px}.iris-palette-container{position:absolute;bottom:0;left:0;margin:0;padding:0}.iris-border .iris-palette-container{left:10px;bottom:10px}.iris-picker .iris-palette{margin:0;cursor:pointer}.iris-square-handle,.ui-slider-handle{border:0;outline:0}</style>
+<script type="text/javascript" charset="utf-8">/*<![CDATA[*/NS = "syntax";var toolbar = [{"type":"format","title":"Bold Text","icon":"bold.png","key":"b","open":"**","close":"**","block":false},{"type":"format","title":"Italic Text","icon":"italic.png","key":"i","open":"\/\/","close":"\/\/","block":false},{"type":"format","title":"Underlined Text","icon":"underline.png","key":"u","open":"__","close":"__","block":false},{"type":"format","title":"Monospaced Text","icon":"mono.png","key":"m","open":"''","close":"''","block":false},{"type":"format","title":"Strike-through Text","icon":"strike.png","key":"d","open":"<del>","close":"<\/del>","block":false},{"type":"autohead","title":"Same Level Headline","icon":"hequal.png","key":"8","text":"Headline","mod":0,"block":true},{"type":"autohead","title":"Lower Headline","icon":"hminus.png","key":"9","text":"Headline","mod":1,"block":true},{"type":"autohead","title":"Higher Headline","icon":"hplus.png","key":"0","text":"Headline","mod":-1,"block":true},{"type":"picker","title":"Select Headline","icon":"h.png","class":"pk_hl","list":[{"type":"format","title":"Level 1 Headline","icon":"h1.png","key":"1","open":"====== ","close":" ======\\n"},{"type":"format","title":"Level 2 Headline","icon":"h2.png","key":"2","open":"===== ","close":" =====\\n"},{"type":"format","title":"Level 3 Headline","icon":"h3.png","key":"3","open":"==== ","close":" ====\\n"},{"type":"format","title":"Level 4 Headline","icon":"h4.png","key":"4","open":"=== ","close":" ===\\n"},{"type":"format","title":"Level 5 Headline","icon":"h5.png","key":"5","open":"== ","close":" ==\\n"}],"block":true},{"type":"format","title":"External Link","icon":"linkextern.png","open":"[[","close":"]]","sample":"http:\/\/example.com|External Link","block":false},{"type":"formatln","title":"Ordered List Item","icon":"ol.png","open":"  - ","close":"","key":"-","block":true},{"type":"formatln","title":"Unordered List Item","icon":"ul.png","open":"  * ","close":"","key":".","block":true},{"type":"insert","title":"Horizontal Rule","icon":"hr.png","insert":"\\n----\\n","block":true},{"type":"picker","title":"Smileys","icon":"smiley.png","list":{"8-)":"icon_cool.gif","8-O":"icon_eek.gif","8-o":"icon_eek.gif",":-(":"icon_sad.gif",":-)":"icon_smile.gif","=)":"icon_smile2.gif",":-\/":"icon_doubt.gif",":-\\":"icon_doubt2.gif",":-?":"icon_confused.gif",":-D":"icon_biggrin.gif",":-P":"icon_razz.gif",":-o":"icon_surprised.gif",":-O":"icon_surprised.gif",":-x":"icon_silenced.gif",":-X":"icon_silenced.gif",":-|":"icon_neutral.gif",";-)":"icon_wink.gif","m(":"facepalm.gif","^_^":"icon_fun.gif",":?:":"icon_question.gif",":!:":"icon_exclaim.gif","LOL":"icon_lol.gif","FIXME":"fixme.gif","DELETEME":"delete.gif",":UPDATE:":"update.gif",":NEW:":"new.gif",":V4:":"v4logo_short.gif"},"icobase":"smileys","block":false},{"type":"picker","title":"Special Chars","icon":"chars.png","list":["\u00c0","\u00e0","\u00c1","\u00e1","\u00c2","\u00e2","\u00c3","\u00e3","\u00c4","\u00e4","\u01cd","\u01ce","\u0102","\u0103","\u00c5","\u00e5","\u0100","\u0101","\u0104","\u0105","\u00c6","\u00e6","\u0106","\u0107","\u00c7","\u00e7","\u010c","\u010d","\u0108","\u0109","\u010a","\u010b","\u00d0","\u0111","\u00f0","\u010e","\u010f","\u00c8","\u00e8","\u00c9","\u00e9","\u00ca","\u00ea","\u00cb","\u00eb","\u011a","\u011b","\u0112","\u0113","\u0116","\u0117","\u0118","\u0119","\u0122","\u0123","\u011c","\u011d","\u011e","\u011f","\u0120","\u0121","\u0124","\u0125","\u00cc","\u00ec","\u00cd","\u00ed","\u00ce","\u00ee","\u00cf","\u00ef","\u01cf","\u01d0","\u012a","\u012b","\u0130","\u0131","\u012e","\u012f","\u0134","\u0135","\u0136","\u0137","\u0139","\u013a","\u013b","\u013c","\u013d","\u013e","\u0141","\u0142","\u013f","\u0140","\u0143","\u0144","\u00d1","\u00f1","\u0145","\u0146","\u0147","\u0148","\u00d2","\u00f2","\u00d3","\u00f3","\u00d4","\u00f4","\u00d5","\u00f5","\u00d6","\u00f6","\u01d1","\u01d2","\u014c","\u014d","\u0150","\u0151","\u0152","\u0153","\u00d8","\u00f8","\u0154","\u0155","\u0156","\u0157","\u0158","\u0159","\u015a","\u015b","\u015e","\u015f","\u0160","\u0161","\u015c","\u015d","\u0162","\u0163","\u0164","\u0165","\u00d9","\u00f9","\u00da","\u00fa","\u00db","\u00fb","\u00dc","\u00fc","\u01d3","\u01d4","\u016c","\u016d","\u016a","\u016b","\u016e","\u016f","\u01d6","\u01d8","\u01da","\u01dc","\u0172","\u0173","\u0170","\u0171","\u0174","\u0175","\u00dd","\u00fd","\u0178","\u00ff","\u0176","\u0177","\u0179","\u017a","\u017d","\u017e","\u017b","\u017c","\u00de","\u00fe","\u00df","\u0126","\u0127","\u00bf","\u00a1","\u00a2","\u00a3","\u00a4","\u00a5","\u20ac","\u00a6","\u00a7","\u00aa","\u00ac","\u00af","\u00b0","\u00b1","\u00f7","\u2030","\u00bc","\u00bd","\u00be","\u00b9","\u00b2","\u00b3","\u00b5","\u00b6","\u2020","\u2021","\u00b7","\u2022","\u00ba","\u2200","\u2202","\u2203","\u018f","\u0259","\u2205","\u2207","\u2208","\u2209","\u220b","\u220f","\u2211","\u203e","\u2212","\u2217","\u00d7","\u2044","\u221a","\u221d","\u221e","\u2220","\u2227","\u2228","\u2229","\u222a","\u222b","\u2234","\u223c","\u2245","\u2248","\u2260","\u2261","\u2264","\u2265","\u2282","\u2283","\u2284","\u2286","\u2287","\u2295","\u2297","\u22a5","\u22c5","\u25ca","\u2118","\u2111","\u211c","\u2135","\u2660","\u2663","\u2665","\u2666","\u03b1","\u03b2","\u0393","\u03b3","\u0394","\u03b4","\u03b5","\u03b6","\u03b7","\u0398","\u03b8","\u03b9","\u03ba","\u039b","\u03bb","\u03bc","\u039e","\u03be","\u03a0","\u03c0","\u03c1","\u03a3","\u03c3","\u03a4","\u03c4","\u03c5","\u03a6","\u03c6","\u03c7","\u03a8","\u03c8","\u03a9","\u03c9","\u2605","\u2606","\u260e","\u261a","\u261b","\u261c","\u261d","\u261e","\u261f","\u2639","\u263a","\u2714","\u2718","\u201e","\u201c","\u201d","\u201a","\u2018","\u2019","\u00ab","\u00bb","\u2039","\u203a","\u2014","\u2013","\u2026","\u2190","\u2191","\u2192","\u2193","\u2194","\u21d0","\u21d1","\u21d2","\u21d3","\u21d4","\u00a9","\u2122","\u00ae","\u2032","\u2033","[","]","{","}","~","(",")","%","\u00a7","$","#","|","@"],"block":false},{"type":"format","title":"Mark text as key press","icon":"..\/..\/plugins\/keyboard\/keyboard.png","open":"<key>","close":"<\/key>"},{"type":"picker","title":"Wrap Plugin","icon":"..\/..\/plugins\/wrap\/images\/toolbar\/picker.png","list":[{"type":"format","title":"columns","icon":"..\/..\/plugins\/wrap\/images\/toolbar\/column.png","open":"<WRAP group>\\n<WRAP half column>\\n","close":"\\n<\/WRAP>\\n\\n<WRAP half column>\\n\\n<\/WRAP>\\n<\/WRAP>\\n"},{"type":"format","title":"simple centered box","icon":"..\/..\/plugins\/wrap\/images\/toolbar\/box.png","open":"<WRAP center round box 60%>\\n","close":"\\n<\/WRAP>\\n"},{"type":"format","title":"info box","icon":"..\/..\/plugins\/wrap\/images\/note\/16\/info.png","open":"<WRAP center round info 60%>\\n","close":"\\n<\/WRAP>\\n"},{"type":"format","title":"tip box","icon":"..\/..\/plugins\/wrap\/images\/note\/16\/tip.png","open":"<WRAP center round tip 60%>\\n","close":"\\n<\/WRAP>\\n"},{"type":"format","title":"important box","icon":"..\/..\/plugins\/wrap\/images\/note\/16\/important.png","open":"<WRAP center round important 60%>\\n","close":"\\n<\/WRAP>\\n"},{"type":"format","title":"alert box","icon":"..\/..\/plugins\/wrap\/images\/note\/16\/alert.png","open":"<WRAP center round alert 60%>\\n","close":"\\n<\/WRAP>\\n"},{"type":"format","title":"help box","icon":"..\/..\/plugins\/wrap\/images\/note\/16\/help.png","open":"<WRAP center round help 60%>\\n","close":"\\n<\/WRAP>\\n"},{"type":"format","title":"download box","icon":"..\/..\/plugins\/wrap\/images\/note\/16\/download.png","open":"<WRAP center round download 60%>\\n","close":"\\n<\/WRAP>\\n"},{"type":"format","title":"todo box","icon":"..\/..\/plugins\/wrap\/images\/note\/16\/todo.png","open":"<WRAP center round todo 60%>\\n","close":"\\n<\/WRAP>\\n"},{"type":"insert","title":"clear floats","icon":"..\/..\/plugins\/wrap\/images\/toolbar\/clear.png","insert":"<WRAP clear\/>\\n"},{"type":"format","title":"especially emphasised","icon":"..\/..\/plugins\/wrap\/images\/toolbar\/em.png","open":"<wrap em>","close":"<\/wrap>"},{"type":"format","title":"highlighted","icon":"..\/..\/plugins\/wrap\/images\/toolbar\/hi.png","open":"<wrap hi>","close":"<\/wrap>"},{"type":"format","title":"less significant","icon":"..\/..\/plugins\/wrap\/images\/toolbar\/lo.png","open":"<wrap lo>","close":"<\/wrap>"}]},{"type":"dialog","title":"PageQuery Cheatsheet","icon":"..\/..\/plugins\/pagequery\/images\/pagequery.png","html":"<div id=\"pq-dialog\" title=\"PageQuery Cheatsheet\" style=\"font-size:75%;\">\n<b>pagequery><\/b>&nbsp; * | .* | exclude ns: ^ |-ns: | include ns: @ | ns: | . | .. | text | regex<\/br>\n<b>fulltext<\/b>&nbsp; Full-text search of page content<\/br>\n<b>fullregex<\/b>&nbsp; Search the full page id using regex<\/br>\n<b>sort=column:direction<\/b>&nbsp; Keys to sort by, in order of sorting<\/br>\n&nbsp;&nbsp;&nbsp;&nbsp;<b>a, ab, abc<\/b>&nbsp; By 1st letter, 2-letters, or 3-letters<\/br>\n&nbsp;&nbsp;&nbsp;&nbsp;<b>name, pagename<\/b>&nbsp; By page name [not grouped]<\/br>\n&nbsp;&nbsp;&nbsp;&nbsp;<b>title, heading<\/b>&nbsp; By page title (or 1st heading) [not grouped]<\/br>\n&nbsp;&nbsp;&nbsp;&nbsp;<b>id, pageid<\/b>&nbsp; By full page id, including namespace [not grouped]<\/br>\n&nbsp;&nbsp;&nbsp;&nbsp;<b>ns<\/b>&nbsp; By namespace (without page name)<\/br>\n&nbsp;&nbsp;&nbsp;&nbsp;<b>mdate, cdate<\/b>&nbsp; By modified\/created dates (full) [not grouped]<\/br>\n&nbsp;&nbsp;&nbsp;&nbsp;<b>m[year][month][day]<\/b>&nbsp; By [m]odified [year][month][day]<\/br>\n&nbsp;&nbsp;&nbsp;&nbsp;<b>c[year][month][day]<\/b>&nbsp; By [c]reated [year][month][day]s<\/br>\n&nbsp;&nbsp;&nbsp;&nbsp;<b>creator<\/b>&nbsp; By page author<\/br>\n&nbsp;&nbsp;&nbsp;&nbsp;<b>contributor<\/b>&nbsp; By page contributor(s)\tsort=contributor:asc<\/br>\n&nbsp;&nbsp;&nbsp;&nbsp;<b>link<\/b>&nbsp; Links on this page, delimited by spaces<\/br>\n&nbsp;&nbsp;&nbsp;&nbsp;<b>backlinks<\/b>&nbsp; Links to this page, delimited by spaces<\/br>\n&nbsp;&nbsp;&nbsp;&nbsp;<b>:asc|:a<\/b>&nbsp; Ascending, e.g. a \u2192 z, 1 \u2192 10<\/br>\n&nbsp;&nbsp;&nbsp;&nbsp;<b>:desc|:d<\/b>&nbsp; Descending, e.g. z \u2192 a, 10 \u2192 1<\/br>\n<b>filter=regex|text|date<\/b>&nbsp; Filter the result list, using regex. =! mean exclude; , between options<\/br>\n<b>group<\/b>&nbsp; Show a group header for each change in sort keys<\/br>\n<b>limit=number<\/b>&nbsp; Maximum number of results to return<\/br>\n<b>spelldate<\/b>&nbsp; Use real month and day names instead of numeric dates<\/br>\n<b>cols=&lt;number&gt;<\/b>&nbsp; Number of columns in displayed list<\/br>\n<b>proper=name|header|both<\/b>&nbsp; Display page names and\/or namespaces in Proper Case<\/br>\n<b>border=none|inside|outside|both<\/b>&nbsp; Show a border around table columns<\/br>\n<b>hidestart<\/b>&nbsp; Ignore any default start pages in the namespace(s)<\/br>\n<b>display=&lt;text{meta}&gt;<\/b>&nbsp; How to display the page links, using page's metadata via replace strings in {}<\/br>\n<b>snippet=tooltip|inline|plain|quoted<\/b>&nbsp; Controls how the page snippet (preview) is displayed<\/br>\n&nbsp;&nbsp;&nbsp;&nbsp;<b>e.g. snippet=&lt;format,count,extent&gt;<\/b>&nbsp; <\/br>\n&nbsp;&nbsp;&nbsp;&nbsp;<b>format<\/b>&nbsp; one of the formats listed above: inline, plain, quoted<\/br>\n&nbsp;&nbsp;&nbsp;&nbsp;<b>count<\/b>&nbsp; to show 1st <count> items in list with an preview\tall<\/br>\n&nbsp;&nbsp;&nbsp;&nbsp;<b>extent<\/b>&nbsp; can be choice of [c]hars, [w]ords, [l]ines, or [~]<stop at><\/br>\n<b>maxns=&lt;number&gt;<\/b>&nbsp; The number of namespace levels to display.<\/br>\n<b>case<\/b>&nbsp; Honour case when sorting, i.e. a..z then A..Z<\/br>\n<b>natsort<\/b>&nbsp; Use PHP's natural sorting functions, e.g. 1,2,10,12 rather than 1,10,12,2<\/br>\n<b>underline<\/b>&nbsp; Show a faint underline between each link for clarity<\/br>\n<b>label=&lt;text&gt;<\/b>&nbsp; A label to be displayed at the top of the PageQuery list<\/br>\n<b>hidemsg<\/b>&nbsp; Hide any empty result messages<\/br>\n<b>hidejump<\/b>&nbsp; Hide the \u201cJump To Top\u201d link<\/br>\n<b>showcount<\/b>&nbsp; Show the total count of page links at bottom of list<\/br>\n<b>layout=table|column<\/b>&nbsp; Choose between table or CSS3 column layout<\/br>\n<b>fontsize=&lt;CSS-Unit&gt;<\/b>&nbsp; Set the base font size for the pagequery list. You can use any CSS size unit<\/br>\n<b>bullet=none|disc|circle|square<\/b>&nbsp; Bullet style for list items<\/br>\n<\/div>\n","block":false}];
+
+/*!]]>*/</script>
+  <style type="text/css">
+    body { padding-top: 20px; }
+    .toc-affix { z-index: 9999; top: 10px; right: 10px; }
+  </style>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script type="text/javascript" src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script type="text/javascript" src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  </head>
+<body class="default page-on-panel">
+  <!--[if IE 8 ]><div id="IE8"><![endif]-->
+  <div id="dokuwiki__site" class="container">
+    <div id="dokuwiki__top" class="site dokuwiki mode_show tpl_bootstrap3    ">
+
+      
+      <!-- header -->
+      <div id="dokuwiki__header">
+        <nav class="navbar  navbar-default" role="navigation">
+
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a href="http://wiki.bash-hackers.org/start" accesskey="h" title="[H]" class="navbar-brand"><img src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/logo.png" alt="Bash Hackers Wiki" class="pull-left" id="dw__logo" height="20"> <span id="dw__title">Bash Hackers Wiki</span></a>
+    </div>
+
+    <div class="collapse navbar-collapse">
+
+            
+            <ul class="nav navbar-nav">
+        <li>
+  <a href="http://wiki.bash-hackers.org/start"><i class="fa fa-fw fa-home"></i> Home</a></li>
+      </ul>
+      
+      <div class="navbar-right">
+
+                  <form action="/start" accept-charset="utf-8" class="navbar-form navbar-left search" id="dw__search" method="get" role="search"><div class="no"><div class="form-group"><input name="do" value="search" type="hidden"><input id="qsearch__in" placeholder="Search" accesskey="f" name="id" class="edit form-control" title="[F]" type="search"></div> <button type="submit" class="btn btn-default" title="Search"><i class="fa fa-fw fa-search"></i><span class="hidden-lg hidden-md hidden-sm"> Search</span></button><div style="display: none;" id="qsearch__out" class="panel panel-default ajax_qsearch JSpopup"></div></div></form>        
+        
+<ul class="nav navbar-nav" id="dw__tools">
+
+
+  <li class="dropdown">
+
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="">
+      <i class="fa fa-fw fa-wrench"></i> <span class="hidden-lg hidden-md hidden-sm">Tools</span> <span class="caret"></span>
+    </a>
+
+    <ul class="dropdown-menu tools" role="menu">
+    
+      <li class="dropdown-header">
+        <i class="fa fa-fw fa-wrench"></i> Site Tools      </li>
+      <li><a href="http://wiki.bash-hackers.org/syntax/basicgrammar?do=recent" class="action recent" accesskey="r" rel="nofollow" title="Recent Changes [R]"><i class="fa fa-fw fa-list-alt"></i> Recent Changes</a></li><li><a href="http://wiki.bash-hackers.org/syntax/basicgrammar?do=media&amp;ns=syntax" class="action media" rel="nofollow" title="Media Manager"><i class="fa fa-fw fa-picture-o"></i> Media Manager</a></li><li><a href="http://wiki.bash-hackers.org/syntax/basicgrammar?do=index" class="action index" accesskey="x" rel="nofollow" title="Sitemap [X]"><i class="fa fa-fw fa-sitemap"></i> Sitemap</a></li>
+            <li class="divider" role="separator"></li>
+      
+    
+      <li class="dropdown-header">
+        <i class="fa fa-fw fa-file"></i> Page Tools      </li>
+      <li><a href="http://wiki.bash-hackers.org/syntax/basicgrammar?do=edit" class="action source" accesskey="v" rel="nofollow" title="Show pagesource [V]"><i class="fa fa-fw fa-pencil-square-o"></i> Show pagesource</a></li><li><a href="http://wiki.bash-hackers.org/syntax/basicgrammar?do=revisions" class="action revs" accesskey="o" rel="nofollow" title="Old revisions [O]"><i class="fa fa-fw fa-clock-o"></i> Old revisions</a></li><li><a href="http://wiki.bash-hackers.org/syntax/basicgrammar?do=backlink" class="action backlink" rel="nofollow" title="Backlinks"><i class="fa fa-fw fa-link"></i> Backlinks</a></li><li><a href="#dokuwiki__top" class="action top" accesskey="t" rel="nofollow" title="Back to top [T]"><i class="fa fa-fw fa-chevron-up"></i> Back to top</a></li>
+      
+        </ul>
+  </li>
+
+
+</ul>
+
+
+        <ul class="nav navbar-nav">
+
+          
+                    <li>
+            <span class="dw__actions">
+              <a href="http://wiki.bash-hackers.org/syntax/basicgrammar?do=register" class="action register btn btn-success navbar-btn" rel="nofollow" title="Register"><i class="fa fa-fw fa-user-plus"></i> Register</a><a href="http://wiki.bash-hackers.org/syntax/basicgrammar?do=login&amp;sectok=64cca54fe5a3754acc0a4e78378341e9" class="action login btn btn-default navbar-btn" rel="nofollow" title="Log In"><i class="fa fa-fw fa-sign-in"></i> Log In</a>            </span>
+          </li>
+          
+        </ul>
+
+        
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+      </div>
+      <!-- /header -->
+
+      <div align="center">
+<script async="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/adsbygoogle.js"></script>
+<!-- BHORG_BOTTOM -->
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-4658830517838678" data-ad-slot="1603598940"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+      
+      <div id="dw__breadcrumbs">
+  <hr>
+    <div class="dw__youarehere">
+    <ol class="breadcrumb"><li>You are here:</li><li><a href="http://wiki.bash-hackers.org/start" title="start"><i class="fa fa-fw fa-home"></i></a></li><li><a href="http://wiki.bash-hackers.org/syntax/start" class="wikilink1" title="syntax:start">Syntax</a></li><li class="active">Basic grammar rules of Bash</li></ol>  </div>
+      <div class="dw__breadcrumbs hidden-print">
+    <ol class="breadcrumb"><li>Trace:</li><li class="active">Basic grammar rules of Bash</li></ol>  </div>
+    <hr>
+</div>
+
+      <p class="pageId text-right">
+        <span class="label label-primary">syntax:basicgrammar</span>      </p>
+
+      <div id="dw__msgarea">
+              </div>
+
+      <main class="main row" role="main">
+
+        
+        <!-- ********** CONTENT ********** -->
+        <article id="dokuwiki__content" class="container">
+
+          <div class="panel panel-default">
+            <div class="page panel-body">
+
+              <div class="pull-right hidden-print">
+  <div class="toc-affix affix-top" data-spy="affix" data-offset-top="150">
+    <!-- TOC START -->
+<div style="background-color: rgb(255, 255, 255);" class="panel panel-default" id="dw__toc">
+<h3 id="table-of-contents" style="cursor: pointer;" class="panel-heading toggle closed"><i class="fa fa-fw fa-list" style="padding-right: 5px"></i> <strong class="fa fa-fw fa-chevron-down"><span>+</span></strong><span class="label hide">Table of Contents</span><a style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; line-height: 1; padding-left: 0.375em;" data-anchorjs-icon="" aria-label="Anchor link for: table of contents" href="#table-of-contents" class="anchorjs-link "></a></h3>
+<div aria-expanded="false" style="display: none;" class="panel-body">
+
+<ul style="display: none;" class="nav  nav-pills nav-stacked toc">
+<li class="level1"><a href="#basic_grammar_rules_of_bash">Basic grammar rules of Bash</a>
+<ul class="nav  nav-pills nav-stacked toc">
+<li class="level2"><a href="#simple_commands">Simple Commands</a></li>
+<li class="level2"><a href="#pipelines">Pipelines</a></li>
+<li class="level2"><a href="#lists">Lists</a></li>
+<li class="level2"><a href="#compound_commands">Compound Commands</a></li>
+<li class="level2"><a href="#shell_function_definitions">Shell Function Definitions</a></li>
+<li class="level2"><a href="#grammar_summary">Grammar summary</a></li>
+<li class="level2"><a href="#examples_for_classification">Examples for classification</a></li>
+<li class="level2"><a href="#see_also">See also</a></li>
+</ul>
+</li>
+<li class="level1"><a href="#discussion__section">Discussion</a></li>
+</ul>
+</div>
+</div>
+<!-- TOC END -->
+  </div>
+</div>
+
+<h1 class="sectionedit1 page-header" id="basic_grammar_rules_of_bash">Basic grammar rules of Bash<a style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; line-height: 1; padding-left: 0.375em;" data-anchorjs-icon="" aria-label="Anchor link for: basic_grammar_rules_of_bash" href="#basic_grammar_rules_of_bash" class="anchorjs-link "></a></h1>
+<div class="level1">
+
+<p>
+Bash builds its features on top of a few basic <strong>grammar rules</strong>. The code you see everywhere, the code you use, is based on those rules. However, <strong>this is a very theoretical view</strong>, but if you're interested, it may help you understand why things look the way they look.
+</p>
+
+<p>
+If you don't know the commands used in the following examples, just trust the explanation.
+</p>
+
+</div>
+
+<h2 class="sectionedit2" id="simple_commands">Simple Commands<a style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; line-height: 1; padding-left: 0.375em;" data-anchorjs-icon="" aria-label="Anchor link for: simple_commands" href="#simple_commands" class="anchorjs-link "></a></h2>
+<div class="level2">
+
+<p>
+Bash manual says:
+</p><pre class="code">A simple command is a sequence of optional variable assignments followed by blank-separated words and redirections,
+and terminated by a control operator. The first word specifies the command to be executed, and is passed as argument
+zero.  The remaining words are passed as arguments to the invoked command.</pre>
+
+<p></p>
+
+<p>
+Sounds harder than it actually is. It is what you do daily. You enter 
+simple commands with parameters, and the shell executes them.
+</p>
+
+<p>
+Every complex Bash operationcan be split into simple commands:
+</p><pre class="code">ls
+ls &gt; list.txt
+ls -l
+LC_ALL=C ls</pre>
+
+<p></p>
+
+<p>
+The last one might not be familiar. That one simply adds "<code>LC_ALL=C</code>" to the environment of the <code>ls</code>
+ program. It doesn't affect your current shell. This also works while 
+calling functions, unless Bash runs in POSIX® mode (in which case it 
+affects your current shell).
+</p>
+
+<p>
+Every command has an exit code. It's a type of return status. The shell 
+can catch it and act on it. Exit code range is from 0 to 255, where 0 
+means success, and the rest mean either something failed, or there is an
+ issue to report back to the calling program.
+</p>
+
+<p>
+<span class="wrap_center wrap_round wrap_info " style="width: 90%;">
+The simple command construct is the <strong>base</strong> for all higher
+ constructs. Everything you execute, from pipelines to functions, 
+finally ends up in (many) simple commands. That's why Bash only has one 
+method to <a href="http://wiki.bash-hackers.org/syntax/grammar/parser_exec" class="wikilink1" title="syntax:grammar:parser_exec"> expand and execute a simple command</a>.
+</span>
+</p>
+
+</div>
+
+<h2 class="sectionedit3" id="pipelines">Pipelines<a style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; line-height: 1; padding-left: 0.375em;" data-anchorjs-icon="" aria-label="Anchor link for: pipelines" href="#pipelines" class="anchorjs-link "></a></h2>
+<div class="level2">
+
+<p>
+<img src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/fixme.gif" class="icon" alt="FIXME"> Missing an additional article about pipelines and pipelining
+</p>
+
+<p>
+<code>[time [-p]] [ ! ] command [ | command2 … ]</code>
+</p>
+
+<p>
+<strong>Don't get confused</strong> about the name "pipeline." It's a 
+grammatic name for a construct. Such a pipeline isn't necessarily a pair
+ of commands where stdout/stdin is connected via a real pipe.
+</p>
+
+<p>
+Pipelines are one or more <a href="http://wiki.bash-hackers.org/syntax/basicgrammar#simple_commands" class="wikilink1 curid" title="syntax:basicgrammar"> simple commands</a> (separated by the <code>|</code> symbol connects their input and output), for example:
+</p><pre class="code">ls /etc | wc -l</pre>
+
+will execute <code>ls</code> on <code>/etc</code> and <strong>pipe</strong> the output to <code>wc</code>, which will count the lines generated by the ls command. The result is the number of directory entries in /etc.
+<p></p>
+
+<p>
+The last command in the pipeline will set the exit code for the 
+pipeline. This exit code can be "inverted" by prefixing an exclamation 
+mark to the pipeline: An unsuccessful pipeline will exit "successful" 
+and vice versa.
+In this example, the commands in the if stanza will be executed if the 
+pattern "^root:" is <strong>not</strong> found in <code>/etc/passwd</code>:
+</p><pre class="code">if ! grep '^root:' /etc/passwd; then
+  echo "No root user defined... eh?"
+fi</pre>
+
+Yes, this is also a pipeline (although there is no pipe!), because the <strong>exclamation mark to invert the exit code</strong> can only be used in a pipeline.
+If <code>grep</code>'s exit code is 1 (FALSE) (the text was not found), the leading <code>!</code> will "invert" the exit code, and the shell sees (and acts on) exit code 0 (TRUE) and the <code>then</code> part of the <code>if</code> stanza is executed. One could say we checked for "<code>not grep "^root" /etc/passwd</code>".
+<p></p>
+
+<p>
+The <a href="http://wiki.bash-hackers.org/commands/builtin/set#attributes" class="wikilink1" title="commands:builtin:set"> set option pipefail</a> determines the behavior of how bash reports the exit code of a pipeline. If it's set, then the exit code (<code>$?</code>) is the last command that exits with non zero status, if none fail, it's zero. If it's not set, then <code>$?</code> always holds the exit code of the last command (as explained above).
+</p>
+
+<p>
+The shell option <code><a href="http://wiki.bash-hackers.org/internals/shell_options#lastpipe" class="wikilink1" title="internals:shell_options"> lastpipe</a></code> will execute the last element in a pipeline construct in the current shell environment, i.e. not a subshell.
+</p>
+
+<p>
+There's also an array <code>PIPESTATUS[]</code> that is set after a foreground pipeline is executed. Each element of <code>PIPESTATUS[]</code>
+ reports the exit code of the respective command in the pipeline. Note: 
+(1) it's only for foreground pipe and (2) for higher level structure 
+that is built up from a pipeline. Like list, <code>PIPESTATUS[]</code> holds the exit status of the last pipeline command executed.
+</p>
+
+<p>
+Another thing you can do with pipelines is log their execution time. Note that <strong><code>time</code> is not a command</strong>, it is part of the pipeline syntax:
+</p><pre class="code"># time updatedb
+real    3m21.288s
+user    0m3.114s
+sys     0m4.744s</pre>
+
+<p></p>
+
+</div>
+
+<h2 class="sectionedit4" id="lists">Lists<a style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; line-height: 1; padding-left: 0.375em;" data-anchorjs-icon="" aria-label="Anchor link for: lists" href="#lists" class="anchorjs-link "></a></h2>
+<div class="level2">
+
+<p>
+<img src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/fixme.gif" class="icon" alt="FIXME"> Missing an additional article about list operators
+</p>
+
+<p>
+A list is a sequence of one or more <a href="http://wiki.bash-hackers.org/syntax/basicgrammar#pipelines" class="wikilink1 curid" title="syntax:basicgrammar"> pipelines</a> separated by one of the operators <code>;</code>, <code>&amp;</code>, <code>&amp;&amp;</code>, or <code>││</code>, and optionally terminated by one of <code>;</code>, <code>&amp;</code>, or <code>&lt;newline&gt;</code>.
+</p>
+
+<p>
+⇒ It's a group of <strong>pipelines</strong> separated or terminated by <strong>tokens</strong> that all have <strong>different meanings</strong> for Bash.
+</p>
+
+<p>
+Your whole Bash script technically is one big single list!
+</p>
+<div class="table sectionedit5 table-responsive"><table class="inline table table-striped table-condensed">
+	<thead>
+	<tr class="row0">
+		<th class="col0">Operator</th><th class="col1">Description</th>
+	</tr>
+	</thead>
+	<tbody><tr class="row1">
+		<td class="col0"><code>&lt;PIPELINE1&gt; <strong>&lt;newline&gt;</strong> &lt;PIPELINE2&gt;</code></td><td class="col1">Newlines completely separate pipelines. The next pipeline is executed without any checks. You enter a command and press <code>&lt;RETURN&gt;</code>!)</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><code>&lt;PIPELINE1&gt; <strong>;</strong> &lt;PIPELINE2&gt;</code></td><td class="col1">The semicolon does what <code>&lt;newline&gt;</code> does: It separates the pipelines</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><code>&lt;PIPELINE&gt; <strong>&amp;</strong> &lt;PIPELINE&gt;</code></td><td class="col1">The pipeline in front of the <code>&amp;</code> is executed <strong>asynchronously</strong> ("in the background"). If a pipeline follows this, it is executed immediately after the async pipeline starts</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><code>&lt;PIPELINE1&gt; <strong>&amp;&amp;</strong> &lt;PIPELINE2&gt;</code></td><td class="col1"><code>&lt;PIPELINE1&gt;</code> is executed and <strong>only</strong> if its exit code was 0 (TRUE), then <code>&lt;PIPELINE2&gt;</code> is executed (AND-List)</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><code>&lt;PIPELINE1&gt; <strong>||</strong> &lt;PIPELINE2&gt;</code></td><td class="col1"><code>&lt;PIPELINE1&gt;</code> is executed and <strong>only</strong> if its exit code was <strong>not</strong> 0 (FALSE), then <code>&lt;PIPELINE2&gt;</code> is executed (OR-List)</td>
+	</tr>
+</tbody></table></div>
+
+<p>
+<strong>Note:</strong> POSIX calls this construct a "compound lists".
+</p>
+
+</div>
+
+<h2 class="sectionedit6" id="compound_commands">Compound Commands<a style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; line-height: 1; padding-left: 0.375em;" data-anchorjs-icon="" aria-label="Anchor link for: compound_commands" href="#compound_commands" class="anchorjs-link "></a></h2>
+<div class="level2">
+
+<p>
+See also the <a href="http://wiki.bash-hackers.org/syntax/ccmd/intro" class="wikilink1" title="syntax:ccmd:intro"> list of compound commands</a>.
+</p>
+
+<p>
+There are two forms of compound commands:
+</p>
+<ul class="fix-media-list-overlap">
+<li class="level1"><div class="li"> form a new syntax element using a list as a "body"</div>
+</li>
+<li class="level1"><div class="li"> completly independant syntax elements</div>
+</li>
+</ul>
+
+<p>
+Essentially, everything else that's not described in this article. Compound commands have the following characteristics:
+</p>
+<ul class="fix-media-list-overlap">
+<li class="level1"><div class="li"> they <strong>begin</strong> and <strong>end</strong> with a specific keyword or operator (e.g. <code>for … done</code>)</div>
+</li>
+<li class="level1"><div class="li"> they can be redirected as a whole</div>
+</li>
+</ul>
+
+<p>
+See the following table for a short overview (no details - just an overview):
+</p>
+<div class="table sectionedit7 table-responsive"><table class="inline table table-striped table-condensed">
+	<thead>
+	<tr class="row0">
+		<th class="col0">Compound command syntax</th><th class="col1">Description</th>
+	</tr>
+	</thead>
+	<tbody><tr class="row1">
+		<td class="col0"><code>( &lt;LIST&gt; )</code></td><td class="col1">Execute <code>&lt;LIST&gt;</code> in an extra subshell ⇒ <a href="http://wiki.bash-hackers.org/syntax/ccmd/grouping_subshell" class="wikilink1" title="syntax:ccmd:grouping_subshell"> article</a></td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><code>{ &lt;LIST&gt; ; }</code></td><td class="col1">Execute <code>&lt;LIST&gt;</code> as separate group (but not in a subshell) ⇒ <a href="http://wiki.bash-hackers.org/syntax/ccmd/grouping_plain" class="wikilink1" title="syntax:ccmd:grouping_plain"> article</a></td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><code>(( &lt;EXPRESSION&gt; ))</code></td><td class="col1">Evaluate the arithmetic expression <code>&lt;EXPRESSION&gt;</code> ⇒ <a href="http://wiki.bash-hackers.org/syntax/ccmd/arithmetic_eval" class="wikilink1" title="syntax:ccmd:arithmetic_eval"> article</a></td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><code>[[ &lt;EXPRESSION&gt; ]]</code></td><td class="col1">Evaluate the conditional expression <code>&lt;EXPRESSION&gt;</code> (aka "the new test command") ⇒ <a href="http://wiki.bash-hackers.org/syntax/ccmd/conditional_expression" class="wikilink1" title="syntax:ccmd:conditional_expression"> article</a></td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><code>for &lt;NAME&gt; in &lt;WORDS&gt; ; do &lt;LIST&gt; ; done</code></td><td class="col1">Executes <code>&lt;LIST&gt;</code> while setting the variable <code>&lt;NAME&gt;</code> to one of <code>&lt;WORDS&gt;</code> on every iteration (classic for-loop) ⇒ <a href="http://wiki.bash-hackers.org/syntax/ccmd/classic_for" class="wikilink1" title="syntax:ccmd:classic_for"> article</a></td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><code>for (( &lt;EXPR1&gt; ; &lt;EXPR2&gt; ; &lt;EXPR3&gt; )) ; do &lt;LIST&gt; ; done</code></td><td class="col1">C-style for-loop (driven by arithmetic expressions) ⇒ <a href="http://wiki.bash-hackers.org/syntax/ccmd/c_for" class="wikilink1" title="syntax:ccmd:c_for"> article</a></td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><code>select &lt;NAME&gt; in &lt;WORDS&gt; ; do &lt;LIST&gt; ; done</code></td><td class="col1">Provides simple menus ⇒ <a href="http://wiki.bash-hackers.org/syntax/ccmd/user_select" class="wikilink1" title="syntax:ccmd:user_select"> article</a></td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><code>case &lt;WORD&gt; in &lt;PATTERN&gt;) &lt;LIST&gt; ;; … esac</code></td><td class="col1">Decisions based on pattern matching - executing <code>&lt;LIST&gt;</code> on match ⇒ <a href="http://wiki.bash-hackers.org/syntax/ccmd/case" class="wikilink1" title="syntax:ccmd:case"> article</a></td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><code>if &lt;LIST&gt; ; then &lt;LIST&gt; ; else &lt;LIST&gt; ; fi</code></td><td class="col1">The if clause: makes decisions based on exit codes ⇒ <a href="http://wiki.bash-hackers.org/syntax/ccmd/if_clause" class="wikilink1" title="syntax:ccmd:if_clause"> article</a></td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><code>while &lt;LIST1&gt; ; do &lt;LIST2&gt; ; done</code></td><td class="col1">Execute <code>&lt;LIST2&gt;</code> while <code>&lt;LIST1&gt;</code> returns TRUE (exit code) ⇒ <a href="http://wiki.bash-hackers.org/syntax/ccmd/while_loop" class="wikilink1" title="syntax:ccmd:while_loop"> article</a></td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><code>until &lt;LIST1&gt; ; do &lt;LIST2&gt; ; done</code></td><td class="col1">Execute <code>&lt;LIST2&gt;</code> until <code>&lt;LIST1&gt;</code> returns TRUE (exit code) ⇒ <a href="http://wiki.bash-hackers.org/syntax/ccmd/until_loop" class="wikilink1" title="syntax:ccmd:until_loop"> article</a></td>
+	</tr>
+</tbody></table></div>
+
+</div>
+
+<h2 class="sectionedit8" id="shell_function_definitions">Shell Function Definitions<a style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; line-height: 1; padding-left: 0.375em;" data-anchorjs-icon="" aria-label="Anchor link for: shell_function_definitions" href="#shell_function_definitions" class="anchorjs-link "></a></h2>
+<div class="level2">
+
+<p>
+<img src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/fixme.gif" class="icon" alt="FIXME"> Missing an additional article about shell functions
+</p>
+
+<p>
+A shell function definition makes a <a href="http://wiki.bash-hackers.org/syntax/basicgrammar#compound_commands" class="wikilink1 curid" title="syntax:basicgrammar"> compound command</a>
+ available via a new name. When the function runs, it has its own 
+"private" set of positional parameters and I/O descriptors. It acts like
+ a script-within-the-script. Simply stated: <strong>You've created a new command.</strong>
+</p>
+
+<p>
+The definition is easy (one of many possibilities):
+</p>
+
+<p>
+<code>&lt;NAME&gt; () &lt;COMPOUND_COMMAND&gt; &lt;REDIRECTIONS&gt;</code>
+</p>
+
+<p>
+which is usually used with the <code>{…; }</code> compound command, and thus looks like:
+</p><pre class="code">print_help() { echo "Sorry, no help available"; }</pre>
+
+<p></p>
+
+<p>
+As above, a function definition can have any <a href="http://wiki.bash-hackers.org/syntax/basicgrammar#compound_commands" class="wikilink1 curid" title="syntax:basicgrammar"> compound command</a> as a body. Structures like
+</p><pre class="code">countme() for ((x=1;x&lt;=9;x++)); do echo $x; done</pre>
+
+are unusual, but perfectly valid, since the for loop construct is a compound command!
+<p></p>
+
+<p>
+If <strong>redirection</strong> is specified, the redirection is not performed when the function is defined. It is performed when the function runs:
+</p><pre class="code"># this will NOT perform the redirection (at definition time)
+f() { echo ok ; } &gt; file
+
+# NOW the redirection will be performed (during EXECUTION of the function)
+f</pre>
+
+<p></p>
+
+<p>
+Bash allows three equivalent forms of the function definition:
+</p><pre class="code">NAME ()          &lt;COMPOUND_COMMAND&gt; &lt;REDIRECTIONS&gt;
+function NAME () &lt;COMPOUND_COMMAND&gt; &lt;REDIRECTIONS&gt;
+function NAME    &lt;COMPOUND_COMMAND&gt; &lt;REDIRECTIONS&gt;</pre>
+
+<p></p>
+
+<p>
+The space between <code>NAME</code> and <code>()</code> is optional, usually you see it without the space.
+</p>
+
+<p>
+I suggest using the first form. It's specified in POSIX and all Bourne-like shells seem to support it.
+</p>
+
+<p>
+<em class="u"><strong>Note:</strong></em> Before version <code>2.05-alpha1</code>, Bash only recognized the definition using curly braces (<code>name() { … }</code>), other shells allow the definition using <strong>any</strong> command (not just the compound command set).
+</p>
+
+<p>
+To execute a function like a regular shell script you put it together like this:
+</p>
+
+<p>
+</p><pre class="code">#!/bin/bash
+# Add shebang
+
+mycmd()
+{
+  # this $1 belongs to the function!
+  find / -iname "$1"
+}
+
+# this $1 belongs the script itself!
+mycmd "$1" # Execute command immediately after defining function 
+
+exit 0</pre>
+
+<p></p>
+
+<p>
+<strong>Just informational(1):</strong>
+</p>
+
+<p>
+Internally, for forking, Bash stores function definitions in environment variables. Variables with the content "<em>() ….</em>".
+</p>
+
+<p>
+Something similar to the following works without "officially" declaring a function:
+</p><pre class="code">$ export testfn="() { echo test; }"
+$ bash -c testfn
+test
+$</pre>
+
+<p></p>
+
+<p>
+<strong>Just informational(2):</strong>
+</p>
+
+<p>
+It is possible to create function names containing slashes:
+</p>
+
+<p>
+</p><pre class="code">/bin/ls() {
+  echo LS FAKE
+}</pre>
+
+<p></p>
+
+<p>
+The elements of this name aren't subject to a path search.
+</p>
+
+<p>
+Weird function names should not be used. Quote from the maintainer:
+</p>
+<ul class="fix-media-list-overlap">
+<li class="level1"><div class="li"> <em>
+It was a mistake to allow such characters in function names (`unset' doesn't
+work to unset them without forcing -f, for instance).  We're stuck with them
+for backwards compatibility, but I don't have to encourage their use.
+</em></div>
+</li>
+</ul>
+
+</div>
+
+<h2 class="sectionedit9" id="grammar_summary">Grammar summary<a style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; line-height: 1; padding-left: 0.375em;" data-anchorjs-icon="" aria-label="Anchor link for: grammar_summary" href="#grammar_summary" class="anchorjs-link "></a></h2>
+<div class="level2">
+<ul class="fix-media-list-overlap">
+<li class="level1"><div class="li"> a <a href="http://wiki.bash-hackers.org/syntax/basicgrammar#simple_commands" class="wikilink1 curid" title="syntax:basicgrammar"> simple command</a> is just a command and its arguments</div>
+</li>
+<li class="level1"><div class="li"> a <a href="http://wiki.bash-hackers.org/syntax/basicgrammar#pipelines" class="wikilink1 curid" title="syntax:basicgrammar"> pipeline</a> is one or more <a href="http://wiki.bash-hackers.org/syntax/basicgrammar#simple_commands" class="wikilink1 curid" title="syntax:basicgrammar"> simple command</a> probably connected in a pipe</div>
+</li>
+<li class="level1"><div class="li"> a <a href="http://wiki.bash-hackers.org/syntax/basicgrammar#lists" class="wikilink1 curid" title="syntax:basicgrammar"> list</a> is one or more <a href="http://wiki.bash-hackers.org/syntax/basicgrammar#pipelines" class="wikilink1 curid" title="syntax:basicgrammar"> pipelines</a> connected by special operators</div>
+</li>
+<li class="level1"><div class="li"> a <a href="http://wiki.bash-hackers.org/syntax/basicgrammar#compound_commands" class="wikilink1 curid" title="syntax:basicgrammar"> compound command</a> is a <a href="http://wiki.bash-hackers.org/syntax/basicgrammar#lists" class="wikilink1 curid" title="syntax:basicgrammar"> list</a> or a special command that forms a new meta-command</div>
+</li>
+<li class="level1"><div class="li"> a <a href="http://wiki.bash-hackers.org/syntax/basicgrammar#shell_function_definitions" class="wikilink1 curid" title="syntax:basicgrammar"> function definition</a> makes a <a href="http://wiki.bash-hackers.org/syntax/basicgrammar#compound_commands" class="wikilink1 curid" title="syntax:basicgrammar"> compound command</a> available under a new name, and a separate environment</div>
+</li>
+</ul>
+
+</div>
+
+<h2 class="sectionedit10" id="examples_for_classification">Examples for classification<a style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; line-height: 1; padding-left: 0.375em;" data-anchorjs-icon="" aria-label="Anchor link for: examples_for_classification" href="#examples_for_classification" class="anchorjs-link "></a></h2>
+<div class="level2">
+
+<p>
+<img src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/fixme.gif" class="icon" alt="FIXME"> more…
+</p>
+<hr>
+
+<p>
+<em class="u">A (very) simple command</em>
+</p><pre class="code">echo "Hello world..."</pre>
+
+<p></p>
+
+<p>
+<em class="u">All of the following are simple commands</em>
+</p><pre class="code">x=5</pre>
+
+<pre class="code">&gt;tmpfile</pre>
+
+<pre class="code">{x}&lt;"$x" _=${x=&lt;(echo moo)} &lt;&amp;0$(cat &lt;&amp;"$x" &gt;&amp;2)</pre>
+
+<p></p>
+<hr>
+
+<p>
+<em class="u">A common compound command</em>
+</p><pre class="code">if [ -d /data/mp3 ]; then
+  cp mymusic.mp3 /data/mp3
+fi</pre>
+
+<p></p>
+<ul class="fix-media-list-overlap">
+<li class="level1"><div class="li"> the <a href="http://wiki.bash-hackers.org/syntax/basicgrammar#compound_commands" class="wikilink1 curid" title="syntax:basicgrammar"> compound command</a> for the <code>if</code> clause</div>
+</li>
+<li class="level1"><div class="li"> the <a href="http://wiki.bash-hackers.org/syntax/basicgrammar#lists" class="wikilink1 curid" title="syntax:basicgrammar"> list</a> that <code>if</code> <strong>checks</strong> actually contains the <a href="http://wiki.bash-hackers.org/syntax/basicgrammar#simple_commands" class="wikilink1 curid" title="syntax:basicgrammar"> simple command</a> <code>[ -d /data/mp3 ]</code></div>
+</li>
+<li class="level1"><div class="li"> the <a href="http://wiki.bash-hackers.org/syntax/basicgrammar#lists" class="wikilink1 curid" title="syntax:basicgrammar"> list</a> that <code>if</code> <strong>executes</strong> contains a simple command (<code>cp mymusic.mp3 /data/mp3</code>)</div>
+</li>
+</ul>
+
+<p>
+Let's invert test command exit code, only one thing changes:
+</p><pre class="code">if ! [ -d /data/mp3 ]; then
+  cp mymusic.mp3 /data/mp3
+fi</pre>
+
+<p></p>
+<ul class="fix-media-list-overlap">
+<li class="level1"><div class="li"> the <a href="http://wiki.bash-hackers.org/syntax/basicgrammar#lists" class="wikilink1 curid" title="syntax:basicgrammar"> list</a> that <code>if</code> <strong>checks</strong> contains a <a href="http://wiki.bash-hackers.org/syntax/basicgrammar#pipelines" class="wikilink1 curid" title="syntax:basicgrammar"> pipeline</a> now (because of the <code>!</code>)</div>
+</li>
+</ul>
+
+</div>
+
+<h2 class="sectionedit11" id="see_also">See also<a style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; line-height: 1; padding-left: 0.375em;" data-anchorjs-icon="" aria-label="Anchor link for: see_also" href="#see_also" class="anchorjs-link "></a></h2>
+<div class="level2">
+<ul class="fix-media-list-overlap">
+<li class="level1"><div class="li"> Internal: <a href="http://wiki.bash-hackers.org/syntax/ccmd/intro" class="wikilink1" title="syntax:ccmd:intro"> List of compound commands</a></div>
+</li>
+<li class="level1"><div class="li"> Internal: <a href="http://wiki.bash-hackers.org/syntax/grammar/parser_exec" class="wikilink1" title="syntax:grammar:parser_exec"> Parsing and execution of simple commands</a></div>
+</li>
+<li class="level1"><div class="li"> Internal: <a href="http://wiki.bash-hackers.org/syntax/quoting" class="wikilink1" title="syntax:quoting"> Quoting and escaping</a></div>
+</li>
+<li class="level1"><div class="li"> Internal: <a href="http://wiki.bash-hackers.org/syntax/expansion/intro" class="wikilink1" title="syntax:expansion:intro"> Introduction to expansions and substitutions</a></div>
+</li>
+<li class="level1"><div class="li"> Internal: <a href="http://wiki.bash-hackers.org/syntax/words" class="wikilink1" title="syntax:words"> Some words about words...</a></div>
+</li>
+</ul>
+
+</div>
+<div class="comment_wrapper" id="comment_wrapper">
+  <h2 class="page-header" id="discussion"><a name="discussion__section" id="discussion__section"><i class="fa fa-fw fa-comments"></i> 
+    Discussion
+  </a><a style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; line-height: 1; padding-left: 0.375em;" data-anchorjs-icon="" aria-label="Anchor link for: discussion" href="#discussion" class="anchorjs-link "></a></h2>
+  <div class="level2 hfeed">
+    <div class="hentry panel panel-default">
+      <div class="comment_head panel-heading">
+        <a name="comment_94a184e9dcad6b19ff6438864cea6604" id="comment_94a184e9dcad6b19ff6438864cea6604"></a>
+        <span class="vcard author"><span class="fn">Jacob</span></span>, <abbr class="published" title="2010-12-28T02:43:06Z">2010/12/28 02:43</abbr>
+      </div>
+      <div class="comment_body entry-content panel-body">
+
+<p>
+"Basically, pipelines are one or more simple commands"
+</p>
+
+<p>
+Actually, the bash man page defines "simple commands" and "compound 
+commands" explicitly, but does not define (plain old) "commands".  
+Presumably they can be simple commands or compound commands.  Witness:
+</p>
+
+<p>
+</p><pre class="code">for NUM in {1..100}; do echo "$NUM"; done | fgrep 3 | while read NUM; do echo "${NUM/3/three}"; done</pre>
+
+<p></p>
+
+<p>
+The REDIRECTION section also implies that "command" includes "compound 
+commands" by the phrase "The following redirection operators may precede
+ or appear anywhere within a simple command or may follow a command."  
+For example:
+</p>
+
+<p>
+</p><pre class="code">while read -a LIST; do echo "${LIST[@]}"; done &lt; &lt;(sed "s/#.*//" /etc/fstab | grep .)</pre>
+
+<p></p>
+
+      </div>
+      <div class="comment_buttons text-right">
+        <form class="discussion__reply form-inline" method="get" action="/doku.php#discussion__comment_form">
+          <div class="no">
+            <input name="id" value="syntax:basicgrammar" type="hidden">
+            <input name="do" value="show" type="hidden">
+            <input name="comment" value="reply" type="hidden">
+            <input name="cid" value="94a184e9dcad6b19ff6438864cea6604" type="hidden">
+            <input value="Reply" class="btn btn-default btn-xs btn-success" title="Reply" type="submit">
+          </div>
+        </form>
+              </div>
+    </div>
+    <div class="comment_replies" style="margin-left: 20px;">
+    <div class="hentry panel panel-default">
+      <div class="comment_head panel-heading">
+        <a name="comment_b7cd4af14eb254b5d8ce1ae2fc66877b" id="comment_b7cd4af14eb254b5d8ce1ae2fc66877b"></a>
+        <span class="vcard author"><span class="fn">Jan Schampera</span></span>, <abbr class="published" title="2010-12-28T07:49:24Z">2010/12/28 07:49</abbr>
+      </div>
+      <div class="comment_body entry-content panel-body">
+
+<p>
+Yes, I know the glitch here. <code>command</code> is defined as
+</p>
+<ul class="fix-media-list-overlap">
+<li class="level1"><div class="li"> simple command</div>
+</li>
+<li class="level1"><div class="li"> compound command</div>
+</li>
+<li class="level1"><div class="li"> function definition</div>
+</li>
+<li class="level1"><div class="li"> (Bash) coproc definition</div>
+</li>
+</ul>
+
+<p>
+Bash manpage is a bit unlucky here (and this page, too!).
+</p>
+
+<p>
+I will make some thoughts about it, the best would be an "advanced 
+syntax description" page that includes (simplified) syntax diagrams 
+based on incomplete (not down to every string and character definition) 
+EBNF to be more accurate. It's just some amount of work and will have 
+mistakes at first.
+</p>
+
+      </div>
+      <div class="comment_buttons text-right">
+        <form class="discussion__reply form-inline" method="get" action="/doku.php#discussion__comment_form">
+          <div class="no">
+            <input name="id" value="syntax:basicgrammar" type="hidden">
+            <input name="do" value="show" type="hidden">
+            <input name="comment" value="reply" type="hidden">
+            <input name="cid" value="b7cd4af14eb254b5d8ce1ae2fc66877b" type="hidden">
+            <input value="Reply" class="btn btn-default btn-xs btn-success" title="Reply" type="submit">
+          </div>
+        </form>
+              </div>
+    </div>
+    </div>
+
+        <div class="comment_form">
+          <form class="form-inline" id="discussion__comment_form" method="post" action="/doku.php" accept-charset="utf-8">
+            <div class="no">
+              <input name="id" value="syntax:basicgrammar" type="hidden">
+              <input name="do" value="show" type="hidden">
+              <input name="comment" value="add" type="hidden">
+                      <input name="reply" value="" type="hidden">
+                      <input name="user" value="192.168.100.2,173.239.221.9" type="hidden">
+              <div class="comment_name">
+                <label class="block control-label" for="discussion__comment_name">
+                  <span>Real name:</span>
+                  <input class="edit form-control" name="name" id="discussion__comment_name" size="50" tabindex="1" type="text">
+                </label>
+              </div>
+              <div class="comment_mail">
+                <label class="block control-label" for="discussion__comment_mail">
+                  <span>E-Mail:</span>
+                  <input class="edit form-control" name="mail" id="discussion__comment_mail" size="50" tabindex="2" type="text">
+                </label>
+              </div>
+                      <div class="comment_url">
+                <label class="block control-label" for="discussion__comment_url">
+                  <span>Website:</span>
+                  <input class="edit form-control" name="url" id="discussion__comment_url" size="50" tabindex="3" type="text">
+                </label>
+              </div>
+                        <div class="comment_text">
+                  Enter your comment. Wiki syntax is allowed:
+                  <!-- Fix for disable the toolbar when wikisyntaxok is set to false. See discussion's script.jss -->
+                                      <div id="discussion__comment_toolbar" class="toolbar group btn-group"><button accesskey="b" aria-controls="wiki__text" title="Bold Text [B]" class="toolbutton btn btn-default btn-xs"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/bold.png" height="16" width="16"></button><button accesskey="i" aria-controls="wiki__text" title="Italic Text [I]" class="toolbutton btn btn-default btn-xs"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/italic.png" height="16" width="16"></button><button accesskey="u" aria-controls="wiki__text" title="Underlined Text [U]" class="toolbutton btn btn-default btn-xs"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/underline.png" height="16" width="16"></button><button accesskey="m" aria-controls="wiki__text" title="Monospaced Text [M]" class="toolbutton btn btn-default btn-xs"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/mono.png" height="16" width="16"></button><button accesskey="d" aria-controls="wiki__text" title="Strike-through Text [D]" class="toolbutton btn btn-default btn-xs"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/strike.png" height="16" width="16"></button><button accesskey="8" aria-controls="wiki__text" title="Same Level Headline [8]" class="toolbutton btn btn-default btn-xs"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/hequal.png" height="16" width="16"></button><button accesskey="9" aria-controls="wiki__text" title="Lower Headline [9]" class="toolbutton btn btn-default btn-xs"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/hminus.png" height="16" width="16"></button><button accesskey="0" aria-controls="wiki__text" title="Higher Headline [0]" class="toolbutton btn btn-default btn-xs"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/hplus.png" height="16" width="16"></button><button aria-haspopup="true" aria-controls="picker0" title="Select Headline" class="toolbutton pk_hl btn btn-default btn-xs"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/h.png" height="16" width="16"></button><button aria-controls="wiki__text" title="External Link" class="toolbutton btn btn-default btn-xs"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/linkextern.png" height="16" width="16"></button><button accesskey="-" aria-controls="wiki__text" title="Ordered List Item [-]" class="toolbutton btn btn-default btn-xs"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/ol.png" height="16" width="16"></button><button accesskey="." aria-controls="wiki__text" title="Unordered List Item [.]" class="toolbutton btn btn-default btn-xs"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/ul.png" height="16" width="16"></button><button aria-controls="wiki__text" title="Horizontal Rule" class="toolbutton btn btn-default btn-xs"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/hr.png" height="16" width="16"></button><button aria-haspopup="true" aria-controls="picker1" title="Smileys" class="toolbutton btn btn-default btn-xs"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/smiley.png" height="16" width="16"></button><button aria-haspopup="true" aria-controls="picker2" title="Special Chars" class="toolbutton btn btn-default btn-xs"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/chars.png" height="16" width="16"></button><button aria-controls="wiki__text" title="Mark text as key press" class="toolbutton btn btn-default btn-xs"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/keyboard.png" height="16" width="16"></button><button aria-haspopup="true" aria-controls="picker3" title="Wrap Plugin" class="toolbutton btn btn-default btn-xs"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/picker.png" height="16" width="16"></button><button aria-controls="wiki__text" title="PageQuery Cheatsheet" class="toolbutton btn btn-default btn-xs"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/pagequery.png" height="16" width="16"></button></div>
+                <textarea class="edit form-control" name="text" cols="80" rows="10" id="discussion__comment_text" tabindex="5"></textarea>
+              </div>
+
+              <div id="plugin__captcha_wrapper"><input name="6a760b395b8cca8c2cd5da1bd3339892" value="/QSG98pbB/66I2FVrOoyXXSejCBOP1gRGb8F0tI+jM0=" type="hidden"><label class="control-label" for="plugin__captcha">Please fill all the letters into the box to prove you're human.</label> <img src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/img.png" alt="" height="40" width="160">  <input size="5" name="1dec782792e9f47b5cb93058a5a88688" class="edit form-control" type="text"> <label class="no control-label">Please keep this field empty: <input style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;" class="form-control" name="394b94ac73b202ef880c540d16a788cf" type="text"></label></div>
+              <input class="comment_submit btn btn-default btn-success" id="discussion__btn_submit" name="submit" accesskey="s" value="Save" title="Save [S]" tabindex="7" type="submit">
+              <input class="comment_preview_button btn btn-default" id="discussion__btn_preview" name="preview" accesskey="p" value="Preview" title="Preview [P]" type="button">
+
+        
+              <div class="clearer"></div>
+              <div id="discussion__comment_preview">&nbsp;</div>
+            </div>
+          </form>
+        </div>
+          </div>
+</div>
+
+
+            </div>
+          </div>
+
+        </article>
+
+        
+        <div id="dw__pagetools" class="hidden-print">
+  <div class="tools">
+    <ul class="nav nav-stacked nav-pills">
+      <li><a href="http://wiki.bash-hackers.org/syntax/basicgrammar?do=edit" class="action text-muted source" accesskey="v" rel="nofollow" title="Show pagesource [V]"><i class="fa fa-fw fa-pencil-square-o"></i><span class="sr-only"> Show pagesource</span></a></li><li><a href="http://wiki.bash-hackers.org/syntax/basicgrammar?do=revisions" class="action text-muted revs" accesskey="o" rel="nofollow" title="Old revisions [O]"><i class="fa fa-fw fa-clock-o"></i><span class="sr-only"> Old revisions</span></a></li><li><a href="http://wiki.bash-hackers.org/syntax/basicgrammar?do=backlink" class="action text-muted backlink" rel="nofollow" title="Backlinks"><i class="fa fa-fw fa-link"></i><span class="sr-only"> Backlinks</span></a></li>    </ul>
+  </div>
+</div>
+
+      </main>
+
+      <footer id="dokuwiki__footer" class="small">
+
+        <a style="display: none;" href="javascript:void(0)" class="back-to-top hidden-print btn btn-default btn-sm" title="skip to content" id="back-to-top" accesskey="t"><i class="fa fa-chevron-up"></i></a>
+
+        <div class="text-right">
+
+                    <span class="docInfo text-muted">
+            syntax/basicgrammar.txt · Last modified: 2015/08/10 05:37 by bill_thomson          </span>
+          
+          
+        </div>
+
+                <hr>
+<div align="center">
+<h3><a target="_blank" href="http://www.performing-databases.com/">This site is supported by Performing Databases - your experts for database administration</a></h3>
+</div>
+<hr>
+<div align="center">
+<script async="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/adsbygoogle.js"></script>
+<!-- BHORG_BOTTOM -->
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-4658830517838678" data-ad-slot="1603598940"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+
+      </footer>
+
+      
+    </div><!-- /site -->
+
+    <img src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/indexer.gif" alt="" height="1" width="2">
+    <div id="screen__mode">      <span class="visible-xs"></span>
+      <span class="visible-sm"></span>
+      <span class="visible-md"></span>
+      <span class="visible-lg"></span>
+    </div>
+
+  </div>
+  <!--[if lte IE 8 ]></div><![endif]-->
+
+
+
+<div aria-hidden="true" style="position: absolute;" id="picker0" class="picker a11y pk_hl"><button accesskey="1" aria-controls="wiki__text" title="Level 1 Headline [1]" class="toolbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/h1.png" height="16" width="16"></button><button accesskey="2" aria-controls="wiki__text" title="Level 2 Headline [2]" class="toolbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/h2.png" height="16" width="16"></button><button accesskey="3" aria-controls="wiki__text" title="Level 3 Headline [3]" class="toolbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/h3.png" height="16" width="16"></button><button accesskey="4" aria-controls="wiki__text" title="Level 4 Headline [4]" class="toolbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/h4.png" height="16" width="16"></button><button accesskey="5" aria-controls="wiki__text" title="Level 5 Headline [5]" class="toolbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/h5.png" height="16" width="16"></button></div><div aria-hidden="true" style="position: absolute;" id="picker1" class="picker a11y"><button aria-controls="discussion__comment_text" title="8-)" class="pickerbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/icon_cool.gif"></button><button aria-controls="discussion__comment_text" title="8-O" class="pickerbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/icon_eek.gif"></button><button aria-controls="discussion__comment_text" title="8-o" class="pickerbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/icon_eek.gif"></button><button aria-controls="discussion__comment_text" title=":-(" class="pickerbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/icon_sad.gif"></button><button aria-controls="discussion__comment_text" title=":-)" class="pickerbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/icon_smile.gif"></button><button aria-controls="discussion__comment_text" title="=)" class="pickerbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/icon_smile2.gif"></button><button aria-controls="discussion__comment_text" title=":-/" class="pickerbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/icon_doubt.gif"></button><button aria-controls="discussion__comment_text" title=":-\" class="pickerbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/icon_doubt2.gif"></button><button aria-controls="discussion__comment_text" title=":-?" class="pickerbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/icon_confused.gif"></button><button aria-controls="discussion__comment_text" title=":-D" class="pickerbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/icon_biggrin.gif"></button><button aria-controls="discussion__comment_text" title=":-P" class="pickerbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/icon_razz.gif"></button><button aria-controls="discussion__comment_text" title=":-o" class="pickerbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/icon_surprised.gif"></button><button aria-controls="discussion__comment_text" title=":-O" class="pickerbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/icon_surprised.gif"></button><button aria-controls="discussion__comment_text" title=":-x" class="pickerbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/icon_silenced.gif"></button><button aria-controls="discussion__comment_text" title=":-X" class="pickerbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/icon_silenced.gif"></button><button aria-controls="discussion__comment_text" title=":-|" class="pickerbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/icon_neutral.gif"></button><button aria-controls="discussion__comment_text" title=";-)" class="pickerbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/icon_wink.gif"></button><button aria-controls="discussion__comment_text" title="m(" class="pickerbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/facepalm.gif"></button><button aria-controls="discussion__comment_text" title="^_^" class="pickerbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/icon_fun.gif"></button><button aria-controls="discussion__comment_text" title=":?:" class="pickerbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/icon_question.gif"></button><button aria-controls="discussion__comment_text" title=":!:" class="pickerbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/icon_exclaim.gif"></button><button aria-controls="discussion__comment_text" title="LOL" class="pickerbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/icon_lol.gif"></button><button aria-controls="discussion__comment_text" title="FIXME" class="pickerbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/fixme.gif"></button><button aria-controls="discussion__comment_text" title="DELETEME" class="pickerbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/delete.gif"></button><button aria-controls="discussion__comment_text" title=":UPDATE:" class="pickerbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/update.gif"></button><button aria-controls="discussion__comment_text" title=":NEW:" class="pickerbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/new.gif"></button><button aria-controls="discussion__comment_text" title=":V4:" class="pickerbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/v4logo_short.gif"></button></div><div aria-hidden="true" style="position: absolute;" id="picker2" class="picker a11y"><button aria-controls="discussion__comment_text" title="À" class="pickerbutton">À</button><button aria-controls="discussion__comment_text" title="à" class="pickerbutton">à</button><button aria-controls="discussion__comment_text" title="Á" class="pickerbutton">Á</button><button aria-controls="discussion__comment_text" title="á" class="pickerbutton">á</button><button aria-controls="discussion__comment_text" title="Â" class="pickerbutton">Â</button><button aria-controls="discussion__comment_text" title="â" class="pickerbutton">â</button><button aria-controls="discussion__comment_text" title="Ã" class="pickerbutton">Ã</button><button aria-controls="discussion__comment_text" title="ã" class="pickerbutton">ã</button><button aria-controls="discussion__comment_text" title="Ä" class="pickerbutton">Ä</button><button aria-controls="discussion__comment_text" title="ä" class="pickerbutton">ä</button><button aria-controls="discussion__comment_text" title="Ǎ" class="pickerbutton">Ǎ</button><button aria-controls="discussion__comment_text" title="ǎ" class="pickerbutton">ǎ</button><button aria-controls="discussion__comment_text" title="Ă" class="pickerbutton">Ă</button><button aria-controls="discussion__comment_text" title="ă" class="pickerbutton">ă</button><button aria-controls="discussion__comment_text" title="Å" class="pickerbutton">Å</button><button aria-controls="discussion__comment_text" title="å" class="pickerbutton">å</button><button aria-controls="discussion__comment_text" title="Ā" class="pickerbutton">Ā</button><button aria-controls="discussion__comment_text" title="ā" class="pickerbutton">ā</button><button aria-controls="discussion__comment_text" title="Ą" class="pickerbutton">Ą</button><button aria-controls="discussion__comment_text" title="ą" class="pickerbutton">ą</button><button aria-controls="discussion__comment_text" title="Æ" class="pickerbutton">Æ</button><button aria-controls="discussion__comment_text" title="æ" class="pickerbutton">æ</button><button aria-controls="discussion__comment_text" title="Ć" class="pickerbutton">Ć</button><button aria-controls="discussion__comment_text" title="ć" class="pickerbutton">ć</button><button aria-controls="discussion__comment_text" title="Ç" class="pickerbutton">Ç</button><button aria-controls="discussion__comment_text" title="ç" class="pickerbutton">ç</button><button aria-controls="discussion__comment_text" title="Č" class="pickerbutton">Č</button><button aria-controls="discussion__comment_text" title="č" class="pickerbutton">č</button><button aria-controls="discussion__comment_text" title="Ĉ" class="pickerbutton">Ĉ</button><button aria-controls="discussion__comment_text" title="ĉ" class="pickerbutton">ĉ</button><button aria-controls="discussion__comment_text" title="Ċ" class="pickerbutton">Ċ</button><button aria-controls="discussion__comment_text" title="ċ" class="pickerbutton">ċ</button><button aria-controls="discussion__comment_text" title="Ð" class="pickerbutton">Ð</button><button aria-controls="discussion__comment_text" title="đ" class="pickerbutton">đ</button><button aria-controls="discussion__comment_text" title="ð" class="pickerbutton">ð</button><button aria-controls="discussion__comment_text" title="Ď" class="pickerbutton">Ď</button><button aria-controls="discussion__comment_text" title="ď" class="pickerbutton">ď</button><button aria-controls="discussion__comment_text" title="È" class="pickerbutton">È</button><button aria-controls="discussion__comment_text" title="è" class="pickerbutton">è</button><button aria-controls="discussion__comment_text" title="É" class="pickerbutton">É</button><button aria-controls="discussion__comment_text" title="é" class="pickerbutton">é</button><button aria-controls="discussion__comment_text" title="Ê" class="pickerbutton">Ê</button><button aria-controls="discussion__comment_text" title="ê" class="pickerbutton">ê</button><button aria-controls="discussion__comment_text" title="Ë" class="pickerbutton">Ë</button><button aria-controls="discussion__comment_text" title="ë" class="pickerbutton">ë</button><button aria-controls="discussion__comment_text" title="Ě" class="pickerbutton">Ě</button><button aria-controls="discussion__comment_text" title="ě" class="pickerbutton">ě</button><button aria-controls="discussion__comment_text" title="Ē" class="pickerbutton">Ē</button><button aria-controls="discussion__comment_text" title="ē" class="pickerbutton">ē</button><button aria-controls="discussion__comment_text" title="Ė" class="pickerbutton">Ė</button><button aria-controls="discussion__comment_text" title="ė" class="pickerbutton">ė</button><button aria-controls="discussion__comment_text" title="Ę" class="pickerbutton">Ę</button><button aria-controls="discussion__comment_text" title="ę" class="pickerbutton">ę</button><button aria-controls="discussion__comment_text" title="Ģ" class="pickerbutton">Ģ</button><button aria-controls="discussion__comment_text" title="ģ" class="pickerbutton">ģ</button><button aria-controls="discussion__comment_text" title="Ĝ" class="pickerbutton">Ĝ</button><button aria-controls="discussion__comment_text" title="ĝ" class="pickerbutton">ĝ</button><button aria-controls="discussion__comment_text" title="Ğ" class="pickerbutton">Ğ</button><button aria-controls="discussion__comment_text" title="ğ" class="pickerbutton">ğ</button><button aria-controls="discussion__comment_text" title="Ġ" class="pickerbutton">Ġ</button><button aria-controls="discussion__comment_text" title="ġ" class="pickerbutton">ġ</button><button aria-controls="discussion__comment_text" title="Ĥ" class="pickerbutton">Ĥ</button><button aria-controls="discussion__comment_text" title="ĥ" class="pickerbutton">ĥ</button><button aria-controls="discussion__comment_text" title="Ì" class="pickerbutton">Ì</button><button aria-controls="discussion__comment_text" title="ì" class="pickerbutton">ì</button><button aria-controls="discussion__comment_text" title="Í" class="pickerbutton">Í</button><button aria-controls="discussion__comment_text" title="í" class="pickerbutton">í</button><button aria-controls="discussion__comment_text" title="Î" class="pickerbutton">Î</button><button aria-controls="discussion__comment_text" title="î" class="pickerbutton">î</button><button aria-controls="discussion__comment_text" title="Ï" class="pickerbutton">Ï</button><button aria-controls="discussion__comment_text" title="ï" class="pickerbutton">ï</button><button aria-controls="discussion__comment_text" title="Ǐ" class="pickerbutton">Ǐ</button><button aria-controls="discussion__comment_text" title="ǐ" class="pickerbutton">ǐ</button><button aria-controls="discussion__comment_text" title="Ī" class="pickerbutton">Ī</button><button aria-controls="discussion__comment_text" title="ī" class="pickerbutton">ī</button><button aria-controls="discussion__comment_text" title="İ" class="pickerbutton">İ</button><button aria-controls="discussion__comment_text" title="ı" class="pickerbutton">ı</button><button aria-controls="discussion__comment_text" title="Į" class="pickerbutton">Į</button><button aria-controls="discussion__comment_text" title="į" class="pickerbutton">į</button><button aria-controls="discussion__comment_text" title="Ĵ" class="pickerbutton">Ĵ</button><button aria-controls="discussion__comment_text" title="ĵ" class="pickerbutton">ĵ</button><button aria-controls="discussion__comment_text" title="Ķ" class="pickerbutton">Ķ</button><button aria-controls="discussion__comment_text" title="ķ" class="pickerbutton">ķ</button><button aria-controls="discussion__comment_text" title="Ĺ" class="pickerbutton">Ĺ</button><button aria-controls="discussion__comment_text" title="ĺ" class="pickerbutton">ĺ</button><button aria-controls="discussion__comment_text" title="Ļ" class="pickerbutton">Ļ</button><button aria-controls="discussion__comment_text" title="ļ" class="pickerbutton">ļ</button><button aria-controls="discussion__comment_text" title="Ľ" class="pickerbutton">Ľ</button><button aria-controls="discussion__comment_text" title="ľ" class="pickerbutton">ľ</button><button aria-controls="discussion__comment_text" title="Ł" class="pickerbutton">Ł</button><button aria-controls="discussion__comment_text" title="ł" class="pickerbutton">ł</button><button aria-controls="discussion__comment_text" title="Ŀ" class="pickerbutton">Ŀ</button><button aria-controls="discussion__comment_text" title="ŀ" class="pickerbutton">ŀ</button><button aria-controls="discussion__comment_text" title="Ń" class="pickerbutton">Ń</button><button aria-controls="discussion__comment_text" title="ń" class="pickerbutton">ń</button><button aria-controls="discussion__comment_text" title="Ñ" class="pickerbutton">Ñ</button><button aria-controls="discussion__comment_text" title="ñ" class="pickerbutton">ñ</button><button aria-controls="discussion__comment_text" title="Ņ" class="pickerbutton">Ņ</button><button aria-controls="discussion__comment_text" title="ņ" class="pickerbutton">ņ</button><button aria-controls="discussion__comment_text" title="Ň" class="pickerbutton">Ň</button><button aria-controls="discussion__comment_text" title="ň" class="pickerbutton">ň</button><button aria-controls="discussion__comment_text" title="Ò" class="pickerbutton">Ò</button><button aria-controls="discussion__comment_text" title="ò" class="pickerbutton">ò</button><button aria-controls="discussion__comment_text" title="Ó" class="pickerbutton">Ó</button><button aria-controls="discussion__comment_text" title="ó" class="pickerbutton">ó</button><button aria-controls="discussion__comment_text" title="Ô" class="pickerbutton">Ô</button><button aria-controls="discussion__comment_text" title="ô" class="pickerbutton">ô</button><button aria-controls="discussion__comment_text" title="Õ" class="pickerbutton">Õ</button><button aria-controls="discussion__comment_text" title="õ" class="pickerbutton">õ</button><button aria-controls="discussion__comment_text" title="Ö" class="pickerbutton">Ö</button><button aria-controls="discussion__comment_text" title="ö" class="pickerbutton">ö</button><button aria-controls="discussion__comment_text" title="Ǒ" class="pickerbutton">Ǒ</button><button aria-controls="discussion__comment_text" title="ǒ" class="pickerbutton">ǒ</button><button aria-controls="discussion__comment_text" title="Ō" class="pickerbutton">Ō</button><button aria-controls="discussion__comment_text" title="ō" class="pickerbutton">ō</button><button aria-controls="discussion__comment_text" title="Ő" class="pickerbutton">Ő</button><button aria-controls="discussion__comment_text" title="ő" class="pickerbutton">ő</button><button aria-controls="discussion__comment_text" title="Œ" class="pickerbutton">Œ</button><button aria-controls="discussion__comment_text" title="œ" class="pickerbutton">œ</button><button aria-controls="discussion__comment_text" title="Ø" class="pickerbutton">Ø</button><button aria-controls="discussion__comment_text" title="ø" class="pickerbutton">ø</button><button aria-controls="discussion__comment_text" title="Ŕ" class="pickerbutton">Ŕ</button><button aria-controls="discussion__comment_text" title="ŕ" class="pickerbutton">ŕ</button><button aria-controls="discussion__comment_text" title="Ŗ" class="pickerbutton">Ŗ</button><button aria-controls="discussion__comment_text" title="ŗ" class="pickerbutton">ŗ</button><button aria-controls="discussion__comment_text" title="Ř" class="pickerbutton">Ř</button><button aria-controls="discussion__comment_text" title="ř" class="pickerbutton">ř</button><button aria-controls="discussion__comment_text" title="Ś" class="pickerbutton">Ś</button><button aria-controls="discussion__comment_text" title="ś" class="pickerbutton">ś</button><button aria-controls="discussion__comment_text" title="Ş" class="pickerbutton">Ş</button><button aria-controls="discussion__comment_text" title="ş" class="pickerbutton">ş</button><button aria-controls="discussion__comment_text" title="Š" class="pickerbutton">Š</button><button aria-controls="discussion__comment_text" title="š" class="pickerbutton">š</button><button aria-controls="discussion__comment_text" title="Ŝ" class="pickerbutton">Ŝ</button><button aria-controls="discussion__comment_text" title="ŝ" class="pickerbutton">ŝ</button><button aria-controls="discussion__comment_text" title="Ţ" class="pickerbutton">Ţ</button><button aria-controls="discussion__comment_text" title="ţ" class="pickerbutton">ţ</button><button aria-controls="discussion__comment_text" title="Ť" class="pickerbutton">Ť</button><button aria-controls="discussion__comment_text" title="ť" class="pickerbutton">ť</button><button aria-controls="discussion__comment_text" title="Ù" class="pickerbutton">Ù</button><button aria-controls="discussion__comment_text" title="ù" class="pickerbutton">ù</button><button aria-controls="discussion__comment_text" title="Ú" class="pickerbutton">Ú</button><button aria-controls="discussion__comment_text" title="ú" class="pickerbutton">ú</button><button aria-controls="discussion__comment_text" title="Û" class="pickerbutton">Û</button><button aria-controls="discussion__comment_text" title="û" class="pickerbutton">û</button><button aria-controls="discussion__comment_text" title="Ü" class="pickerbutton">Ü</button><button aria-controls="discussion__comment_text" title="ü" class="pickerbutton">ü</button><button aria-controls="discussion__comment_text" title="Ǔ" class="pickerbutton">Ǔ</button><button aria-controls="discussion__comment_text" title="ǔ" class="pickerbutton">ǔ</button><button aria-controls="discussion__comment_text" title="Ŭ" class="pickerbutton">Ŭ</button><button aria-controls="discussion__comment_text" title="ŭ" class="pickerbutton">ŭ</button><button aria-controls="discussion__comment_text" title="Ū" class="pickerbutton">Ū</button><button aria-controls="discussion__comment_text" title="ū" class="pickerbutton">ū</button><button aria-controls="discussion__comment_text" title="Ů" class="pickerbutton">Ů</button><button aria-controls="discussion__comment_text" title="ů" class="pickerbutton">ů</button><button aria-controls="discussion__comment_text" title="ǖ" class="pickerbutton">ǖ</button><button aria-controls="discussion__comment_text" title="ǘ" class="pickerbutton">ǘ</button><button aria-controls="discussion__comment_text" title="ǚ" class="pickerbutton">ǚ</button><button aria-controls="discussion__comment_text" title="ǜ" class="pickerbutton">ǜ</button><button aria-controls="discussion__comment_text" title="Ų" class="pickerbutton">Ų</button><button aria-controls="discussion__comment_text" title="ų" class="pickerbutton">ų</button><button aria-controls="discussion__comment_text" title="Ű" class="pickerbutton">Ű</button><button aria-controls="discussion__comment_text" title="ű" class="pickerbutton">ű</button><button aria-controls="discussion__comment_text" title="Ŵ" class="pickerbutton">Ŵ</button><button aria-controls="discussion__comment_text" title="ŵ" class="pickerbutton">ŵ</button><button aria-controls="discussion__comment_text" title="Ý" class="pickerbutton">Ý</button><button aria-controls="discussion__comment_text" title="ý" class="pickerbutton">ý</button><button aria-controls="discussion__comment_text" title="Ÿ" class="pickerbutton">Ÿ</button><button aria-controls="discussion__comment_text" title="ÿ" class="pickerbutton">ÿ</button><button aria-controls="discussion__comment_text" title="Ŷ" class="pickerbutton">Ŷ</button><button aria-controls="discussion__comment_text" title="ŷ" class="pickerbutton">ŷ</button><button aria-controls="discussion__comment_text" title="Ź" class="pickerbutton">Ź</button><button aria-controls="discussion__comment_text" title="ź" class="pickerbutton">ź</button><button aria-controls="discussion__comment_text" title="Ž" class="pickerbutton">Ž</button><button aria-controls="discussion__comment_text" title="ž" class="pickerbutton">ž</button><button aria-controls="discussion__comment_text" title="Ż" class="pickerbutton">Ż</button><button aria-controls="discussion__comment_text" title="ż" class="pickerbutton">ż</button><button aria-controls="discussion__comment_text" title="Þ" class="pickerbutton">Þ</button><button aria-controls="discussion__comment_text" title="þ" class="pickerbutton">þ</button><button aria-controls="discussion__comment_text" title="ß" class="pickerbutton">ß</button><button aria-controls="discussion__comment_text" title="Ħ" class="pickerbutton">Ħ</button><button aria-controls="discussion__comment_text" title="ħ" class="pickerbutton">ħ</button><button aria-controls="discussion__comment_text" title="¿" class="pickerbutton">¿</button><button aria-controls="discussion__comment_text" title="¡" class="pickerbutton">¡</button><button aria-controls="discussion__comment_text" title="¢" class="pickerbutton">¢</button><button aria-controls="discussion__comment_text" title="£" class="pickerbutton">£</button><button aria-controls="discussion__comment_text" title="¤" class="pickerbutton">¤</button><button aria-controls="discussion__comment_text" title="¥" class="pickerbutton">¥</button><button aria-controls="discussion__comment_text" title="€" class="pickerbutton">€</button><button aria-controls="discussion__comment_text" title="¦" class="pickerbutton">¦</button><button aria-controls="discussion__comment_text" title="§" class="pickerbutton">§</button><button aria-controls="discussion__comment_text" title="ª" class="pickerbutton">ª</button><button aria-controls="discussion__comment_text" title="¬" class="pickerbutton">¬</button><button aria-controls="discussion__comment_text" title="¯" class="pickerbutton">¯</button><button aria-controls="discussion__comment_text" title="°" class="pickerbutton">°</button><button aria-controls="discussion__comment_text" title="±" class="pickerbutton">±</button><button aria-controls="discussion__comment_text" title="÷" class="pickerbutton">÷</button><button aria-controls="discussion__comment_text" title="‰" class="pickerbutton">‰</button><button aria-controls="discussion__comment_text" title="¼" class="pickerbutton">¼</button><button aria-controls="discussion__comment_text" title="½" class="pickerbutton">½</button><button aria-controls="discussion__comment_text" title="¾" class="pickerbutton">¾</button><button aria-controls="discussion__comment_text" title="¹" class="pickerbutton">¹</button><button aria-controls="discussion__comment_text" title="²" class="pickerbutton">²</button><button aria-controls="discussion__comment_text" title="³" class="pickerbutton">³</button><button aria-controls="discussion__comment_text" title="µ" class="pickerbutton">µ</button><button aria-controls="discussion__comment_text" title="¶" class="pickerbutton">¶</button><button aria-controls="discussion__comment_text" title="†" class="pickerbutton">†</button><button aria-controls="discussion__comment_text" title="‡" class="pickerbutton">‡</button><button aria-controls="discussion__comment_text" title="·" class="pickerbutton">·</button><button aria-controls="discussion__comment_text" title="•" class="pickerbutton">•</button><button aria-controls="discussion__comment_text" title="º" class="pickerbutton">º</button><button aria-controls="discussion__comment_text" title="∀" class="pickerbutton">∀</button><button aria-controls="discussion__comment_text" title="∂" class="pickerbutton">∂</button><button aria-controls="discussion__comment_text" title="∃" class="pickerbutton">∃</button><button aria-controls="discussion__comment_text" title="Ə" class="pickerbutton">Ə</button><button aria-controls="discussion__comment_text" title="ə" class="pickerbutton">ə</button><button aria-controls="discussion__comment_text" title="∅" class="pickerbutton">∅</button><button aria-controls="discussion__comment_text" title="∇" class="pickerbutton">∇</button><button aria-controls="discussion__comment_text" title="∈" class="pickerbutton">∈</button><button aria-controls="discussion__comment_text" title="∉" class="pickerbutton">∉</button><button aria-controls="discussion__comment_text" title="∋" class="pickerbutton">∋</button><button aria-controls="discussion__comment_text" title="∏" class="pickerbutton">∏</button><button aria-controls="discussion__comment_text" title="∑" class="pickerbutton">∑</button><button aria-controls="discussion__comment_text" title="‾" class="pickerbutton">‾</button><button aria-controls="discussion__comment_text" title="−" class="pickerbutton">−</button><button aria-controls="discussion__comment_text" title="∗" class="pickerbutton">∗</button><button aria-controls="discussion__comment_text" title="×" class="pickerbutton">×</button><button aria-controls="discussion__comment_text" title="⁄" class="pickerbutton">⁄</button><button aria-controls="discussion__comment_text" title="√" class="pickerbutton">√</button><button aria-controls="discussion__comment_text" title="∝" class="pickerbutton">∝</button><button aria-controls="discussion__comment_text" title="∞" class="pickerbutton">∞</button><button aria-controls="discussion__comment_text" title="∠" class="pickerbutton">∠</button><button aria-controls="discussion__comment_text" title="∧" class="pickerbutton">∧</button><button aria-controls="discussion__comment_text" title="∨" class="pickerbutton">∨</button><button aria-controls="discussion__comment_text" title="∩" class="pickerbutton">∩</button><button aria-controls="discussion__comment_text" title="∪" class="pickerbutton">∪</button><button aria-controls="discussion__comment_text" title="∫" class="pickerbutton">∫</button><button aria-controls="discussion__comment_text" title="∴" class="pickerbutton">∴</button><button aria-controls="discussion__comment_text" title="∼" class="pickerbutton">∼</button><button aria-controls="discussion__comment_text" title="≅" class="pickerbutton">≅</button><button aria-controls="discussion__comment_text" title="≈" class="pickerbutton">≈</button><button aria-controls="discussion__comment_text" title="≠" class="pickerbutton">≠</button><button aria-controls="discussion__comment_text" title="≡" class="pickerbutton">≡</button><button aria-controls="discussion__comment_text" title="≤" class="pickerbutton">≤</button><button aria-controls="discussion__comment_text" title="≥" class="pickerbutton">≥</button><button aria-controls="discussion__comment_text" title="⊂" class="pickerbutton">⊂</button><button aria-controls="discussion__comment_text" title="⊃" class="pickerbutton">⊃</button><button aria-controls="discussion__comment_text" title="⊄" class="pickerbutton">⊄</button><button aria-controls="discussion__comment_text" title="⊆" class="pickerbutton">⊆</button><button aria-controls="discussion__comment_text" title="⊇" class="pickerbutton">⊇</button><button aria-controls="discussion__comment_text" title="⊕" class="pickerbutton">⊕</button><button aria-controls="discussion__comment_text" title="⊗" class="pickerbutton">⊗</button><button aria-controls="discussion__comment_text" title="⊥" class="pickerbutton">⊥</button><button aria-controls="discussion__comment_text" title="⋅" class="pickerbutton">⋅</button><button aria-controls="discussion__comment_text" title="◊" class="pickerbutton">◊</button><button aria-controls="discussion__comment_text" title="℘" class="pickerbutton">℘</button><button aria-controls="discussion__comment_text" title="ℑ" class="pickerbutton">ℑ</button><button aria-controls="discussion__comment_text" title="ℜ" class="pickerbutton">ℜ</button><button aria-controls="discussion__comment_text" title="ℵ" class="pickerbutton">ℵ</button><button aria-controls="discussion__comment_text" title="♠" class="pickerbutton">♠</button><button aria-controls="discussion__comment_text" title="♣" class="pickerbutton">♣</button><button aria-controls="discussion__comment_text" title="♥" class="pickerbutton">♥</button><button aria-controls="discussion__comment_text" title="♦" class="pickerbutton">♦</button><button aria-controls="discussion__comment_text" title="α" class="pickerbutton">α</button><button aria-controls="discussion__comment_text" title="β" class="pickerbutton">β</button><button aria-controls="discussion__comment_text" title="Γ" class="pickerbutton">Γ</button><button aria-controls="discussion__comment_text" title="γ" class="pickerbutton">γ</button><button aria-controls="discussion__comment_text" title="Δ" class="pickerbutton">Δ</button><button aria-controls="discussion__comment_text" title="δ" class="pickerbutton">δ</button><button aria-controls="discussion__comment_text" title="ε" class="pickerbutton">ε</button><button aria-controls="discussion__comment_text" title="ζ" class="pickerbutton">ζ</button><button aria-controls="discussion__comment_text" title="η" class="pickerbutton">η</button><button aria-controls="discussion__comment_text" title="Θ" class="pickerbutton">Θ</button><button aria-controls="discussion__comment_text" title="θ" class="pickerbutton">θ</button><button aria-controls="discussion__comment_text" title="ι" class="pickerbutton">ι</button><button aria-controls="discussion__comment_text" title="κ" class="pickerbutton">κ</button><button aria-controls="discussion__comment_text" title="Λ" class="pickerbutton">Λ</button><button aria-controls="discussion__comment_text" title="λ" class="pickerbutton">λ</button><button aria-controls="discussion__comment_text" title="μ" class="pickerbutton">μ</button><button aria-controls="discussion__comment_text" title="Ξ" class="pickerbutton">Ξ</button><button aria-controls="discussion__comment_text" title="ξ" class="pickerbutton">ξ</button><button aria-controls="discussion__comment_text" title="Π" class="pickerbutton">Π</button><button aria-controls="discussion__comment_text" title="π" class="pickerbutton">π</button><button aria-controls="discussion__comment_text" title="ρ" class="pickerbutton">ρ</button><button aria-controls="discussion__comment_text" title="Σ" class="pickerbutton">Σ</button><button aria-controls="discussion__comment_text" title="σ" class="pickerbutton">σ</button><button aria-controls="discussion__comment_text" title="Τ" class="pickerbutton">Τ</button><button aria-controls="discussion__comment_text" title="τ" class="pickerbutton">τ</button><button aria-controls="discussion__comment_text" title="υ" class="pickerbutton">υ</button><button aria-controls="discussion__comment_text" title="Φ" class="pickerbutton">Φ</button><button aria-controls="discussion__comment_text" title="φ" class="pickerbutton">φ</button><button aria-controls="discussion__comment_text" title="χ" class="pickerbutton">χ</button><button aria-controls="discussion__comment_text" title="Ψ" class="pickerbutton">Ψ</button><button aria-controls="discussion__comment_text" title="ψ" class="pickerbutton">ψ</button><button aria-controls="discussion__comment_text" title="Ω" class="pickerbutton">Ω</button><button aria-controls="discussion__comment_text" title="ω" class="pickerbutton">ω</button><button aria-controls="discussion__comment_text" title="★" class="pickerbutton">★</button><button aria-controls="discussion__comment_text" title="☆" class="pickerbutton">☆</button><button aria-controls="discussion__comment_text" title="☎" class="pickerbutton">☎</button><button aria-controls="discussion__comment_text" title="☚" class="pickerbutton">☚</button><button aria-controls="discussion__comment_text" title="☛" class="pickerbutton">☛</button><button aria-controls="discussion__comment_text" title="☜" class="pickerbutton">☜</button><button aria-controls="discussion__comment_text" title="☝" class="pickerbutton">☝</button><button aria-controls="discussion__comment_text" title="☞" class="pickerbutton">☞</button><button aria-controls="discussion__comment_text" title="☟" class="pickerbutton">☟</button><button aria-controls="discussion__comment_text" title="☹" class="pickerbutton">☹</button><button aria-controls="discussion__comment_text" title="☺" class="pickerbutton">☺</button><button aria-controls="discussion__comment_text" title="✔" class="pickerbutton">✔</button><button aria-controls="discussion__comment_text" title="✘" class="pickerbutton">✘</button><button aria-controls="discussion__comment_text" title="„" class="pickerbutton">„</button><button aria-controls="discussion__comment_text" title="“" class="pickerbutton">“</button><button aria-controls="discussion__comment_text" title="”" class="pickerbutton">”</button><button aria-controls="discussion__comment_text" title="‚" class="pickerbutton">‚</button><button aria-controls="discussion__comment_text" title="‘" class="pickerbutton">‘</button><button aria-controls="discussion__comment_text" title="’" class="pickerbutton">’</button><button aria-controls="discussion__comment_text" title="«" class="pickerbutton">«</button><button aria-controls="discussion__comment_text" title="»" class="pickerbutton">»</button><button aria-controls="discussion__comment_text" title="‹" class="pickerbutton">‹</button><button aria-controls="discussion__comment_text" title="›" class="pickerbutton">›</button><button aria-controls="discussion__comment_text" title="—" class="pickerbutton">—</button><button aria-controls="discussion__comment_text" title="–" class="pickerbutton">–</button><button aria-controls="discussion__comment_text" title="…" class="pickerbutton">…</button><button aria-controls="discussion__comment_text" title="←" class="pickerbutton">←</button><button aria-controls="discussion__comment_text" title="↑" class="pickerbutton">↑</button><button aria-controls="discussion__comment_text" title="→" class="pickerbutton">→</button><button aria-controls="discussion__comment_text" title="↓" class="pickerbutton">↓</button><button aria-controls="discussion__comment_text" title="↔" class="pickerbutton">↔</button><button aria-controls="discussion__comment_text" title="⇐" class="pickerbutton">⇐</button><button aria-controls="discussion__comment_text" title="⇑" class="pickerbutton">⇑</button><button aria-controls="discussion__comment_text" title="⇒" class="pickerbutton">⇒</button><button aria-controls="discussion__comment_text" title="⇓" class="pickerbutton">⇓</button><button aria-controls="discussion__comment_text" title="⇔" class="pickerbutton">⇔</button><button aria-controls="discussion__comment_text" title="©" class="pickerbutton">©</button><button aria-controls="discussion__comment_text" title="™" class="pickerbutton">™</button><button aria-controls="discussion__comment_text" title="®" class="pickerbutton">®</button><button aria-controls="discussion__comment_text" title="′" class="pickerbutton">′</button><button aria-controls="discussion__comment_text" title="″" class="pickerbutton">″</button><button aria-controls="discussion__comment_text" title="[" class="pickerbutton">[</button><button aria-controls="discussion__comment_text" title="]" class="pickerbutton">]</button><button aria-controls="discussion__comment_text" title="{" class="pickerbutton">{</button><button aria-controls="discussion__comment_text" title="}" class="pickerbutton">}</button><button aria-controls="discussion__comment_text" title="~" class="pickerbutton">~</button><button aria-controls="discussion__comment_text" title="(" class="pickerbutton">(</button><button aria-controls="discussion__comment_text" title=")" class="pickerbutton">)</button><button aria-controls="discussion__comment_text" title="%" class="pickerbutton">%</button><button aria-controls="discussion__comment_text" title="§" class="pickerbutton">§</button><button aria-controls="discussion__comment_text" title="$" class="pickerbutton">$</button><button aria-controls="discussion__comment_text" title="#" class="pickerbutton">#</button><button aria-controls="discussion__comment_text" title="|" class="pickerbutton">|</button><button aria-controls="discussion__comment_text" title="@" class="pickerbutton">@</button></div><div aria-hidden="true" style="position: absolute;" id="picker3" class="picker a11y"><button aria-controls="wiki__text" title="columns" class="toolbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/column.png" height="16" width="16"></button><button aria-controls="wiki__text" title="simple centered box" class="toolbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/box.png" height="16" width="16"></button><button aria-controls="wiki__text" title="info box" class="toolbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/info.png" height="16" width="16"></button><button aria-controls="wiki__text" title="tip box" class="toolbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/tip.png" height="16" width="16"></button><button aria-controls="wiki__text" title="important box" class="toolbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/important.png" height="16" width="16"></button><button aria-controls="wiki__text" title="alert box" class="toolbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/alert.png" height="16" width="16"></button><button aria-controls="wiki__text" title="help box" class="toolbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/help.png" height="16" width="16"></button><button aria-controls="wiki__text" title="download box" class="toolbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/download.png" height="16" width="16"></button><button aria-controls="wiki__text" title="todo box" class="toolbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/todo.png" height="16" width="16"></button><button aria-controls="wiki__text" title="clear floats" class="toolbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/clear.png" height="16" width="16"></button><button aria-controls="wiki__text" title="especially emphasised" class="toolbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/em.png" height="16" width="16"></button><button aria-controls="wiki__text" title="highlighted" class="toolbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/hi.png" height="16" width="16"></button><button aria-controls="wiki__text" title="less significant" class="toolbutton"><img alt="" src="Basic%20grammar%20rules%20of%20Bash%20[Bash%20Hackers%20Wiki]_files/lo.png" height="16" width="16"></button></div></body></html>

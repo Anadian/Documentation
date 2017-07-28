@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<title>All public logs - cppreference.com</title>
+<meta charset="UTF-8" />
+<meta name="generator" content="MediaWiki 1.21.2" />
+<meta name="robots" content="noindex,nofollow" />
+<link rel="shortcut icon" href="http://en.cppreference.com/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://en.cppreference.com/mwiki/opensearch_desc.php" title="cppreference.com (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="http://en.cppreference.com/mwiki/api.php?action=rsd" />
+<link rel="alternate" type="application/atom+xml" title="cppreference.com Atom feed" href="http://en.cppreference.com/mwiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="http://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.ColiruCompiler%2CMathJax%7Cext.rtlcite%7Cmediawiki.legacy.commonPrint%2Cshared%7Cskins.cppreference2&amp;only=styles&amp;skin=cppreference2&amp;*" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="http://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=cppreference2&amp;*" />
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
+
+<script src="http://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"Special","wgCanonicalSpecialPageName":"Log","wgNamespaceNumber":-1,"wgPageName":"Special:Log/Cubbi","wgTitle":"Log/Cubbi","wgCurRevisionId":0,"wgArticleId":0,"wgIsArticle":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":true,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Special:Log/Cubbi"});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:9f05c6caceb9bb1a482b6cebd4c5a330 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns--1 ns-special mw-special-Log page-Special_Log_Cubbi skin-cppreference2 action-view">
+        <!-- header -->
+        <div id="mw-head" class="noprint">
+            <div id="cpp-head-first-base">
+                <div id="cpp-head-first">
+                    <h5><a href="http://en.cppreference.com/">
+                        cppreference.com                        </a></h5>
+                    <div id="cpp-head-search">
+                        
+<!-- 0 -->
+<div id="p-search">
+	<h5><label for="searchInput">Search</label></h5>
+	<form action="http://en.cppreference.com/mwiki/index.php" id="searchform">
+		<input type='hidden' name="title" value="Special:Search"/>
+				<div id="simpleSearch">
+						<input name="search" title="Search cppreference.com [f]" accesskey="f" id="searchInput" />						<button type="submit" name="button" title="Search the pages for this text" id="searchButton"><img src="http://en.cppreference.com/mwiki/skins/cppreference2/images/search-ltr.png?303" alt="Search" /></button>					</div>
+			</form>
+</div>
+
+<!-- /0 -->
+                    </div>
+                    <div id="cpp-head-personal">
+                        
+<!-- 0 -->
+<div id="p-personal" class="">
+<span id="pt-createaccount"><a href="http://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=Special%3ALog%2FCubbi&amp;type=signup">Create account</a></span>	<div class="menu">
+        <ul>
+<li id="pt-login"><a href="http://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=Special%3ALog%2FCubbi" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>        </ul>
+    </div>
+</div>
+
+<!-- /0 -->
+                    </div>
+
+                </div>
+            </div>
+            <div id="cpp-head-second-base">
+                <div id="cpp-head-second">
+                    <div id="cpp-head-tools-left">
+                        
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>Namespaces</h5>
+	<ul>
+					<li  id="ca-nstab-special" class="selected"><span><a href="Cubbi"  title="This is a special page, you cannot edit the page itself">Special page</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+		<h5><span>Variants</span><a href="Cubbi#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+                    </div>
+                    <div id="cpp-head-tools-right">
+                        
+<!-- 0 -->
+<div id="p-views" class="vectorTabs emptyPortlet">
+	<h5>Views</h5>
+	<ul>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>Actions</span><a href="Cubbi#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /header -->
+        <!-- content -->
+        <div id="cpp-content-base">
+            <div id="content">
+                <a id="top"></a>
+                <div id="mw-js-message" style="display:none;"></div>
+                                <!-- firstHeading -->
+                <h1 id="firstHeading" class="firstHeading">All public logs</h1>
+                <!-- /firstHeading -->
+                <!-- bodyContent -->
+                <div id="bodyContent">
+                                        <!-- subtitle -->
+                    <div id="contentSub"></div>
+                    <!-- /subtitle -->
+                                                            <!-- bodycontent -->
+                    <div id="mw-content-text"><p>Combined display of all available logs of cppreference.com.
+You can narrow down the view by selecting a log type, the username (case-sensitive), or the affected page (also case-sensitive).
+</p><form action="http://en.cppreference.com/mwiki/index.php" method="get"><fieldset>
+<legend>Logs</legend>
+<input type="hidden" value="Special:Log" name="title" /><select name="type"><option value="" selected="">All public logs</option>
+<option value="block">Block log</option>
+<option value="delete">Deletion log</option>
+<option value="import">Import log</option>
+<option value="interwiki">Interwiki table log</option>
+<option value="merge">Merge log</option>
+<option value="move">Move log</option>
+<option value="patrol">Patrol log</option>
+<option value="protect">Protection log</option>
+<option value="upload">Upload log</option>
+<option value="newusers">User creation log</option>
+<option value="renameuser">User rename log</option>
+<option value="rights">User rights log</option></select>
+<span style="white-space: nowrap"><label for="mw-log-user">Performer:</label>&#160;<input name="user" size="15" value="Cubbi" id="mw-log-user" /></span>
+<span style="white-space: nowrap"><label for="mw-log-page">Target (title or user):</label>&#160;<input name="page" size="20" value="" id="mw-log-page" /></span>
+
+<p><label for="year">From year (and earlier):</label> <input id="year" maxlength="4" size="7" type="number" name="year" /> <label for="month">From month (and earlier):</label> <select id="month" name="month" class="mw-month-selector"><option value="-1">all</option>
+<option value="1">January</option>
+<option value="2">February</option>
+<option value="3">March</option>
+<option value="4">April</option>
+<option value="5">May</option>
+<option value="6">June</option>
+<option value="7">July</option>
+<option value="8">August</option>
+<option value="9">September</option>
+<option value="10">October</option>
+<option value="11">November</option>
+<option value="12">December</option></select></p><input type="submit" value="Go" />
+</fieldset>
+</form>(Latest | <a href="http://en.cppreference.com/mwiki/index.php?title=Special:Log/Cubbi&amp;dir=prev&amp;type=&amp;user=Cubbi" title="Special:Log/Cubbi" rel="last" class="mw-lastlink">Earliest</a>) View (newer 50  |  <a href="http://en.cppreference.com/mwiki/index.php?title=Special:Log/Cubbi&amp;offset=20170412191815&amp;type=&amp;user=Cubbi" title="Special:Log/Cubbi" rel="next" class="mw-nextlink">older 50</a>) (<a href="http://en.cppreference.com/mwiki/index.php?title=Special:Log/Cubbi&amp;offset=&amp;limit=20&amp;type=&amp;user=Cubbi" title="Special:Log/Cubbi" class="mw-numlink">20</a> | <a href="http://en.cppreference.com/mwiki/index.php?title=Special:Log/Cubbi&amp;offset=&amp;limit=50&amp;type=&amp;user=Cubbi" title="Special:Log/Cubbi" class="mw-numlink">50</a> | <a href="http://en.cppreference.com/mwiki/index.php?title=Special:Log/Cubbi&amp;offset=&amp;limit=100&amp;type=&amp;user=Cubbi" title="Special:Log/Cubbi" class="mw-numlink">100</a> | <a href="http://en.cppreference.com/mwiki/index.php?title=Special:Log/Cubbi&amp;offset=&amp;limit=250&amp;type=&amp;user=Cubbi" title="Special:Log/Cubbi" class="mw-numlink">250</a> | <a href="http://en.cppreference.com/mwiki/index.php?title=Special:Log/Cubbi&amp;offset=&amp;limit=500&amp;type=&amp;user=Cubbi" title="Special:Log/Cubbi" class="mw-numlink">500</a>)<ul>
+<li class="mw-logline-patrol"> 11:06, 17 July 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=User_talk:Mgkrupa&amp;oldid=94481&amp;diff=prev" title="User talk:Mgkrupa">94481</a> of page <a href="http://en.cppreference.com/w/User_talk:Mgkrupa" title="User talk:Mgkrupa">User talk:Mgkrupa</a> patrolled   </li>
+<li class="mw-logline-patrol"> 07:54, 17 July 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=cpp/types/endian&amp;oldid=94469&amp;diff=prev" title="cpp/types/endian">94469</a> of page <a href="http://en.cppreference.com/w/cpp/types/endian" title="cpp/types/endian">cpp/types/endian</a> patrolled   </li>
+<li class="mw-logline-patrol"> 07:38, 17 July 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/types/dsc_endian&amp;oldid=94466&amp;diff=prev" title="Template:cpp/types/dsc endian">94466</a> of page <a href="http://en.cppreference.com/w/Template:cpp/types/dsc_endian" title="Template:cpp/types/dsc endian">Template:cpp/types/dsc endian</a> patrolled   </li>
+<li class="mw-logline-patrol"> 07:37, 17 July 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=Template:mark_until_c%2B%2B20&amp;oldid=94464&amp;diff=prev" title="Template:mark until c++20">94464</a> of page <a href="../Template:mark_until_c++20" title="Template:mark until c++20">Template:mark until c++20</a> patrolled   </li>
+<li class="mw-logline-patrol"> 07:36, 17 July 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=Template:mark_c%2B%2B20&amp;oldid=94463&amp;diff=prev" title="Template:mark c++20">94463</a> of page <a href="../Template:mark_c++20" title="Template:mark c++20">Template:mark c++20</a> patrolled   </li>
+<li class="mw-logline-patrol"> 07:35, 17 July 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=Template:mark_since_c%2B%2B20&amp;oldid=94462&amp;diff=prev" title="Template:mark since c++20">94462</a> of page <a href="../Template:mark_since_c++20" title="Template:mark since c++20">Template:mark since c++20</a> patrolled   </li>
+<li class="mw-logline-patrol"> 08:41, 24 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=cpp/filesystem/path/format&amp;oldid=92565&amp;diff=prev" title="cpp/filesystem/path/format">92565</a> of page <a href="http://en.cppreference.com/w/cpp/filesystem/path/format" title="cpp/filesystem/path/format">cpp/filesystem/path/format</a> patrolled   </li>
+<li class="mw-logline-patrol"> 15:27, 20 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=cpp/filesystem/perm_options&amp;oldid=92537&amp;diff=prev" title="cpp/filesystem/perm options">92537</a> of page <a href="http://en.cppreference.com/w/cpp/filesystem/perm_options" title="cpp/filesystem/perm options">cpp/filesystem/perm options</a> patrolled   </li>
+<li class="mw-logline-patrol"> 15:11, 20 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/filesystem/dsc_perm_options&amp;oldid=92532&amp;diff=prev" title="Template:cpp/filesystem/dsc perm options">92532</a> of page <a href="http://en.cppreference.com/w/Template:cpp/filesystem/dsc_perm_options" title="Template:cpp/filesystem/dsc perm options">Template:cpp/filesystem/dsc perm options</a> patrolled   </li>
+<li class="mw-logline-patrol"> 13:01, 19 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=cpp/filesystem/directory_entry/last_write_time&amp;oldid=92475&amp;diff=prev" title="cpp/filesystem/directory entry/last write time">92475</a> of page <a href="http://en.cppreference.com/w/cpp/filesystem/directory_entry/last_write_time" title="cpp/filesystem/directory entry/last write time">cpp/filesystem/directory entry/last write time</a> patrolled   </li>
+<li class="mw-logline-patrol"> 12:59, 19 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=cpp/filesystem/directory_entry/hard_link_count&amp;oldid=92473&amp;diff=prev" title="cpp/filesystem/directory entry/hard link count">92473</a> of page <a href="http://en.cppreference.com/w/cpp/filesystem/directory_entry/hard_link_count" title="cpp/filesystem/directory entry/hard link count">cpp/filesystem/directory entry/hard link count</a> patrolled   </li>
+<li class="mw-logline-patrol"> 12:57, 19 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=cpp/filesystem/directory_entry/file_size&amp;oldid=92471&amp;diff=prev" title="cpp/filesystem/directory entry/file size">92471</a> of page <a href="http://en.cppreference.com/w/cpp/filesystem/directory_entry/file_size" title="cpp/filesystem/directory entry/file size">cpp/filesystem/directory entry/file size</a> patrolled   </li>
+<li class="mw-logline-patrol"> 12:54, 19 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=cpp/filesystem/directory_entry/is_symlink&amp;oldid=92469&amp;diff=prev" title="cpp/filesystem/directory entry/is symlink">92469</a> of page <a href="http://en.cppreference.com/w/cpp/filesystem/directory_entry/is_symlink" title="cpp/filesystem/directory entry/is symlink">cpp/filesystem/directory entry/is symlink</a> patrolled   </li>
+<li class="mw-logline-patrol"> 12:49, 19 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=cpp/filesystem/directory_entry/is_socket&amp;oldid=92460&amp;diff=prev" title="cpp/filesystem/directory entry/is socket">92460</a> of page <a href="http://en.cppreference.com/w/cpp/filesystem/directory_entry/is_socket" title="cpp/filesystem/directory entry/is socket">cpp/filesystem/directory entry/is socket</a> patrolled   </li>
+<li class="mw-logline-patrol"> 12:48, 19 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=cpp/filesystem/directory_entry/is_regular_file&amp;oldid=92458&amp;diff=prev" title="cpp/filesystem/directory entry/is regular file">92458</a> of page <a href="http://en.cppreference.com/w/cpp/filesystem/directory_entry/is_regular_file" title="cpp/filesystem/directory entry/is regular file">cpp/filesystem/directory entry/is regular file</a> patrolled   </li>
+<li class="mw-logline-patrol"> 12:46, 19 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=cpp/filesystem/directory_entry/is_other&amp;oldid=92456&amp;diff=prev" title="cpp/filesystem/directory entry/is other">92456</a> of page <a href="http://en.cppreference.com/w/cpp/filesystem/directory_entry/is_other" title="cpp/filesystem/directory entry/is other">cpp/filesystem/directory entry/is other</a> patrolled   </li>
+<li class="mw-logline-patrol"> 12:44, 19 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=cpp/filesystem/directory_entry/is_fifo&amp;oldid=92454&amp;diff=prev" title="cpp/filesystem/directory entry/is fifo">92454</a> of page <a href="http://en.cppreference.com/w/cpp/filesystem/directory_entry/is_fifo" title="cpp/filesystem/directory entry/is fifo">cpp/filesystem/directory entry/is fifo</a> patrolled   </li>
+<li class="mw-logline-patrol"> 12:38, 19 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=cpp/filesystem/directory_entry/is_directory&amp;oldid=92452&amp;diff=prev" title="cpp/filesystem/directory entry/is directory">92452</a> of page <a href="http://en.cppreference.com/w/cpp/filesystem/directory_entry/is_directory" title="cpp/filesystem/directory entry/is directory">cpp/filesystem/directory entry/is directory</a> patrolled   </li>
+<li class="mw-logline-patrol"> 12:29, 19 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=cpp/filesystem/directory_entry/is_character_file&amp;oldid=92450&amp;diff=prev" title="cpp/filesystem/directory entry/is character file">92450</a> of page <a href="http://en.cppreference.com/w/cpp/filesystem/directory_entry/is_character_file" title="cpp/filesystem/directory entry/is character file">cpp/filesystem/directory entry/is character file</a> patrolled   </li>
+<li class="mw-logline-patrol"> 12:26, 19 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=cpp/filesystem/directory_entry/is_block_file&amp;oldid=92448&amp;diff=prev" title="cpp/filesystem/directory entry/is block file">92448</a> of page <a href="http://en.cppreference.com/w/cpp/filesystem/directory_entry/is_block_file" title="cpp/filesystem/directory entry/is block file">cpp/filesystem/directory entry/is block file</a> patrolled   </li>
+<li class="mw-logline-patrol"> 12:13, 19 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=cpp/filesystem/directory_entry/exists&amp;oldid=92446&amp;diff=prev" title="cpp/filesystem/directory entry/exists">92446</a> of page <a href="http://en.cppreference.com/w/cpp/filesystem/directory_entry/exists" title="cpp/filesystem/directory entry/exists">cpp/filesystem/directory entry/exists</a> patrolled   </li>
+<li class="mw-logline-patrol"> 11:53, 19 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=cpp/filesystem/directory_entry/refresh&amp;oldid=92438&amp;diff=prev" title="cpp/filesystem/directory entry/refresh">92438</a> of page <a href="http://en.cppreference.com/w/cpp/filesystem/directory_entry/refresh" title="cpp/filesystem/directory entry/refresh">cpp/filesystem/directory entry/refresh</a> patrolled   </li>
+<li class="mw-logline-patrol"> 11:42, 19 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/filesystem/directory_caching_note&amp;oldid=92432&amp;diff=prev" title="Template:cpp/filesystem/directory caching note">92432</a> of page <a href="http://en.cppreference.com/w/Template:cpp/filesystem/directory_caching_note" title="Template:cpp/filesystem/directory caching note">Template:cpp/filesystem/directory caching note</a> patrolled   </li>
+<li class="mw-logline-patrol"> 11:05, 19 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/filesystem/directory_entry/dsc_last_write_time&amp;oldid=92427&amp;diff=prev" title="Template:cpp/filesystem/directory entry/dsc last write time">92427</a> of page <a href="http://en.cppreference.com/w/Template:cpp/filesystem/directory_entry/dsc_last_write_time" title="Template:cpp/filesystem/directory entry/dsc last write time">Template:cpp/filesystem/directory entry/dsc last write time</a> patrolled   </li>
+<li class="mw-logline-patrol"> 11:05, 19 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/filesystem/directory_entry/dsc_hard_link_count&amp;oldid=92426&amp;diff=prev" title="Template:cpp/filesystem/directory entry/dsc hard link count">92426</a> of page <a href="http://en.cppreference.com/w/Template:cpp/filesystem/directory_entry/dsc_hard_link_count" title="Template:cpp/filesystem/directory entry/dsc hard link count">Template:cpp/filesystem/directory entry/dsc hard link count</a> patrolled   </li>
+<li class="mw-logline-patrol"> 11:04, 19 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/filesystem/directory_entry/dsc_file_size&amp;oldid=92425&amp;diff=prev" title="Template:cpp/filesystem/directory entry/dsc file size">92425</a> of page <a href="http://en.cppreference.com/w/Template:cpp/filesystem/directory_entry/dsc_file_size" title="Template:cpp/filesystem/directory entry/dsc file size">Template:cpp/filesystem/directory entry/dsc file size</a> patrolled   </li>
+<li class="mw-logline-patrol"> 11:02, 19 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/filesystem/directory_entry/dsc_is_symlink&amp;oldid=92424&amp;diff=prev" title="Template:cpp/filesystem/directory entry/dsc is symlink">92424</a> of page <a href="http://en.cppreference.com/w/Template:cpp/filesystem/directory_entry/dsc_is_symlink" title="Template:cpp/filesystem/directory entry/dsc is symlink">Template:cpp/filesystem/directory entry/dsc is symlink</a> patrolled   </li>
+<li class="mw-logline-patrol"> 11:00, 19 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/filesystem/directory_entry/dsc_is_socket&amp;oldid=92423&amp;diff=prev" title="Template:cpp/filesystem/directory entry/dsc is socket">92423</a> of page <a href="http://en.cppreference.com/w/Template:cpp/filesystem/directory_entry/dsc_is_socket" title="Template:cpp/filesystem/directory entry/dsc is socket">Template:cpp/filesystem/directory entry/dsc is socket</a> patrolled   </li>
+<li class="mw-logline-patrol"> 10:59, 19 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/filesystem/directory_entry/dsc_is_regular_file&amp;oldid=92422&amp;diff=prev" title="Template:cpp/filesystem/directory entry/dsc is regular file">92422</a> of page <a href="http://en.cppreference.com/w/Template:cpp/filesystem/directory_entry/dsc_is_regular_file" title="Template:cpp/filesystem/directory entry/dsc is regular file">Template:cpp/filesystem/directory entry/dsc is regular file</a> patrolled   </li>
+<li class="mw-logline-patrol"> 10:58, 19 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/filesystem/directory_entry/dsc_is_other&amp;oldid=92421&amp;diff=prev" title="Template:cpp/filesystem/directory entry/dsc is other">92421</a> of page <a href="http://en.cppreference.com/w/Template:cpp/filesystem/directory_entry/dsc_is_other" title="Template:cpp/filesystem/directory entry/dsc is other">Template:cpp/filesystem/directory entry/dsc is other</a> patrolled   </li>
+<li class="mw-logline-patrol"> 10:57, 19 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/filesystem/directory_entry/dsc_is_fifo&amp;oldid=92420&amp;diff=prev" title="Template:cpp/filesystem/directory entry/dsc is fifo">92420</a> of page <a href="http://en.cppreference.com/w/Template:cpp/filesystem/directory_entry/dsc_is_fifo" title="Template:cpp/filesystem/directory entry/dsc is fifo">Template:cpp/filesystem/directory entry/dsc is fifo</a> patrolled   </li>
+<li class="mw-logline-patrol"> 10:57, 19 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/filesystem/directory_entry/dsc_is_directory&amp;oldid=92419&amp;diff=prev" title="Template:cpp/filesystem/directory entry/dsc is directory">92419</a> of page <a href="http://en.cppreference.com/w/Template:cpp/filesystem/directory_entry/dsc_is_directory" title="Template:cpp/filesystem/directory entry/dsc is directory">Template:cpp/filesystem/directory entry/dsc is directory</a> patrolled   </li>
+<li class="mw-logline-patrol"> 10:56, 19 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/filesystem/directory_entry/dsc_is_character_file&amp;oldid=92418&amp;diff=prev" title="Template:cpp/filesystem/directory entry/dsc is character file">92418</a> of page <a href="http://en.cppreference.com/w/Template:cpp/filesystem/directory_entry/dsc_is_character_file" title="Template:cpp/filesystem/directory entry/dsc is character file">Template:cpp/filesystem/directory entry/dsc is character file</a> patrolled   </li>
+<li class="mw-logline-patrol"> 10:55, 19 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/filesystem/directory_entry/dsc_is_block_file&amp;oldid=92417&amp;diff=prev" title="Template:cpp/filesystem/directory entry/dsc is block file">92417</a> of page <a href="http://en.cppreference.com/w/Template:cpp/filesystem/directory_entry/dsc_is_block_file" title="Template:cpp/filesystem/directory entry/dsc is block file">Template:cpp/filesystem/directory entry/dsc is block file</a> patrolled   </li>
+<li class="mw-logline-patrol"> 10:55, 19 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/filesystem/directory_entry/dsc_exists&amp;oldid=92416&amp;diff=prev" title="Template:cpp/filesystem/directory entry/dsc exists">92416</a> of page <a href="http://en.cppreference.com/w/Template:cpp/filesystem/directory_entry/dsc_exists" title="Template:cpp/filesystem/directory entry/dsc exists">Template:cpp/filesystem/directory entry/dsc exists</a> patrolled   </li>
+<li class="mw-logline-patrol"> 10:54, 19 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/filesystem/directory_entry/dsc_refresh&amp;oldid=92415&amp;diff=prev" title="Template:cpp/filesystem/directory entry/dsc refresh">92415</a> of page <a href="http://en.cppreference.com/w/Template:cpp/filesystem/directory_entry/dsc_refresh" title="Template:cpp/filesystem/directory entry/dsc refresh">Template:cpp/filesystem/directory entry/dsc refresh</a> patrolled   </li>
+<li class="mw-logline-patrol"> 13:09, 12 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=cpp/container/priority_queue/deduction_guides&amp;oldid=92335&amp;diff=prev" title="cpp/container/priority queue/deduction guides">92335</a> of page <a href="http://en.cppreference.com/w/cpp/container/priority_queue/deduction_guides" title="cpp/container/priority queue/deduction guides">cpp/container/priority queue/deduction guides</a> patrolled   </li>
+<li class="mw-logline-patrol"> 12:59, 12 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/container/ad_deduction_guides&amp;oldid=92332&amp;diff=prev" title="Template:cpp/container/ad deduction guides">92332</a> of page <a href="http://en.cppreference.com/w/Template:cpp/container/ad_deduction_guides" title="Template:cpp/container/ad deduction guides">Template:cpp/container/ad deduction guides</a> patrolled   </li>
+<li class="mw-logline-move"> 12:58, 12 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> moved page <a href="http://en.cppreference.com/mwiki/index.php?title=cpp/container/stack/deduction_guildes&amp;redirect=no&amp;action=edit&amp;redlink=1" class="new" title="cpp/container/stack/deduction guildes (page does not exist)">cpp/container/stack/deduction guildes</a> to <a href="http://en.cppreference.com/w/cpp/container/stack/deduction_guides" title="cpp/container/stack/deduction guides">cpp/container/stack/deduction guides</a> without leaving a redirect <span class="comment">(typo)</span>  </li>
+<li class="mw-logline-move"> 12:56, 12 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> moved page <a href="http://en.cppreference.com/mwiki/index.php?title=cpp/container/multiset/queue&amp;redirect=no&amp;action=edit&amp;redlink=1" class="new" title="cpp/container/multiset/queue (page does not exist)">cpp/container/multiset/queue</a> to <a href="http://en.cppreference.com/w/cpp/container/queue/deduction_guides" title="cpp/container/queue/deduction guides">cpp/container/queue/deduction guides</a> without leaving a redirect <span class="comment">(typo)</span>  </li>
+<li class="mw-logline-move"> 12:55, 12 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> moved page <a href="http://en.cppreference.com/mwiki/index.php?title=cpp/container/multiset/stack&amp;redirect=no&amp;action=edit&amp;redlink=1" class="new" title="cpp/container/multiset/stack (page does not exist)">cpp/container/multiset/stack</a> to <a href="http://en.cppreference.com/mwiki/index.php?title=cpp/container/stack/deduction_guildes&amp;action=edit&amp;redlink=1" class="new" title="cpp/container/stack/deduction guildes (page does not exist)">cpp/container/stack/deduction guildes</a> without leaving a redirect <span class="comment">(typo)</span>  </li>
+<li class="mw-logline-patrol"> 12:50, 12 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision 92325 of page <a href="http://en.cppreference.com/mwiki/index.php?title=cpp/container/multiset/queue&amp;action=edit&amp;redlink=1" class="new" title="cpp/container/multiset/queue (page does not exist)">cpp/container/multiset/queue</a> patrolled   </li>
+<li class="mw-logline-patrol"> 12:49, 12 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision 92324 of page <a href="http://en.cppreference.com/mwiki/index.php?title=cpp/container/multiset/stack&amp;action=edit&amp;redlink=1" class="new" title="cpp/container/multiset/stack (page does not exist)">cpp/container/multiset/stack</a> patrolled   </li>
+<li class="mw-logline-patrol"> 12:45, 12 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/container/unord_map_deduction_guides&amp;oldid=92318&amp;diff=prev" title="Template:cpp/container/unord map deduction guides">92318</a> of page <a href="http://en.cppreference.com/w/Template:cpp/container/unord_map_deduction_guides" title="Template:cpp/container/unord map deduction guides">Template:cpp/container/unord map deduction guides</a> patrolled   </li>
+<li class="mw-logline-patrol"> 12:42, 12 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/container/map_deduction_guides_type_aliases&amp;oldid=92316&amp;diff=prev" title="Template:cpp/container/map deduction guides type aliases">92316</a> of page <a href="http://en.cppreference.com/w/Template:cpp/container/map_deduction_guides_type_aliases" title="Template:cpp/container/map deduction guides type aliases">Template:cpp/container/map deduction guides type aliases</a> patrolled   </li>
+<li class="mw-logline-patrol"> 12:30, 12 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=Template:cpp/container/unord_set_deduction_guides&amp;oldid=92313&amp;diff=prev" title="Template:cpp/container/unord set deduction guides">92313</a> of page <a href="http://en.cppreference.com/w/Template:cpp/container/unord_set_deduction_guides" title="Template:cpp/container/unord set deduction guides">Template:cpp/container/unord set deduction guides</a> patrolled   </li>
+<li class="mw-logline-patrol"> 12:18, 12 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=cpp/container/unordered_multimap/deduction_guides&amp;oldid=92312&amp;diff=prev" title="cpp/container/unordered multimap/deduction guides">92312</a> of page <a href="http://en.cppreference.com/w/cpp/container/unordered_multimap/deduction_guides" title="cpp/container/unordered multimap/deduction guides">cpp/container/unordered multimap/deduction guides</a> patrolled   </li>
+<li class="mw-logline-patrol"> 12:18, 12 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=cpp/container/unordered_map/deduction_guides&amp;oldid=92311&amp;diff=prev" title="cpp/container/unordered map/deduction guides">92311</a> of page <a href="http://en.cppreference.com/w/cpp/container/unordered_map/deduction_guides" title="cpp/container/unordered map/deduction guides">cpp/container/unordered map/deduction guides</a> patrolled   </li>
+<li class="mw-logline-patrol"> 12:18, 12 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=cpp/container/unordered_multiset/deduction_guides&amp;oldid=92310&amp;diff=prev" title="cpp/container/unordered multiset/deduction guides">92310</a> of page <a href="http://en.cppreference.com/w/cpp/container/unordered_multiset/deduction_guides" title="cpp/container/unordered multiset/deduction guides">cpp/container/unordered multiset/deduction guides</a> patrolled   </li>
+<li class="mw-logline-patrol"> 12:18, 12 April 2017 <a href="../User:Cubbi.2" title="User:Cubbi" class="mw-userlink">Cubbi</a> <span class="mw-usertoollinks">(<a href="../User_talk:Cubbi" title="User talk:Cubbi">Talk</a> | <a href="../Special:Contributions/Cubbi" title="Special:Contributions/Cubbi">contribs</a>)</span> automatically marked revision <a href="http://en.cppreference.com/mwiki/index.php?title=cpp/container/unordered_set/deduction_guides&amp;oldid=92309&amp;diff=prev" title="cpp/container/unordered set/deduction guides">92309</a> of page <a href="http://en.cppreference.com/w/cpp/container/unordered_set/deduction_guides" title="cpp/container/unordered set/deduction guides">cpp/container/unordered set/deduction guides</a> patrolled   </li>
+</ul>
+(Latest | <a href="http://en.cppreference.com/mwiki/index.php?title=Special:Log/Cubbi&amp;dir=prev&amp;type=&amp;user=Cubbi" title="Special:Log/Cubbi" rel="last" class="mw-lastlink">Earliest</a>) View (newer 50  |  <a href="http://en.cppreference.com/mwiki/index.php?title=Special:Log/Cubbi&amp;offset=20170412191815&amp;type=&amp;user=Cubbi" title="Special:Log/Cubbi" rel="next" class="mw-nextlink">older 50</a>) (<a href="http://en.cppreference.com/mwiki/index.php?title=Special:Log/Cubbi&amp;offset=&amp;limit=20&amp;type=&amp;user=Cubbi" title="Special:Log/Cubbi" class="mw-numlink">20</a> | <a href="http://en.cppreference.com/mwiki/index.php?title=Special:Log/Cubbi&amp;offset=&amp;limit=50&amp;type=&amp;user=Cubbi" title="Special:Log/Cubbi" class="mw-numlink">50</a> | <a href="http://en.cppreference.com/mwiki/index.php?title=Special:Log/Cubbi&amp;offset=&amp;limit=100&amp;type=&amp;user=Cubbi" title="Special:Log/Cubbi" class="mw-numlink">100</a> | <a href="http://en.cppreference.com/mwiki/index.php?title=Special:Log/Cubbi&amp;offset=&amp;limit=250&amp;type=&amp;user=Cubbi" title="Special:Log/Cubbi" class="mw-numlink">250</a> | <a href="http://en.cppreference.com/mwiki/index.php?title=Special:Log/Cubbi&amp;offset=&amp;limit=500&amp;type=&amp;user=Cubbi" title="Special:Log/Cubbi" class="mw-numlink">500</a>)</div>                    <!-- /bodycontent -->
+                                        <!-- printfooter -->
+                    <div class="printfooter">
+                    Retrieved from "<a href="Cubbi">http://en.cppreference.com/w/Special:Log/Cubbi</a>"                    </div>
+                    <!-- /printfooter -->
+                                                            <!-- catlinks -->
+                    <div id='catlinks' class='catlinks catlinks-allhidden'></div>                    <!-- /catlinks -->
+                                                            <div class="visualClear"></div>
+                    <!-- debughtml -->
+                                        <!-- /debughtml -->
+                </div>
+                <!-- /bodyContent -->
+            </div>
+        </div>
+        <!-- /content -->
+        <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul>
+<li id="n-Support-us"><a href="http://www.cppreference.com/support" rel="nofollow">Support us</a></li><li id="n-recentchanges"><a href="../Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-FAQ"><a href="../Cppreference:FAQ">FAQ</a></li><li id="n-Offline-version"><a href="../Cppreference:Archives">Offline version</a></li>            </ul>
+        </div>
+                        <div id="cpp-toolbox">
+            <h5><span>Toolbox</span><a href="Cubbi#"></a></h5>
+            <ul>
+<li id="t-contributions"><a href="../Special:Contributions/Cubbi" title="A list of contributions of this user">User contributions</a></li><li id="t-log"><a href="Cubbi">Logs</a></li><li id="t-upload"><a href="http://upload.cppreference.com/w/Special:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="../Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>            </ul>
+        </div>
+                            <ul id="footer-places">
+                                    <li id="footer-places-privacy"><a href="../Cppreference:Privacy_policy" title="Cppreference:Privacy policy">Privacy policy</a></li>
+                                    <li id="footer-places-about"><a href="../Cppreference:FAQ" title="Cppreference:About">About cppreference.com</a></li>
+                                    <li id="footer-places-disclaimer"><a href="../Cppreference:General_disclaimer" title="Cppreference:General disclaimer">Disclaimers</a></li>
+                            </ul>
+                                    <ul id="footer-icons" class="noprint">
+                                    <li id="footer-poweredbyico">
+                                            <a href="http://www.mediawiki.org/"><img src="http://en.cppreference.com/mwiki/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>                                            <a href="http://qbnz.com/highlighter/"><img src="http://upload.cppreference.com/mwiki/images/2/2b/powered_by_geshi_88x31.png" alt="Powered by GeSHi" height="31" width="88" /></a>                                            <a href="http://www.tigertech.net/referral/cppreference.com"><img src="http://upload.cppreference.com/mwiki/images/9/94/powered_by_tigertech_88x31.png" alt="Hosted by Tiger Technologies" height="31" width="88" /></a>                                        </li>
+                                </ul>
+                        <div style="clear:both">
+            </div>
+            </div>
+        </div>
+        <!-- /footer -->
+        <script>if(window.mw){
+mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
+}</script>
+<script src="http://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=skins.cppreference2&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.MathJax"], null, true);
+}</script>
+<script src="http://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-2828341-1']);
+_gaq.push(['_setDomainName', 'cppreference.com']);
+_gaq.push(['_trackPageview']);
+</script><!-- Served in 0.337 secs. -->
+	</body>
+</html>

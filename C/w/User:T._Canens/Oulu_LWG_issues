@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<title>User:T. Canens/Oulu LWG issues - cppreference.com</title>
+<meta charset="UTF-8" />
+<meta name="generator" content="MediaWiki 1.21.2" />
+<link rel="shortcut icon" href="http://en.cppreference.com/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://en.cppreference.com/mwiki/opensearch_desc.php" title="cppreference.com (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="http://en.cppreference.com/mwiki/api.php?action=rsd" />
+<link rel="alternate" type="application/atom+xml" title="cppreference.com Atom feed" href="http://en.cppreference.com/mwiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="http://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.ColiruCompiler%2CMathJax%7Cext.rtlcite%7Cmediawiki.legacy.commonPrint%2Cshared%7Cskins.cppreference2&amp;only=styles&amp;skin=cppreference2&amp;*" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="http://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=cppreference2&amp;*" />
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
+
+<script src="http://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"User","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":2,"wgPageName":"User:T._Canens/Oulu_LWG_issues","wgTitle":"T. Canens/Oulu LWG issues","wgCurRevisionId":94783,"wgArticleId":16503,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"User:T._Canens/Oulu_LWG_issues","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:9f05c6caceb9bb1a482b6cebd4c5a330 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-2 ns-subject page-User_T_Canens_Oulu_LWG_issues skin-cppreference2 action-view">
+        <!-- header -->
+        <div id="mw-head" class="noprint">
+            <div id="cpp-head-first-base">
+                <div id="cpp-head-first">
+                    <h5><a href="http://en.cppreference.com/">
+                        cppreference.com                        </a></h5>
+                    <div id="cpp-head-search">
+                        
+<!-- 0 -->
+<div id="p-search">
+	<h5><label for="searchInput">Search</label></h5>
+	<form action="http://en.cppreference.com/mwiki/index.php" id="searchform">
+		<input type='hidden' name="title" value="Special:Search"/>
+				<div id="simpleSearch">
+						<input name="search" title="Search cppreference.com [f]" accesskey="f" id="searchInput" />						<button type="submit" name="button" title="Search the pages for this text" id="searchButton"><img src="http://en.cppreference.com/mwiki/skins/cppreference2/images/search-ltr.png?303" alt="Search" /></button>					</div>
+			</form>
+</div>
+
+<!-- /0 -->
+                    </div>
+                    <div id="cpp-head-personal">
+                        
+<!-- 0 -->
+<div id="p-personal" class="">
+<span id="pt-createaccount"><a href="http://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=User%3AT.+Canens%2FOulu+LWG+issues&amp;type=signup">Create account</a></span>	<div class="menu">
+        <ul>
+<li id="pt-login"><a href="http://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=User%3AT.+Canens%2FOulu+LWG+issues" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>        </ul>
+    </div>
+</div>
+
+<!-- /0 -->
+                    </div>
+
+                </div>
+            </div>
+            <div id="cpp-head-second-base">
+                <div id="cpp-head-second">
+                    <div id="cpp-head-tools-left">
+                        
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>Namespaces</h5>
+	<ul>
+					<li  id="ca-nstab-user" class="selected"><span><a href="Oulu_LWG_issues"  title="View the user page [c]" accesskey="c">User page</a></span></li>
+					<li  id="ca-talk" class="new"><span><a href="http://en.cppreference.com/mwiki/index.php?title=User_talk:T._Canens/Oulu_LWG_issues&amp;action=edit&amp;redlink=1"  title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+		<h5><span>Variants</span><a href="Oulu_LWG_issues#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+                    </div>
+                    <div id="cpp-head-tools-right">
+                        
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>Views</h5>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="Oulu_LWG_issues" >View</a></span></li>
+					<li id="ca-viewsource"><span><a href="http://en.cppreference.com/mwiki/index.php?title=User:T._Canens/Oulu_LWG_issues&amp;action=edit"  title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="http://en.cppreference.com/mwiki/index.php?title=User:T._Canens/Oulu_LWG_issues&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">History</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>Actions</span><a href="Oulu_LWG_issues#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /header -->
+        <!-- content -->
+        <div id="cpp-content-base">
+            <div id="content">
+                <a id="top"></a>
+                <div id="mw-js-message" style="display:none;"></div>
+                                <!-- firstHeading -->
+                <h1 id="firstHeading" class="firstHeading">User:T. Canens/Oulu LWG issues</h1>
+                <!-- /firstHeading -->
+                <!-- bodyContent -->
+                <div id="bodyContent">
+                                        <!-- tagline -->
+                    <div id="siteSub">From cppreference.com</div>
+                    <!-- /tagline -->
+                                        <!-- subtitle -->
+                    <div id="contentSub"><span class="subpages">&lt; <a href="../User:T._Canens" title="User:T. Canens">User:T. Canens</a></span></div>
+                    <!-- /subtitle -->
+                                                            <!-- bodycontent -->
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table class="wikitable sortable" style="text-align:center;">
+
+<tr>
+<th style="width: 15%;">Issue #
+</th>
+<th style="width: 15%;">Status
+</th>
+<th style="width: 70%;">Notes
+</th></tr>
+
+<tr>
+<td style="background-color:#FDEDED"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2393">LWG 2393</a></b>
+</td>
+<td style="background-color:#FDEDED"><span style="font-size:25px;color:red"><b>&#x2718;</b></span>&#160;<b>Not done</b>
+</td>
+<td style="text-align:left; background-color:#FDEDED"> Lvalue-Callable. I want to burn this thing to the ground. (Seriously, do we want to rename <a href="http://en.cppreference.com/w/cpp/concept/Callable" title="cpp/concept/Callable"><code>Callable</code></a>?
+</td></tr>
+<tr>
+<td style="background-color:#FDEDED"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2542">LWG 2542</a></b>
+</td>
+<td style="background-color:#FDEDED"><span style="font-size:25px;color:red"><b>&#x2718;</b></span>&#160;<b>Not done</b>
+</td>
+<td style="text-align:left; background-color:#FDEDED"> We need to finish <a href="http://en.cppreference.com/w/cpp/concept/AssociativeContainer" title="cpp/concept/AssociativeContainer"><code>AssociativeContainer</code></a>, and/or add a note for all containers involved.
+</td></tr>
+<tr>
+<td style="background-color:#FDEDED"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2436">LWG 2436</a></b>
+</td>
+<td style="background-color:#FDEDED"><span style="font-size:25px;color:red"><b>&#x2718;</b></span>&#160;<b>Not done</b>
+</td>
+<td style="text-align:left; background-color:#FDEDED"> Like 2542.
+</td></tr>
+<tr>
+<td style="background-color:#E9FEE9"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2550">LWG 2550</a></b>
+</td>
+<td style="background-color:#E9FEE9"><span style="font-size:25px;color:green"><b>&#x2714;</b></span>&#160;<b>Done</b>
+</td>
+<td style="text-align:left; background-color:#E9FEE9">
+</td></tr>
+<tr>
+<td style="background-color:#E9FEE9"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2310">LWG 2310</a></b>
+</td>
+<td style="background-color:#E9FEE9"><span style="font-size:25px;color:green"><b>&#x2714;</b></span>&#160;<b>Done</b>
+</td>
+<td style="text-align:left; background-color:#E9FEE9">
+</td></tr>
+<tr>
+<td style="background-color:#FDEDED"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2181">LWG 2181</a></b>
+</td>
+<td style="background-color:#FDEDED"><span style="font-size:25px;color:red"><b>&#x2718;</b></span>&#160;<b>Not done</b>
+</td>
+<td style="text-align:left; background-color:#FDEDED"> need to check everything taking a seed sequence
+</td></tr>
+<tr>
+<td style="background-color:#E9FEE9"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2328">LWG 2328</a></b>
+</td>
+<td style="background-color:#E9FEE9"><span style="font-size:25px;color:green"><b>&#x2714;</b></span>&#160;<b>Done</b>
+</td>
+<td style="text-align:left; background-color:#E9FEE9">
+</td></tr>
+<tr>
+<td style="background-color:#E9FEE9"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2667">LWG 2667</a></b>
+</td>
+<td style="background-color:#E9FEE9"><span style="font-size:25px;color:green"><b>&#x2714;</b></span>&#160;<b>Done</b>
+</td>
+<td style="text-align:left; background-color:#E9FEE9">
+</td></tr>
+<tr>
+<td style="background-color:#E9FEE9"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2669">LWG 2669</a></b>
+</td>
+<td style="background-color:#E9FEE9"><span style="font-size:25px;color:green"><b>&#x2714;</b></span>&#160;<b>Done</b>
+</td>
+<td style="text-align:left; background-color:#E9FEE9">
+</td></tr>
+<tr>
+<td style="background-color:#E9FEE9"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2671">LWG 2671</a></b>
+</td>
+<td style="background-color:#E9FEE9"><span style="font-size:25px;color:green"><b>&#x2714;</b></span>&#160;<b>Done</b>
+</td>
+<td style="text-align:left; background-color:#E9FEE9">
+</td></tr>
+<tr>
+<td style="background-color:#E9FEE9"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2673">LWG 2673</a></b>
+</td>
+<td style="background-color:#E9FEE9"><span style="font-size:25px;color:green"><b>&#x2714;</b></span>&#160;<b>No-op</b>
+</td>
+<td style="text-align:left; background-color:#E9FEE9">
+</td></tr>
+<tr>
+<td style="background-color:#E9FEE9"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2670">LWG 2670</a></b>
+</td>
+<td style="background-color:#E9FEE9"><span style="font-size:25px;color:green"><b>&#x2714;</b></span>&#160;<b>No-op</b>
+</td>
+<td style="text-align:left; background-color:#E9FEE9"> <code>system_complete</code> isn't a thing anymore.
+</td></tr>
+<tr>
+<td style="background-color:#FDEDED"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2426">LWG 2426</a></b>
+</td>
+<td style="background-color:#FDEDED"><span style="font-size:25px;color:red"><b>&#x2718;</b></span>&#160;<b>Not done</b>
+</td>
+<td style="text-align:left; background-color:#FDEDED">
+</td></tr>
+<tr>
+<td style="background-color:#FDEDED"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2309">LWG 2309</a></b>
+</td>
+<td style="background-color:#FDEDED"><span style="font-size:25px;color:red"><b>&#x2718;</b></span>&#160;<b>Not done</b>
+</td>
+<td style="text-align:left; background-color:#FDEDED">
+</td></tr>
+<tr>
+<td style="background-color:#FDEDED"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2710">LWG 2710</a></b>
+</td>
+<td style="background-color:#FDEDED"><span style="font-size:25px;color:red"><b>&#x2718;</b></span>&#160;<b>Not done</b>
+</td>
+<td style="text-align:left; background-color:#FDEDED">
+</td></tr>
+<tr>
+<td style="background-color:#FDEDED"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2685">LWG 2685</a></b>
+</td>
+<td style="background-color:#FDEDED"><span style="font-size:25px;color:red"><b>&#x2718;</b></span>&#160;<b>Not done</b>
+</td>
+<td style="text-align:left; background-color:#FDEDED">
+</td></tr>
+<tr>
+<td style="background-color:#E9FEE9"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2698">LWG 2698</a></b>
+</td>
+<td style="background-color:#E9FEE9"><span style="font-size:25px;color:green"><b>&#x2714;</b></span>&#160;<b>Done</b>
+</td>
+<td style="text-align:left; background-color:#E9FEE9">
+</td></tr>
+<tr>
+<td style="background-color:#E9FEE9"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2596">LWG 2596</a></b>
+</td>
+<td style="background-color:#E9FEE9"><span style="font-size:25px;color:green"><b>&#x2714;</b></span>&#160;<b>Done</b>
+</td>
+<td style="text-align:left; background-color:#E9FEE9">
+</td></tr>
+<tr>
+<td style="background-color:#E9FEE9"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2684">LWG 2684</a></b>
+</td>
+<td style="background-color:#E9FEE9"><span style="font-size:25px;color:green"><b>&#x2714;</b></span>&#160;<b>Done</b>
+</td>
+<td style="text-align:left; background-color:#E9FEE9">
+</td></tr>
+<tr>
+<td style="background-color:#FDEDED"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2689">LWG 2689</a></b>
+</td>
+<td style="background-color:#FDEDED"><span style="font-size:25px;color:red"><b>&#x2718;</b></span>&#160;<b>Not done</b>
+</td>
+<td style="text-align:left; background-color:#FDEDED">
+</td></tr>
+<tr>
+<td style="background-color:#E9FEE9"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2707">LWG 2707</a></b>
+</td>
+<td style="background-color:#E9FEE9"><span style="font-size:25px;color:green"><b>&#x2714;</b></span>&#160;<b>Done</b>
+</td>
+<td style="text-align:left; background-color:#E9FEE9">
+</td></tr>
+<tr>
+<td style="background-color:#E9FEE9"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2674">LWG 2674</a></b>
+</td>
+<td style="background-color:#E9FEE9"><span style="font-size:25px;color:green"><b>&#x2714;</b></span>&#160;<b>Done</b>
+</td>
+<td style="text-align:left; background-color:#E9FEE9">
+</td></tr>
+<tr>
+<td style="background-color:#E9FEE9"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2706">LWG 2706</a></b>
+</td>
+<td style="background-color:#E9FEE9"><span style="font-size:25px;color:green"><b>&#x2714;</b></span>&#160;<b>Done</b>
+</td>
+<td style="text-align:left; background-color:#E9FEE9">
+</td></tr>
+<tr>
+<td style="background-color:#E9FEE9"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2683">LWG 2683</a></b>
+</td>
+<td style="background-color:#E9FEE9"><span style="font-size:25px;color:green"><b>&#x2714;</b></span>&#160;<b>Done</b>
+</td>
+<td style="text-align:left; background-color:#E9FEE9">
+</td></tr>
+<tr>
+<td style="background-color:#FDEDED"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2555">LWG 2555</a></b>
+</td>
+<td style="background-color:#FDEDED"><span style="font-size:25px;color:red"><b>&#x2718;</b></span>&#160;<b>Not done</b>
+</td>
+<td style="text-align:left; background-color:#FDEDED">
+</td></tr>
+<tr>
+<td style="background-color:#FDEDED"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2451">LWG 2451</a></b>
+</td>
+<td style="background-color:#FDEDED"><span style="font-size:25px;color:red"><b>&#x2718;</b></span>&#160;<b>Not done</b>
+</td>
+<td style="text-align:left; background-color:#FDEDED">
+</td></tr>
+<tr>
+<td style="background-color:#FDEDED"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2573">LWG 2573</a></b>
+</td>
+<td style="background-color:#FDEDED"><span style="font-size:25px;color:red"><b>&#x2718;</b></span>&#160;<b>Not done</b>
+</td>
+<td style="text-align:left; background-color:#FDEDED">
+</td></tr>
+<tr>
+<td style="background-color:#FDEDED"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2551">LWG 2551</a></b>
+</td>
+<td style="background-color:#FDEDED"><span style="font-size:25px;color:red"><b>&#x2718;</b></span>&#160;<b>Not done</b>
+</td>
+<td style="text-align:left; background-color:#FDEDED">
+</td></tr>
+<tr>
+<td style="background-color:#FDEDED"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2516">LWG 2516</a></b>
+</td>
+<td style="background-color:#FDEDED"><span style="font-size:25px;color:red"><b>&#x2718;</b></span>&#160;<b>Not done</b>
+</td>
+<td style="text-align:left; background-color:#FDEDED">
+</td></tr>
+<tr>
+<td style="background-color:#FDEDED"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2509">LWG 2509</a></b>
+</td>
+<td style="background-color:#FDEDED"><span style="font-size:25px;color:red"><b>&#x2718;</b></span>&#160;<b>Not done</b>
+</td>
+<td style="text-align:left; background-color:#FDEDED">
+</td></tr>
+<tr>
+<td style="background-color:#FDEDED"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2704">LWG 2704</a></b>
+</td>
+<td style="background-color:#FDEDED"><span style="font-size:25px;color:red"><b>&#x2718;</b></span>&#160;<b>Not done</b>
+</td>
+<td style="text-align:left; background-color:#FDEDED">
+</td></tr>
+<tr>
+<td style="background-color:#FDEDED"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2711">LWG 2711</a></b>
+</td>
+<td style="background-color:#FDEDED"><span style="font-size:25px;color:red"><b>&#x2718;</b></span>&#160;<b>Not done</b>
+</td>
+<td style="text-align:left; background-color:#FDEDED"> CONSTRAIN THEM ALL!!!!
+</td></tr>
+<tr>
+<td style="background-color:#E9FEE9"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2725">LWG 2725</a></b>
+</td>
+<td style="background-color:#E9FEE9"><span style="font-size:25px;color:green"><b>&#x2714;</b></span>&#160;<b>Done</b>
+</td>
+<td style="text-align:left; background-color:#E9FEE9">
+</td></tr>
+<tr>
+<td style="background-color:#E9FEE9"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2422">LWG 2422</a></b>
+</td>
+<td style="background-color:#E9FEE9"><span style="font-size:25px;color:green"><b>&#x2714;</b></span>&#160;<b>Done</b>
+</td>
+<td style="text-align:left; background-color:#E9FEE9">
+</td></tr>
+<tr>
+<td style="background-color:#E9FEE9"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2709">LWG 2709</a></b>
+</td>
+<td style="background-color:#E9FEE9"><span style="font-size:25px;color:green"><b>&#x2714;</b></span>&#160;<b>Done</b>
+</td>
+<td style="text-align:left; background-color:#E9FEE9">
+</td></tr>
+<tr>
+<td style="background-color:#E9FEE9"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2716">LWG 2716</a></b>
+</td>
+<td style="background-color:#E9FEE9"><span style="font-size:25px;color:green"><b>&#x2714;</b></span>&#160;<b>Done</b>
+</td>
+<td style="text-align:left; background-color:#E9FEE9">
+</td></tr>
+<tr>
+<td style="background-color:#FDEDED"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2718">LWG 2718</a></b>
+</td>
+<td style="background-color:#FDEDED"><span style="font-size:25px;color:red"><b>&#x2718;</b></span>&#160;<b>Not done</b>
+</td>
+<td style="text-align:left; background-color:#FDEDED">
+</td></tr>
+<tr>
+<td style="background-color:#E9FEE9"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2719">LWG 2719</a></b>
+</td>
+<td style="background-color:#E9FEE9"><span style="font-size:25px;color:green"><b>&#x2714;</b></span>&#160;<b>No-op</b>
+</td>
+<td style="text-align:left; background-color:#E9FEE9"> superseded by later changes
+</td></tr>
+<tr>
+<td style="background-color:#E9FEE9"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2720">LWG 2720</a></b>
+</td>
+<td style="background-color:#E9FEE9"><span style="font-size:25px;color:green"><b>&#x2714;</b></span>&#160;<b>No-op</b>
+</td>
+<td style="text-align:left; background-color:#E9FEE9"> superseded by later changes
+</td></tr>
+<tr>
+<td style="background-color:#E9FEE9"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2721">LWG 2721</a></b>
+</td>
+<td style="background-color:#E9FEE9"><span style="font-size:25px;color:green"><b>&#x2714;</b></span>&#160;<b>No-op</b>
+</td>
+<td style="text-align:left; background-color:#E9FEE9">
+</td></tr>
+<tr>
+<td style="background-color:#E9FEE9"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2723">LWG 2723</a></b>
+</td>
+<td style="background-color:#E9FEE9"><span style="font-size:25px;color:green"><b>&#x2714;</b></span>&#160;<b>Done</b>
+</td>
+<td style="text-align:left; background-color:#E9FEE9">
+</td></tr>
+<tr>
+<td style="background-color:#FDEDED"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2726">LWG 2726</a></b>
+</td>
+<td style="background-color:#FDEDED"><span style="font-size:25px;color:red"><b>&#x2718;</b></span>&#160;<b>Not done</b>
+</td>
+<td style="text-align:left; background-color:#FDEDED"> This is about the most annoying specification ever.
+</td></tr>
+<tr>
+<td style="background-color:#E9FEE9"><b><a rel="nofollow" class="external text" href="https://timsong-cpp.github.io/lwg-issues/2728">LWG 2728</a></b>
+</td>
+<td style="background-color:#E9FEE9"><span style="font-size:25px;color:green"><b>&#x2714;</b></span>&#160;<b>Done</b>
+</td>
+<td style="text-align:left; background-color:#E9FEE9">
+</td></tr></table>
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 2951/1000000
+Preprocessor generated node count: 3250/1000000
+Post‐expand include size: 23220/2097152 bytes
+Template argument size: 1580/2097152 bytes
+Highest expansion depth: 7/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:16503-0!*!0!*!*!*!* and timestamp 20170725211329 -->
+</div>                    <!-- /bodycontent -->
+                                        <!-- printfooter -->
+                    <div class="printfooter">
+                    Retrieved from "<a href="http://en.cppreference.com/mwiki/index.php?title=User:T._Canens/Oulu_LWG_issues&amp;oldid=94783">http://en.cppreference.com/mwiki/index.php?title=User:T._Canens/Oulu_LWG_issues&amp;oldid=94783</a>"                    </div>
+                    <!-- /printfooter -->
+                                                            <!-- catlinks -->
+                    <div id='catlinks' class='catlinks catlinks-allhidden'></div>                    <!-- /catlinks -->
+                                                            <div class="visualClear"></div>
+                    <!-- debughtml -->
+                                        <!-- /debughtml -->
+                </div>
+                <!-- /bodyContent -->
+            </div>
+        </div>
+        <!-- /content -->
+        <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul>
+<li id="n-Support-us"><a href="http://www.cppreference.com/support" rel="nofollow">Support us</a></li><li id="n-recentchanges"><a href="../Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-FAQ"><a href="../Cppreference:FAQ">FAQ</a></li><li id="n-Offline-version"><a href="../Cppreference:Archives">Offline version</a></li>            </ul>
+        </div>
+                        <div id="cpp-toolbox">
+            <h5><span>Toolbox</span><a href="Oulu_LWG_issues#"></a></h5>
+            <ul>
+<li id="t-whatlinkshere"><a href="http://en.cppreference.com/w/Special:WhatLinksHere/User:T._Canens/Oulu_LWG_issues" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="http://en.cppreference.com/w/Special:RecentChangesLinked/User:T._Canens/Oulu_LWG_issues" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-contributions"><a href="../Special:Contributions/T._Canens" title="A list of contributions of this user">User contributions</a></li><li id="t-log"><a href="../Special:Log/T._Canens">Logs</a></li><li id="t-upload"><a href="http://upload.cppreference.com/w/Special:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="../Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="http://en.cppreference.com/mwiki/index.php?title=User:T._Canens/Oulu_LWG_issues&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="http://en.cppreference.com/mwiki/index.php?title=User:T._Canens/Oulu_LWG_issues&amp;oldid=94783" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="http://en.cppreference.com/mwiki/index.php?title=User:T._Canens/Oulu_LWG_issues&amp;action=info">Page information</a></li>            </ul>
+        </div>
+                            <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 25 July 2017, at 14:13.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 16 times.</li>
+                            </ul>
+                    <ul id="footer-places">
+                                    <li id="footer-places-privacy"><a href="../Cppreference:Privacy_policy" title="Cppreference:Privacy policy">Privacy policy</a></li>
+                                    <li id="footer-places-about"><a href="../Cppreference:FAQ" title="Cppreference:About">About cppreference.com</a></li>
+                                    <li id="footer-places-disclaimer"><a href="../Cppreference:General_disclaimer" title="Cppreference:General disclaimer">Disclaimers</a></li>
+                            </ul>
+                                    <ul id="footer-icons" class="noprint">
+                                    <li id="footer-poweredbyico">
+                                            <a href="http://www.mediawiki.org/"><img src="http://en.cppreference.com/mwiki/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>                                            <a href="http://qbnz.com/highlighter/"><img src="http://upload.cppreference.com/mwiki/images/2/2b/powered_by_geshi_88x31.png" alt="Powered by GeSHi" height="31" width="88" /></a>                                            <a href="http://www.tigertech.net/referral/cppreference.com"><img src="http://upload.cppreference.com/mwiki/images/9/94/powered_by_tigertech_88x31.png" alt="Hosted by Tiger Technologies" height="31" width="88" /></a>                                        </li>
+                                </ul>
+                        <div style="clear:both">
+            </div>
+            </div>
+        </div>
+        <!-- /footer -->
+        <script>if(window.mw){
+mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
+}</script>
+<script src="http://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=skins.cppreference2&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler","ext.gadget.MathJax"], null, true);
+}</script>
+<script src="http://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-2828341-1']);
+_gaq.push(['_setDomainName', 'cppreference.com']);
+_gaq.push(['_trackPageview']);
+</script><!-- Served in 0.048 secs. -->
+	</body>
+<!-- Cached 20170726005903 -->
+</html>

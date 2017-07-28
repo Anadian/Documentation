@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<title>Talk:c/string/multibyte/c16rtomb - cppreference.com</title>
+<meta charset="UTF-8" />
+<meta name="generator" content="MediaWiki 1.21.2" />
+<link rel="alternate" type="application/x-wiki" title="Edit" href="http://en.cppreference.com/mwiki/index.php?title=Talk:c/string/multibyte/c16rtomb&amp;action=edit" />
+<link rel="edit" title="Edit" href="http://en.cppreference.com/mwiki/index.php?title=Talk:c/string/multibyte/c16rtomb&amp;action=edit" />
+<link rel="shortcut icon" href="http://en.cppreference.com/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://en.cppreference.com/mwiki/opensearch_desc.php" title="cppreference.com (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="http://en.cppreference.com/mwiki/api.php?action=rsd" />
+<link rel="alternate" type="application/atom+xml" title="cppreference.com Atom feed" href="http://en.cppreference.com/mwiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="http://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.ColiruCompiler%7Cext.rtlcite%7Cmediawiki.legacy.commonPrint%2Cshared%7Cskins.cppreference2&amp;only=styles&amp;skin=cppreference2&amp;*" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="http://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=cppreference2&amp;*" />
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
+
+<script src="http://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"Talk","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":1,"wgPageName":"Talk:c/string/multibyte/c16rtomb","wgTitle":"c/string/multibyte/c16rtomb","wgCurRevisionId":92374,"wgArticleId":15867,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Talk:c/string/multibyte/c16rtomb","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
+"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:ca03345b1e2c4d90a25d968753a73b92 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+<style type="text/css">/*<![CDATA[*/
+.source-c {line-height: normal;}
+.source-c li, .source-c pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for c
+ * CSS class: source-c, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.c.source-c .de1, .c.source-c .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.c.source-c  {font-family:monospace;}
+.c.source-c .imp {font-weight: bold; color: red;}
+.c.source-c li, .c.source-c .li1 {font-weight: normal; vertical-align:top;}
+.c.source-c .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.c.source-c .li2 {font-weight: bold; vertical-align:top;}
+.c.source-c .kw1 {color: #0000dd;}
+.c.source-c .kw2 {color: #0000ff;}
+.c.source-c .kw3 {color: #0000dd;}
+.c.source-c .kw4 {color: #0000ff;}
+.c.source-c .co1 {color: #909090;}
+.c.source-c .co2 {color: #339900;}
+.c.source-c .coMULTI {color: #ff0000; font-style: italic;}
+.c.source-c .es0 {color: #008000; font-weight: bold;}
+.c.source-c .es1 {color: #008000; font-weight: bold;}
+.c.source-c .es2 {color: #008000; font-weight: bold;}
+.c.source-c .es3 {color: #008000; font-weight: bold;}
+.c.source-c .es4 {color: #008000; font-weight: bold;}
+.c.source-c .es5 {color: #008000; font-weight: bold;}
+.c.source-c .br0 {color: #008000;}
+.c.source-c .sy0 {color: #008000;}
+.c.source-c .sy1 {color: #000080;}
+.c.source-c .sy2 {color: #000040;}
+.c.source-c .sy3 {color: #000040;}
+.c.source-c .sy4 {color: #008080;}
+.c.source-c .st0 {color: #008000;}
+.c.source-c .nu0 {color: #000080;}
+.c.source-c .nu6 {color:#000080;}
+.c.source-c .nu8 {color:#000080;}
+.c.source-c .nu12 {color:#000080;}
+.c.source-c .nu16 {color:#000080;}
+.c.source-c .nu17 {color:#000080;}
+.c.source-c .nu18 {color:#000080;}
+.c.source-c .nu19 {color:#000080;}
+.c.source-c .ln-xtra, .c.source-c li.ln-xtra, .c.source-c div.ln-xtra {background-color: #ffc;}
+.c.source-c span.xtra { display:block; }
+
+/*]]>*/
+</style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-1 ns-talk page-Talk_c_string_multibyte_c16rtomb skin-cppreference2 action-view">
+        <!-- header -->
+        <div id="mw-head" class="noprint">
+            <div id="cpp-head-first-base">
+                <div id="cpp-head-first">
+                    <h5><a href="http://en.cppreference.com/">
+                        cppreference.com                        </a></h5>
+                    <div id="cpp-head-search">
+                        
+<!-- 0 -->
+<div id="p-search">
+	<h5><label for="searchInput">Search</label></h5>
+	<form action="http://en.cppreference.com/mwiki/index.php" id="searchform">
+		<input type='hidden' name="title" value="Special:Search"/>
+				<div id="simpleSearch">
+						<input name="search" title="Search cppreference.com [f]" accesskey="f" id="searchInput" />						<button type="submit" name="button" title="Search the pages for this text" id="searchButton"><img src="http://en.cppreference.com/mwiki/skins/cppreference2/images/search-ltr.png?303" alt="Search" /></button>					</div>
+			</form>
+</div>
+
+<!-- /0 -->
+                    </div>
+                    <div id="cpp-head-personal">
+                        
+<!-- 0 -->
+<div id="p-personal" class="">
+<span id="pt-createaccount"><a href="http://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=Talk%3Ac%2Fstring%2Fmultibyte%2Fc16rtomb&amp;type=signup">Create account</a></span>	<div class="menu">
+        <ul>
+<li id="pt-login"><a href="http://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=Talk%3Ac%2Fstring%2Fmultibyte%2Fc16rtomb" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>        </ul>
+    </div>
+</div>
+
+<!-- /0 -->
+                    </div>
+
+                </div>
+            </div>
+            <div id="cpp-head-second-base">
+                <div id="cpp-head-second">
+                    <div id="cpp-head-tools-left">
+                        
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>Namespaces</h5>
+	<ul>
+					<li  id="ca-nstab-main"><span><a href="../../../c/string/multibyte/c16rtomb"  title="View the content page [c]" accesskey="c">Page</a></span></li>
+					<li  id="ca-talk" class="selected"><span><a href="c16rtomb"  title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+		<h5><span>Variants</span><a href="c16rtomb#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+                    </div>
+                    <div id="cpp-head-tools-right">
+                        
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>Views</h5>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="c16rtomb" >View</a></span></li>
+					<li id="ca-edit" class=" istalk"><span><a href="http://en.cppreference.com/mwiki/index.php?title=Talk:c/string/multibyte/c16rtomb&amp;action=edit"  title="You can edit this page. Please use the preview button before saving [e]" accesskey="e">Edit</a></span></li>
+					<li id="ca-addsection" class="collapsible"><span><a href="http://en.cppreference.com/mwiki/index.php?title=Talk:c/string/multibyte/c16rtomb&amp;action=edit&amp;section=new"  title="Start a new section [+]" accesskey="+">+</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="http://en.cppreference.com/mwiki/index.php?title=Talk:c/string/multibyte/c16rtomb&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">History</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>Actions</span><a href="c16rtomb#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /header -->
+        <!-- content -->
+        <div id="cpp-content-base">
+            <div id="content">
+                <a id="top"></a>
+                <div id="mw-js-message" style="display:none;"></div>
+                                <!-- firstHeading -->
+                <h1 id="firstHeading" class="firstHeading">Talk:c/string/multibyte/c16rtomb</h1>
+                <!-- /firstHeading -->
+                <!-- bodyContent -->
+                <div id="bodyContent">
+                                        <!-- tagline -->
+                    <div id="siteSub">From cppreference.com</div>
+                    <!-- /tagline -->
+                                        <!-- subtitle -->
+                    <div id="contentSub"><span class="subpages">&lt; <a href="../../../Talk:c.1" title="Talk:c">Talk:c</a>&lrm; | <a href="../multibyte" title="Talk:c/string/multibyte">string/multibyte</a></span></div>
+                    <!-- /subtitle -->
+                                                            <!-- bodycontent -->
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="c16rtomb#Example"><span class="tocnumber">1</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="c16rtomb#using_the_term_.22wide.22"><span class="tocnumber">2</span> <span class="toctext">using the term "wide"</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="c16rtomb#hiding_0xd83c"><span class="tocnumber">3</span> <span class="toctext">hiding 0xd83c</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="c16rtomb#Scope_of_object_named_state"><span class="tocnumber">4</span> <span class="toctext">Scope of object named state</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="c16rtomb#Parameter_ps"><span class="tocnumber">5</span> <span class="toctext">Parameter ps</span></a></li>
+</ul>
+</td></tr></table>
+<h3><span class="editsection">[<a href="http://en.cppreference.com/mwiki/index.php?title=Talk:c/string/multibyte/c16rtomb&amp;action=edit&amp;section=1" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
+<p>The example mentions "UCS-2 code units" and the Notes state that "this function can only convert single-unit 16-bit encoding, meaning it cannot convert UTF-16..." On the other hand, an earlier sentence on this page says "If the macro __STDC_UTF_16__ is defined, the 16-bit encoding used by this function is UTF-16," suggests that the function can convert UTF-16. And C11:6.10.8.2 mentions "values of type char16_t are UTF-16 encoded." C11:6.10.8.2 does not say UCS-2. I admit that I tried to convert the Gothic hwair character ([D800 DF48] in UTF-16) and got nowhere, but the two pairs of sentences seem to me to contradict each other. Any thoughts? <a href="http://en.cppreference.com/mwiki/index.php?title=User:Newatthis&amp;action=edit&amp;redlink=1" class="new" title="User:Newatthis (page does not exist)">Newatthis</a> (<a href="../../../User_talk:Newatthis" title="User talk:Newatthis">talk</a>) 07:17, 18 January 2017 (PST)
+</p>
+<dl><dd>it's a known defect in C11: Report: <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n2059.htm#dr_488">DR488</a> Fix: <a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n2040.htm">n2040</a>. Since UTF-16 was the intent of this function, I think it's worth writing it up for UTF-16 with a note and with an example that can be used to test available implementations. --<a href="../../../User:Cubbi.2" title="User:Cubbi">Cubbi</a> (<a href="../../../User_talk:Cubbi" title="User talk:Cubbi">talk</a>) 08:09, 18 January 2017 (PST)
+<dl><dd> Thanks. I'll read the materials and then suggest an example. 08:41, 18 January 2017 (PST)
+</dd><dd> I think I understand now. In n1570, functions <span class="t-c"><span class="mw-geshi c source-c"><a href="../../../c/string/multibyte/c16rtomb"><span class="kw589">c16rtomb</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span></span></span> and <span class="t-c"><span class="mw-geshi c source-c"><a href="../../../c/string/multibyte/mbrtoc16"><span class="kw588">mbrtoc16</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span></span></span> are not inverses, but with the suggested fix n2040 they are, or will be in the future. Also, you wrote your example to work when the fix is in. <a href="http://en.cppreference.com/mwiki/index.php?title=User:Newatthis&amp;action=edit&amp;redlink=1" class="new" title="User:Newatthis (page does not exist)">Newatthis</a> (<a href="../../../User_talk:Newatthis" title="User talk:Newatthis">talk</a>) 02:21, 1 February 2017 (PST)
+</dd><dd> I continue to study the fix n2040. If, as you say, "it's worth writing it up for UTF-16 with a note," shouldn't the second parameter of the function prototype at the top of the page be a pointer, as in <span class="t-c"><span class="mw-geshi c source-c">char16_t <span class="sy2">*</span>pc16</span></span>, to accommodate the variable length of UTF-16 encoding? <a href="http://en.cppreference.com/mwiki/index.php?title=User:Newatthis&amp;action=edit&amp;redlink=1" class="new" title="User:Newatthis (page does not exist)">Newatthis</a> (<a href="../../../User_talk:Newatthis" title="User talk:Newatthis">talk</a>) 03:24, 1 February 2017 (PST)
+<dl><dd> no, after the fix/clarification made by n2040, it still takes a char16_t by value. The state transitions are recorded in the mbstate_t parameter. --<a href="../../../User:Cubbi.2" title="User:Cubbi">Cubbi</a> (<a href="../../../User_talk:Cubbi" title="User talk:Cubbi">talk</a>) 05:55, 1 February 2017 (PST)
+</dd></dl>
+</dd></dl>
+</dd></dl>
+<h3><span class="editsection">[<a href="http://en.cppreference.com/mwiki/index.php?title=Talk:c/string/multibyte/c16rtomb&amp;action=edit&amp;section=2" title="Edit section: using the term &quot;wide&quot;">edit</a>]</span> <span class="mw-headline" id="using_the_term_.22wide.22">using the term "wide"</span></h3>
+<p>I reread DR488 and the fix. DR488 emphasizes the confusion of the use of the term "wide" as in "wide character" since "wide character" is defined in C11:3.7.3. The fix completely drops the word "wide." I would like to delete the word "wide" from the <span class="t-c"><span class="mw-geshi c source-c"><a href="../../../c/string/multibyte/c16rtomb"><span class="kw589">c16rtomb</span></a><span class="br0">&#40;</span><span class="br0">&#41;</span></span></span>'s page. Any objections? <a href="http://en.cppreference.com/mwiki/index.php?title=User:Newatthis&amp;action=edit&amp;redlink=1" class="new" title="User:Newatthis (page does not exist)">Newatthis</a> (<a href="../../../User_talk:Newatthis" title="User talk:Newatthis">talk</a>) 05:31, 3 February 2017 (PST)
+</p>
+<dl><dd> fine, but what is it getting replaced by? This page uses the word 'wide' twice right now:
+<ul><li> "If c16 is the null wide character u'\0'" - here it could say "16-bit wide" to match <a href="../../../c/language/character_constant" title="c/language/character constant">c/language/character_constant</a>
+</li><li> "the final code unit in a 16-bit representation of a wide character" - here I suppose it could just say "a character" or even "a code point". --<a href="../../../User:Cubbi.2" title="User:Cubbi">Cubbi</a> (<a href="../../../User_talk:Cubbi" title="User talk:Cubbi">talk</a>) 06:11, 3 February 2017 (PST)
+</li></ul>
+<dl><dd> The third occurrence of "wide character" appears in the See Also subsection. What would replace "wide?" Here, "16-bit." On the page for <span class="t-c"><span class="mw-geshi c source-c">c32tomb<span class="br0">&#40;</span><span class="br0">&#41;</span></span></span>, "32-bit." The terms "16-bit character" and "32-bit character" appear in 7.28/2. True, my suggested replacements do not appear formally defined in <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">3</span>. <span class="me1">Terms</span>, definitions, and symbols</span></span>, but they conform to the suggested replacement text appearing in the fix n2040, which does not use "wide" at all. On the other hand, <span class="t-c"><span class="mw-geshi c source-c">6.4.4.4<span class="sy2">/</span><span class="nu0">11</span></span></span> seems to extend the definition of "wide character" in <span class="t-c"><span class="mw-geshi c source-c">3.7.3</span></span> to include types char16_t or char32_t. And "16-bit wide character" might prompt a reader to think about the 16-bit <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">wchar_t</span></span></span> of Windows. I am still thinking about this. <a href="http://en.cppreference.com/mwiki/index.php?title=User:Newatthis&amp;action=edit&amp;redlink=1" class="new" title="User:Newatthis (page does not exist)">Newatthis</a> (<a href="../../../User_talk:Newatthis" title="User talk:Newatthis">talk</a>) 03:02, 4 February 2017 (PST)
+<dl><dd> my point in saying "to match <a href="../../../c/language/character_constant" title="c/language/character constant">c/language/character_constant</a>" (which is, basically, our version of 6.4.4.4) is to point out that it would require careful editing of more than just this page, since it would introduce something that disagrees with the standard site-wide - the standard calls all of u/U/L characters and strings "wide" all over the place despite the new wording of c16rtomb avoiding the word. To another person reading the rest of the standard (or perhaps even to the editor that merges n2040 into the standard), not using 'wide' when talking about c16 would be clearly wrong in terminology. --<a href="../../../User:Cubbi.2" title="User:Cubbi">Cubbi</a> (<a href="../../../User_talk:Cubbi" title="User talk:Cubbi">talk</a>) 04:20, 4 February 2017 (PST)
+<dl><dd> Yes, use of the word "wide" in C11:6.4.4.4/11 clearly carries a lot of weight. OK, in a minute I shall insert "wide" in two places, and you can decide whether my insertions are appropriate. <a href="http://en.cppreference.com/mwiki/index.php?title=User:Newatthis&amp;action=edit&amp;redlink=1" class="new" title="User:Newatthis (page does not exist)">Newatthis</a> (<a href="../../../User_talk:Newatthis" title="User talk:Newatthis">talk</a>) 06:40, 4 February 2017 (PST)
+</dd></dl>
+</dd></dl>
+</dd></dl>
+</dd></dl>
+<h3><span class="editsection">[<a href="http://en.cppreference.com/mwiki/index.php?title=Talk:c/string/multibyte/c16rtomb&amp;action=edit&amp;section=3" title="Edit section: hiding 0xd83c">edit</a>]</span> <span class="mw-headline" id="hiding_0xd83c">hiding 0xd83c</span></h3>
+<p>I hid "the fact that the first 0xd83c should be swallowed with no output" to emphasize that the code point's representation of [ 0xd83c 0xdf4c ] was converted to the code point's representation of [ 0xf0 0x9f 0x8d 0x8c ] and to show how to use the return value of zero. This function is about converting a code point from one representation to another representation. <a href="http://en.cppreference.com/mwiki/index.php?title=User:Newatthis&amp;action=edit&amp;redlink=1" class="new" title="User:Newatthis (page does not exist)">Newatthis</a> (<a href="../../../User_talk:Newatthis" title="User talk:Newatthis">talk</a>) 02:43, 5 February 2017 (PST)
+</p>
+<dl><dd> it comes down to what the goal of the example is: practical use case (take a string, produce a string, all individual call details omitted as already explained in full detail on the same page - this kind of examples people copy into real code) or mechanics of a function call (take a char16_t, produce zero or more chars, a return code, and a state update - this kind of examples people copy into bug reports). Showing only some individual calls and treating only some of a char16_t string as a string, to me, appears to miss both goals: it's not something you'd use as a programmer and it's not showing what happens in the difficult case. --<a href="../../../User:Cubbi.2" title="User:Cubbi">Cubbi</a> (<a href="../../../User_talk:Cubbi" title="User talk:Cubbi">talk</a>) 07:38, 5 February 2017 (PST)
+<dl><dd> Thanks. Your explanation is helpful. <a href="http://en.cppreference.com/mwiki/index.php?title=User:Newatthis&amp;action=edit&amp;redlink=1" class="new" title="User:Newatthis (page does not exist)">Newatthis</a> (<a href="../../../User_talk:Newatthis" title="User talk:Newatthis">talk</a>) 02:33, 13 February 2017 (PST)
+</dd><dd> Since your preference for examples is the "practical use case (take a string, produce a string," shouldn't the example here produce a string? Currently, the example yields only an array of chars which holds the encoding of one multibyte character. If you agree, I would like to make an attempt at modifying the example. <a href="http://en.cppreference.com/mwiki/index.php?title=User:Newatthis&amp;action=edit&amp;redlink=1" class="new" title="User:Newatthis (page does not exist)">Newatthis</a> (<a href="../../../User_talk:Newatthis" title="User talk:Newatthis">talk</a>) 05:21, 15 February 2017 (PST)
+<dl><dd> That was not my preference, if it were, that would have been the example on this page. Let's see if I can fix the one you wrote... --<a href="../../../User:Cubbi.2" title="User:Cubbi">Cubbi</a> (<a href="../../../User_talk:Cubbi" title="User talk:Cubbi">talk</a>) 06:07, 16 February 2017 (PST)
+<dl><dd> Many thanks for fixing my inadequate example. I studied your corrections. <a href="http://en.cppreference.com/mwiki/index.php?title=User:Newatthis&amp;action=edit&amp;redlink=1" class="new" title="User:Newatthis (page does not exist)">Newatthis</a> (<a href="../../../User_talk:Newatthis" title="User talk:Newatthis">talk</a>) 06:19, 18 February 2017 (PST)
+</dd></dl>
+</dd></dl>
+</dd></dl>
+</dd></dl>
+<h3><span class="editsection">[<a href="http://en.cppreference.com/mwiki/index.php?title=Talk:c/string/multibyte/c16rtomb&amp;action=edit&amp;section=4" title="Edit section: Scope of object named state">edit</a>]</span> <span class="mw-headline" id="Scope_of_object_named_state">Scope of object named state</span></h3>
+<dl><dd>In the examples of functions c16rtomb(),etc, the scope of variable state is file scope; in the examples of functions wcrtomb(),etc, the scope of variable state is block scope. Is one choice to be preferred over the other in these examples? Is thread safety something to be considered here? I think file scope objects are shared while block scope objects are not. I am trying to understand why the examples of the two sets of function apply different scopes to variable state. <a href="http://en.cppreference.com/mwiki/index.php?title=User:Newatthis&amp;action=edit&amp;redlink=1" class="new" title="User:Newatthis (page does not exist)">Newatthis</a> (<a href="../../../User_talk:Newatthis" title="User talk:Newatthis">talk</a>) 03:50, 24 February 2017 (PST)
+</dd><dd> there is no need to complicate the examples by bringing in memset etc. --<a href="../../../User:Cubbi.2" title="User:Cubbi">Cubbi</a> (<a href="../../../User_talk:Cubbi" title="User talk:Cubbi">talk</a>) 13:53, 26 February 2017 (PST)
+<dl><dd> I mentioned the question about the scope of variable state because I had noticed that the ported examples of the restartable wide character functions used the block-scoped variable state and initialized variable state with memset(). Are those examples also unnecessarily complicated by their using memset() etc.? <a href="http://en.cppreference.com/mwiki/index.php?title=User:Newatthis&amp;action=edit&amp;redlink=1" class="new" title="User:Newatthis (page does not exist)">Newatthis</a> (<a href="../../../User_talk:Newatthis" title="User talk:Newatthis">talk</a>) 03:06, 27 February 2017 (PST)
+<dl><dd> It's not an error either way, and not essential to what the examples are about. --<a href="../../../User:Cubbi.2" title="User:Cubbi">Cubbi</a> (<a href="../../../User_talk:Cubbi" title="User talk:Cubbi">talk</a>) 05:23, 27 February 2017 (PST)
+</dd></dl>
+</dd></dl>
+</dd></dl>
+<h3><span class="editsection">[<a href="http://en.cppreference.com/mwiki/index.php?title=Talk:c/string/multibyte/c16rtomb&amp;action=edit&amp;section=5" title="Edit section: Parameter ps">edit</a>]</span> <span class="mw-headline" id="Parameter_ps">Parameter ps</span></h3>
+<p>When describing parameter ps, six functions use the subordinate clause "when interpreting the multibyte string". This clause makes sense for functions mbrtowc, mbrtoc16, and mbrtoc32; these functions read a multibyte character. On the other hand, is this clause correct for functions wcrtomb, c16rtomb (when fixed), and c32rtomb? For the latter set of three functions, shouldn't the clause read, "when interpreting the wide character string?" The latter functions read a wide character, not a multibyte character. <a href="http://en.cppreference.com/mwiki/index.php?title=User:Newatthis&amp;action=edit&amp;redlink=1" class="new" title="User:Newatthis (page does not exist)">Newatthis</a> (<a href="../../../User_talk:Newatthis" title="User talk:Newatthis">talk</a>) 03:57, 16 April 2017 (PDT)
+</p>
+<dl><dd> the latter functions read from *ps in order to determine ("interpret") the conversion state of the multibyte string. Perhaps as worded it's not immediately clear, but 'interpreting the wide string' would make it incorrect. --<a href="../../../User:Cubbi.2" title="User:Cubbi">Cubbi</a> (<a href="../../../User_talk:Cubbi" title="User talk:Cubbi">talk</a>) 07:08, 16 April 2017 (PDT)
+<dl><dd> I understand that all six functions read from *ps to determine the conversion state. But the conversion state of what? The three mbrto* functions convert a multibyte character, so *ps tracks the conversion state during the conversion of a multibyte character; the three *rtomb functions convert a wide character (wchar_t,char16_t,char32_t), so *ps tracks the conversion state during the conversion of a wide character. When c16rtomb is fixed, will it not convert from a variable-length encoding schema, namely UTF-16; moreover, will it not use *ps to track the conversion state during the conversion of the one to two UTF-16 code units in a way that is similar to the way that the mbrto* functions use *ps to track the conversion state during the conversion of the one to four UTF-8 code units? I am suggesting replacing the clause "when interpreting the multibyte string" with "when converting the multibyte character string" in the cases of the mbrto* functions and with "when converting the wide character string" in the cases of the *rtomb functions. <a href="http://en.cppreference.com/mwiki/index.php?title=User:Newatthis&amp;action=edit&amp;redlink=1" class="new" title="User:Newatthis (page does not exist)">Newatthis</a> (<a href="../../../User_talk:Newatthis" title="User talk:Newatthis">talk</a>) 04:06, 17 April 2017 (PDT)
+<dl><dd> all six functions read from *ps to determine the conversion state of the multibyte string. Three of them then read from that string, the other three then append to that string. The meaning of the bytes read and the values of the bytes written depend on the state obtained from *ps. It is not just "conversion state during the conversion of a wide character", multibyte encodings are, in general, stateful. --<a href="../../../User:Cubbi.2" title="User:Cubbi">Cubbi</a> (<a href="../../../User_talk:Cubbi" title="User talk:Cubbi">talk</a>) 06:11, 17 April 2017 (PDT)
+<dl><dd> Many thanks for your patience. I am just starting to see my misreading of ISO C on conversions. I'll read more about "appending," which I have seen described in other sources. I wish that the defect of c16rtomb were fixed so that I could compare what I am understanding about how mbrtoc16 and c16rtomb handle variable-length encoding schemas. <a href="http://en.cppreference.com/mwiki/index.php?title=User:Newatthis&amp;action=edit&amp;redlink=1" class="new" title="User:Newatthis (page does not exist)">Newatthis</a> (<a href="../../../User_talk:Newatthis" title="User talk:Newatthis">talk</a>) 08:02, 17 April 2017 (PDT)
+<dl><dd> I updated the three *rtomb functions to mention *ps in the main description. --<a href="../../../User:Cubbi.2" title="User:Cubbi">Cubbi</a> (<a href="../../../User_talk:Cubbi" title="User talk:Cubbi">talk</a>) 08:48, 17 April 2017 (PDT)
+</dd></dl>
+</dd></dl>
+</dd></dl>
+</dd></dl>
+</dd></dl>
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 242/1000000
+Preprocessor generated node count: 355/1000000
+Post‐expand include size: 1255/2097152 bytes
+Template argument size: 218/2097152 bytes
+Highest expansion depth: 6/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:15867-0!*!0!!en!*!* and timestamp 20170417154803 -->
+</div>                    <!-- /bodycontent -->
+                                        <!-- printfooter -->
+                    <div class="printfooter">
+                    Retrieved from "<a href="http://en.cppreference.com/mwiki/index.php?title=Talk:c/string/multibyte/c16rtomb&amp;oldid=92374">http://en.cppreference.com/mwiki/index.php?title=Talk:c/string/multibyte/c16rtomb&amp;oldid=92374</a>"                    </div>
+                    <!-- /printfooter -->
+                                                            <!-- catlinks -->
+                    <div id='catlinks' class='catlinks catlinks-allhidden'></div>                    <!-- /catlinks -->
+                                                            <div class="visualClear"></div>
+                    <!-- debughtml -->
+                                        <!-- /debughtml -->
+                </div>
+                <!-- /bodyContent -->
+            </div>
+        </div>
+        <!-- /content -->
+        <!-- footer -->
+        <div id="cpp-footer-base" class="noprint">
+            <div id="footer">
+                        <div id="cpp-navigation">
+            <h5>Navigation</h5>
+            <ul>
+<li id="n-Support-us"><a href="http://www.cppreference.com/support" rel="nofollow">Support us</a></li><li id="n-recentchanges"><a href="../../../Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-FAQ"><a href="../../../Cppreference:FAQ">FAQ</a></li><li id="n-Offline-version"><a href="../../../Cppreference:Archives">Offline version</a></li>            </ul>
+        </div>
+                        <div id="cpp-toolbox">
+            <h5><span>Toolbox</span><a href="c16rtomb#"></a></h5>
+            <ul>
+<li id="t-whatlinkshere"><a href="../../../Special:WhatLinksHere/Talk:c/string/multibyte/c16rtomb" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="../../../Special:RecentChangesLinked/Talk:c/string/multibyte/c16rtomb" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="http://upload.cppreference.com/w/Special:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="../../../Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="http://en.cppreference.com/mwiki/index.php?title=Talk:c/string/multibyte/c16rtomb&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="http://en.cppreference.com/mwiki/index.php?title=Talk:c/string/multibyte/c16rtomb&amp;oldid=92374" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="http://en.cppreference.com/mwiki/index.php?title=Talk:c/string/multibyte/c16rtomb&amp;action=info">Page information</a></li>            </ul>
+        </div>
+                            <ul id="footer-info">
+                                    <li id="footer-info-lastmod"> This page was last modified on 17 April 2017, at 08:48.</li>
+                                    <li id="footer-info-viewcount">This page has been accessed 583 times.</li>
+                            </ul>
+                    <ul id="footer-places">
+                                    <li id="footer-places-privacy"><a href="../../../Cppreference:Privacy_policy" title="Cppreference:Privacy policy">Privacy policy</a></li>
+                                    <li id="footer-places-about"><a href="../../../Cppreference:FAQ" title="Cppreference:About">About cppreference.com</a></li>
+                                    <li id="footer-places-disclaimer"><a href="../../../Cppreference:General_disclaimer" title="Cppreference:General disclaimer">Disclaimers</a></li>
+                            </ul>
+                                    <ul id="footer-icons" class="noprint">
+                                    <li id="footer-poweredbyico">
+                                            <a href="http://www.mediawiki.org/"><img src="http://en.cppreference.com/mwiki/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>                                            <a href="http://qbnz.com/highlighter/"><img src="http://upload.cppreference.com/mwiki/images/2/2b/powered_by_geshi_88x31.png" alt="Powered by GeSHi" height="31" width="88" /></a>                                            <a href="http://www.tigertech.net/referral/cppreference.com"><img src="http://upload.cppreference.com/mwiki/images/9/94/powered_by_tigertech_88x31.png" alt="Hosted by Tiger Technologies" height="31" width="88" /></a>                                        </li>
+                                </ul>
+                        <div style="clear:both">
+            </div>
+            </div>
+        </div>
+        <!-- /footer -->
+        <script>if(window.mw){
+mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
+}</script>
+<script src="http://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=skins.cppreference2&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.gadget.ColiruCompiler"], null, true);
+}</script>
+<script src="http://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-2828341-1']);
+_gaq.push(['_setDomainName', 'cppreference.com']);
+_gaq.push(['_trackPageview']);
+</script><!-- Served in 0.054 secs. -->
+	</body>
+<!-- Cached 20170418012212 -->
+</html>
