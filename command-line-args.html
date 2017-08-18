@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html class=" js" prefix="og: http://ogp.me/ns#" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style type="text/css">.autocomplete-container {  overflow: visible;}.autocomplete-suggestions {  border: 1px solid #999;  background: #FFF;  overflow-x: hidden;  overflow-y: auto;  cursor: default;}.autocomplete-suggestion {  padding: 2px 5px;  white-space: nowrap;  overflow: hidden;}.autocomplete-selected {  background: #F0F0F0;}.autocomplete-container strong {  font-weight: bold;}#powered-by-constructor-io {  font-size: 0.8em;  text-align:right;  background-color:rgb(255,255,192);  font-family:sans-serif;  padding: 4px 10px;  position: absolute;  border: 1px solid #999;}#constructorio-backing-node {  background-color:rgb(255,255,255);  padding: 4px 10px;  position: absolute;  border: 1px solid #FFF;}.autocomplete-suggestion-image {  float:left;  padding-right: 10px;}#autocomplete-direct-results:before {  content:'Products'}#autocomplete-search-container:before {  content:'Search Suggestions'}.autocomplete-suggestion-description {  font-size: 0.8em;  display: block;  margin-left: 10px;  line-height: 1.0em;}</style>
+  <meta charset="utf-8">
+  
+  <title>command-line-args</title>
+
+    <meta name="description" content="A mature, feature-complete library to parse command-line options.">
+    <meta property="og:description" content="A mature, feature-complete library to parse command-line options.">
+    <meta property="og:title" content="command-line-args">
+    <meta property="og:url" content="https://www.npmjs.com/package/command-line-args">
+    <meta property="og:site_name" content="npm">
+    <meta name="keywords" content="argv,parse,argument,args,option,options,parser,parsing,cli,command,line">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="https://www.npmjs.com/package/command-line-args">
+    <meta name="twitter:title" content="npm: command-line-args">
+    <meta name="twitter:description" content="A mature, feature-complete library to parse command-line options.">
+  
+  
+  <meta http-equiv="cleartype" content="on">
+  
+  <meta name="apple-mobile-web-app-capable" content="no">
+  
+  
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,initial-scale=1,user-scalable=yes">
+  
+  <meta name="x-npm:ga:id" content="UA-47041310-1">
+  <meta name="x-npm:ga:dimensions" content="{&quot;aboveChrome&quot;:&quot;dimension1&quot;,&quot;belowHeader&quot;:&quot;dimension3&quot;,&quot;packagePage&quot;:&quot;dimension2&quot;}">
+  
+  <link rel="canonical" href="https://www.npmjs.com/package/command-line-args">
+  <link rel="search" type="application/opensearchdescription+xml" href="https://www.npmjs.com/opensearch.xml" title="npm">
+
+    <link rel="stylesheet" media="all" href="command-line-args_files/index.css">
+
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <![endif]-->
+
+  <link rel="stylesheet" href="command-line-args_files/css.css">
+  
+    <script src="command-line-args_files/ec.js" async="" type="text/javascript"></script><script src="command-line-args_files/analytics.js" async=""></script><script src="command-line-args_files/index.js"></script>
+    <style>
+      .marketing {
+  margin: 0px;
+  margin-left: -10px;
+  margin-bottom: 40px;
+  padding: 0px 0px;
+  font-size: 15px;
+  font-style: normal;
+  fond-variant: normal;
+  fort-weight: normal;
+  background: rgba(0, 0, 0, 0.02);
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  letter-spacing: -0.03em;
+  line-height: 22.5px;
+  }
+  
+  .marketing a {
+  font-weight: 400;
+  text-decoration: none;
+  color: #cb3837;
+  }
+  
+  .marketing h3 {
+  display: block;
+  margin: 0;
+  padding: 20px 0 10px 0;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 22px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .marketing h3 a {
+  color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .marketing h3 a:hover {
+  color: #cb3837;
+  }
+  
+  .marketing p {
+  line-height: 22.5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  }
+  
+  .marketing p a {
+  white-space: nowrap;
+  }
+  
+  #marketing-texthed {
+  margin-left: 10px;
+  }
+    </style>
+  <link rel="apple-touch-icon" sizes="57x57" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="https://www.npmjs.com/static/images/touch-icons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://www.npmjs.com/static/images/touch-icons/favicon-230x230.png" sizes="230x230">
+  <link rel="icon" type="image/png" href="https://www.npmjs.com/static/images/touch-icons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="https://www.npmjs.com/static/images/touch-icons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="https://www.npmjs.com/static/images/touch-icons/coast-228x228.png" sizes="228x228">
+  <link rel="icon" type="image/png" href="https://www.npmjs.com/static/images/touch-icons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="https://www.npmjs.com/static/images/touch-icons/manifest.json">
+  <link rel="yandex-tableau-widget" href="https://www.npmjs.com/static/images/touch-icons/yandex-browser-manifest.json">
+  <meta property="og:image" content="https://www.npmjs.com/static/images/touch-icons/open-graph.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="msapplication-TileColor" content="#cb3837">
+  <meta name="msapplication-TileImage" content="/static/images/touch-icons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/static/images/touch-icons/browserconfig.xml">
+  <meta name="theme-color" content="#cb3837">
+
+<style type="text/css" id="iconic-responsive-css">/* Iconic Responsive Support Styles */
+.iconic-property-fill, .iconic-property-text {stroke: none !important;}
+.iconic-property-stroke {fill: none !important;}
+svg.iconic.iconic-fluid {height:100% !important;width:100% !important;}
+svg.iconic.iconic-sm:not(.iconic-size-md):not(.iconic-size-lg), svg.iconic.iconic-size-sm{width:16px;height:16px;}
+svg.iconic.iconic-md:not(.iconic-size-sm):not(.iconic-size-lg), svg.iconic.iconic-size-md{width:32px;height:32px;}
+svg.iconic.iconic-lg:not(.iconic-size-sm):not(.iconic-size-md), svg.iconic.iconic-size-lg{width:128px;height:128px;}
+svg.iconic-sm > g.iconic-md, svg.iconic-sm > g.iconic-lg, svg.iconic-md > g.iconic-sm, svg.iconic-md > g.iconic-lg, svg.iconic-lg > g.iconic-sm, svg.iconic-lg > g.iconic-md {display: none;}
+svg.iconic.iconic-icon-sm > g.iconic-lg, svg.iconic.iconic-icon-md > g.iconic-lg {display:none;}
+svg.iconic-sm:not(.iconic-icon-md):not(.iconic-icon-lg) > g.iconic-sm, svg.iconic-md.iconic-icon-sm > g.iconic-sm, svg.iconic-lg.iconic-icon-sm > g.iconic-sm {display:inline;}
+svg.iconic-md:not(.iconic-icon-sm):not(.iconic-icon-lg) > g.iconic-md, svg.iconic-sm.iconic-icon-md > g.iconic-md, svg.iconic-lg.iconic-icon-md > g.iconic-md {display:inline;}
+svg.iconic-lg:not(.iconic-icon-sm):not(.iconic-icon-md) > g.iconic-lg, svg.iconic-sm.iconic-icon-lg > g.iconic-lg, svg.iconic-md.iconic-icon-lg > g.iconic-lg {display:inline;}</style><style>.autocomplete-container, .autocomplete-suggestions, #powered-by-constructor-io { width: NaNpx !important }</style></head>
+
+<body itemscope="" itemtype="http://schema.org/WebSite" data-crumb="MrH0K4rzwOOFHBgPSyLWNecdbzm9tll9gAUWWdb28G6">
+  <meta itemprop="url" content="https://www.npmjs.com/">
+
+
+  <header class="anonymous   ">
+  <!-- logo -->
+  <div class="header-item brand-container">
+    <div class="logo-container" id="npm-logo">
+      <a href="https://www.npmjs.com/"><svg viewBox="0 0 18 7">
+	<path fill="#CB3837" d="M0,0v6h5v1h4v-1h9v-6"></path>
+	<path fill="#FFF" d="M1,1v4h2v-3h1v3h1v-4h1v5h2v-4h1v2h-1v1h2v-4h1v4h2v-3h1v3h1v-3h1v3h1v-4"></path>
+</svg></a>
+    </div>
+  </div>
+  <!-- /logo -->
+
+  <!-- search -->
+  <div class="header-item header-search-container">
+    <form class="site-search" id="npm-search" action="/search" method="get" itemprop="potentialAction" itemscope="" itemtype="http://schema.org/SearchAction">
+      <meta itemprop="target" content="https://www.npmjs.com/search?q={q}">
+      <div id="site-search-container">
+          <input autocomplete="off" name="q" id="site-search" placeholder="find packages" tabindex="1" autocorrect="off" autocapitalize="off" itemprop="query-input" type="search">
+      </div>
+      <button tabindex="2" type="submit">
+        <span class="a11y-only">Search</span>
+        <svg viewBox="0 0 34 34" fill="none" stroke="currentColor">
+    <ellipse stroke-width="3" cx="16" cy="15" rx="12" ry="12"></ellipse>
+    <path d="M26 26 l 8 8" stroke-width="3" stroke-linecap="square"></path>
+</svg>
+      </button>
+    </form>
+  </div>
+
+
+  <!-- menu 1 -->
+  <div class="header-item user-info-container">
+    <div class="user-info">
+        <ul class="user-info-salutation single">
+          <li><a href="https://www.npmjs.com/signup">sign up</a> or <a href="https://www.npmjs.com/login">log in</a></li>
+          <li><a href="https://www.npmjs.com/login"><span class="a11y-only">log in</span><svg viewBox="-2765 2857 1080 1080">
+  <path fill="#986844" d="M-1811.2 3598.5c-.1-4.3-.3-11.3-.8-20.3-.9-15.8-2.7-40.9-6.6-70.7-6.9-52.6-21.6-130.1-52.6-200.4-22.3-50.4-53.5-97.1-90.3-135.2-4.4-20.5-16.7-66.5-43.5-104.8l-5-7.2-54 35.5c-44.5-22.4-91-33.7-138.6-33.7-47.5 0-94.1 11.3-138.6 33.7l-54-35.5-5 7.2c-26.8 38.3-39 84.3-43.5 104.8-36.8 38.1-68 84.8-90.3 135.3-31.1 70.3-45.8 147.8-52.6 200.4-6.1 46.6-7.2 81.6-7.5 93.8 16.6 14 31.3 29.8 46.9 45 17.2 16.7 39.4 28.2 59.1 41.6 1.7 1.1 3.1 2.6 4.2 4.1 15.7 10.4 31 15.4 50.2 19.5 19.2 4.1 35.6 5.6 55.6 7.3 38.7 3.2 77 7.7 115.5 12.6 43.1 5.4 86.5 11.5 130 13.1 41.6 1.5 81.8-9 121.8-19.3 8.9-2.3 17.9-4.5 26.8-6.8.6-4.2 3-8.1 6.7-10.4 40.1-25 81.2-48.2 122-72 5.9-3.5 13.7-1.9 17.9 3.3 9-8.9 17.1-18.2 24.3-27.9l.2-.2.2-.2c1.7-2.6 1.8-2.7 1.5-12.6z"></path>
+  <path fill="#FFF" d="M-1808.7 3494.8c-6.9-53.2-21.8-131.7-53.4-203.2-22.3-50.5-53.5-97.5-90.3-136.1-5.5-24.4-18.2-68.2-44.5-105.7l-10.6-15.1-57.3 37.7c-44.3-21.4-90.6-32.2-137.9-32.2-47.2 0-93.6 10.8-137.9 32.2l-57.3-37.7-10.6 15.1c-26.2 37.5-39 81.2-44.5 105.7-36.7 38.5-67.9 85.5-90.3 136.1-31.6 71.4-46.5 149.9-53.4 203.2-7.5 57.7-7.6 98-7.6 99.7v6.3l3.8 5.1c26 35 62.9 64.7 109.6 88.3 36.9 18.6 80 33.6 128.3 44.4 82.2 18.5 151.8 19 159.5 19h.6c7.7 0 77.3-.5 159.5-19 48.3-10.8 91.4-25.8 128.3-44.4 46.7-23.6 83.6-53.3 109.6-88.3l3.7-5v-6.3c.4-1.8.2-42.3-7.3-99.8zm-118.3 174.3c-34.8 17.6-75.8 31.8-121.8 42.1-80.7 18.1-150.4 18.3-153.4 18.3h-.6c-2.9 0-72.7-.2-153.4-18.3-46-10.3-87-24.5-121.8-42.1-41.7-21.1-74.7-47.2-98-77.6.4-22.5 5.1-167.5 58.6-288.5 21.8-49.3 52.4-94.9 88.5-131.8l1.8-1.9.5-2.6c2.7-13.1 12.9-56.4 36.3-93.4l37.2 24.5-7.3 16.6 22.8-11.9c43.3-22.6 88.7-34.1 135-34.1s91.7 11.5 135 34.1l22.8 11.9-7.3-16.6 37.2-24.5c23.4 37 33.6 80.4 36.3 93.4l.5 2.6 1.8 1.9c36.1 36.9 66.7 82.5 88.5 131.8 53.5 121 58.2 266.1 58.6 288.5-23.2 30.4-56.1 56.5-97.8 77.6zm-163-13c0 30.1-50.4 54.4-112.5 54.4s-112.5-24.4-112.5-54.4c0-30.1 50.4-54.4 112.5-54.4s112.5 24.3 112.5 54.4zm-223.5-65.3c0 12.3-10 22.3-22.3 22.3s-22.3-10-22.3-22.3 10-22.3 22.3-22.3c12.3-.1 22.3 9.9 22.3 22.3zm267.8 0c0 12.3-10 22.3-22.3 22.3s-22.3-10-22.3-22.3 10-22.3 22.3-22.3c12.3-.1 22.3 9.9 22.3 22.3z"></path>
+</svg></a></li>
+        </ul>
+    </div> <!-- .user-info -->
+  </div>
+  <!-- /menu 1 -->
+
+  <!-- menu 2 -->
+  <div class="header-item header-nav-menu-container">
+    <a href="#" id="npm-expansions" class="npm-expansions" data-event-trigger="click" data-event-name="npm-expansions">Neonatal Penguin March</a>
+
+    <div class="nav-menu-container" role="navigation">
+      <a class="nav-toggle drop-down-menu-toggle" href="#product-navigation"><span class="a11y-only">Toggle Navigation</span>
+        <svg viewBox="0 0 44 44">
+    <rect x="4" y="12" fill="currentColor" width="36" height="2"></rect>
+    <rect x="4" y="20" fill="currentColor" width="36" height="2"></rect>
+    <rect x="4" y="28" fill="currentColor" width="36" height="2"></rect>
+</svg>
+      </a>
+
+
+      <div class="drop-down-menu-container" role="menu">
+        <nav id="product-navigation" class="product-navigation drop-down-menu">
+          <ul class="drop-down-menu-section products-list">
+            <li><a id="nav-enterprise-link" href="https://www.npmjs.com/npm/enterprise">npm Enterprise</a></li>
+            <li><a id="nav-features-link" href="https://www.npmjs.com/features" data-event-trigger="click" data-event-name="features-nav-link">features</a></li>
+            <li><a id="nav-pricing-link" href="https://www.npmjs.com/pricing">pricing</a></li>
+            <li><a id="nav-docs-link" href="https://docs.npmjs.com/">documentation</a></li>
+            <li><a id="nav-support-link" href="https://www.npmjs.com/support">support</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- /menu 2 -->
+
+
+
+</header>
+
+
+
+
+  
+
+    <div class="container content">
+      
+<div class="content-column">
+
+  <h1 class="package-name">
+    <a class="active" href="https://www.npmjs.com/package/command-line-args">command-line-args</a>
+      <i class="icon-public"></i>
+  </h1>
+
+  <form class="star">
+    <input name="name" value="command-line-args" type="hidden">
+    <input id="star-input" name="isStarred" value="true" type="checkbox">
+    <label for="star-input" class="icon-star"></label>
+      <input name="crumb" value="MrH0K4rzwOOFHBgPSyLWNecdbzm9tll9gAUWWdb28G6" type="hidden">
+  </form>
+
+  <div id="readme" class="markdown">
+      <!-- this HTML was generated using marky-markdown version 11.0.0. see an issue? file at https://github.com/npm/marky-markdown/issues. please include the version in your issue. thanks for using marky! to learn more, visit https://github.com/npm/marky-markdown.  -->
+<p><a href="https://www.npmjs.org/package/command-line-args"><img src="command-line-args_files/command-line-args_003.svg" alt="view on npm"></a>
+<a href="https://www.npmjs.org/package/command-line-args"><img src="command-line-args_files/command-line-args_002.svg" alt="npm module downloads"></a>
+<a href="https://travis-ci.org/75lb/command-line-args"><img src="command-line-args_files/command-line-args_004.svg" alt="Build Status"></a>
+<a href="https://coveralls.io/github/75lb/command-line-args?branch=master"><img src="command-line-args_files/badge.svg" alt="Coverage Status"></a>
+<a href="https://david-dm.org/75lb/command-line-args"><img src="command-line-args_files/command-line-args.svg" alt="Dependency Status"></a>
+<a href="https://github.com/feross/standard"><img src="command-line-args_files/code%2520style-standard-brightgreen.svg" alt="js-standard-style"></a>
+<a href="https://gitter.im/75lb/command-line-args?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="command-line-args_files/Join%2520Chat.svg" alt="Join the chat at https://gitter.im/75lb/command-line-args"></a></p>
+<h1 class="package-name-redundant"><a id="user-content-command-line-args" class="deep-link" href="#command-line-args" aria-hidden="true"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>command-line-args</h1>
+<p class="package-description-redundant">A mature, feature-complete library to parse command-line options.</p>
+<p><em>If your app requires a git-like command interface, consider using <a href="https://github.com/75lb/command-line-commands">command-line-commands</a>.</em></p>
+<h2><a id="user-content-synopsis" class="deep-link" href="#synopsis" aria-hidden="true"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Synopsis</h2>
+<p>You can set options using the main notation standards (getopt, 
+getopt_long, etc.). These commands are all equivalent, setting the same 
+values:</p>
+<pre><code>$ example --verbose --timeout=1000 --src one.js --src two.js
+$ example --verbose --timeout 1000 --src one.js two.js
+$ example -vt 1000 --src one.js two.js
+$ example -vt 1000 one.js two.js
+</code></pre><p>To access the values, first describe the options your app accepts (see <a href="#optiondefinition-">option definitions</a>).</p>
+<div class="highlight js"><pre class="editor editor-colors"><div class="line"><span class="source js"><span class="storage modifier js"><span>const</span></span><span>&nbsp;</span><span class="constant other js"><span>commandLineArgs</span></span><span>&nbsp;</span><span class="keyword operator assignment js"><span>=</span></span><span>&nbsp;</span><span class="meta function-call js"><span class="support function js"><span>require</span></span><span class="meta js"><span class="punctuation definition begin round js"><span>(</span></span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>command-line-args</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="punctuation definition end round js"><span>)</span></span></span></span></span></div><div class="line"><span class="source js"><span>&nbsp;</span></span></div><div class="line"><span class="source js"><span class="storage modifier js"><span>const</span></span><span>&nbsp;</span><span class="constant other js"><span>optionDefinitions</span></span><span>&nbsp;</span><span class="keyword operator assignment js"><span>=</span></span><span>&nbsp;</span><span class="meta brace square js"><span>[</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;name</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>verbose</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;alias</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>v</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;type</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="support class js"><span>Boolean</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>}</span></span><span class="meta delimiter object comma js"><span>,</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;name</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>src</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;type</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="support class js"><span>String</span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;multiple</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="constant language boolean true js"><span>true</span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;defaultOption</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="constant language boolean true js"><span>true</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>}</span></span><span class="meta delimiter object comma js"><span>,</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;name</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>timeout</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;alias</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>t</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;type</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="support class js"><span>Number</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>}</span></span></span></div><div class="line"><span class="source js"><span class="meta brace square js"><span>]</span></span></span></div></pre></div>
+<p>The <a href="#optiontype--function"><code>type</code></a> property is a setter function (the value supplied is passed through this), giving you full control over the value received.</p>
+<p>Next, parse the options using <a href="#commandlineargsdefinitions-argv--object-">commandLineArgs()</a>:</p>
+<div class="highlight js"><pre class="editor editor-colors"><div class="line"><span class="source js"><span class="storage modifier js"><span>const</span></span><span>&nbsp;</span><span class="constant other js"><span>options</span></span><span>&nbsp;</span><span class="keyword operator assignment js"><span>=</span></span><span>&nbsp;</span><span class="meta function-call js"><span class="entity name function js"><span>commandLineArgs</span></span><span class="meta js"><span class="punctuation definition begin round js"><span>(</span></span><span>optionDefinitions</span><span class="punctuation definition end round js"><span>)</span></span></span></span></span></div></pre></div>
+<p><code>options</code> now looks like this:</p>
+<div class="highlight js"><pre class="editor editor-colors"><div class="line"><span class="source js"><span class="meta brace curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;files</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="meta brace square js"><span>[</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>one.js</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="meta delimiter object comma js"><span>,</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>two.js</span><span class="punctuation definition string end js"><span>'</span></span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="meta brace square js"><span>]</span></span><span class="meta delimiter object comma js"><span>,</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;verbose</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="constant language boolean true js"><span>true</span></span><span class="meta delimiter object comma js"><span>,</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;timeout</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="constant numeric decimal js"><span>1000</span></span></span></div><div class="line"><span class="source js"><span class="meta brace curly js"><span>}</span></span></span></div></pre></div>
+<p>When dealing with large amounts of options it often makes sense to <a href="#optiongroup--string--arraystring">group</a> them.</p>
+<p>A usage guide can be generated using <a href="https://github.com/75lb/command-line-usage">command-line-usage</a>, for example:</p>
+<p><img src="command-line-args_files/footer.png" alt="usage"></p>
+<h3><a id="user-content-notation-rules" class="deep-link" href="#notation-rules" aria-hidden="true"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Notation rules</h3>
+<p>Notation rules for setting command-line options.</p>
+<ul>
+<li>Argument order is insignificant. Whether you set <code>--example</code> at the beginning or end of the arg list makes no difference.</li>
+<li>Options with a <a href="#optiontype--function">type</a> of <code>Boolean</code> do not need to supply a value. Setting <code>--flag</code> or <code>-f</code> will set that option's value to <code>true</code>. This is the only <a href="#optiontype--function">type</a> with special behaviour.</li>
+<li>Three ways to set an option value
+<ul>
+<li><code>--option value</code></li>
+<li><code>--option=value</code></li>
+<li><code>-o value</code></li>
+</ul>
+</li>
+<li>Two ways to a set list of values (on options with <a href="#optionmultiple--boolean">multiple</a> set)
+<ul>
+<li><code>--list one two three</code></li>
+<li><code>--list one --list two --list three</code></li>
+</ul>
+</li>
+<li>Short options (<a href="#optionalias--string">alias</a>) can be set in groups. The following are equivalent:
+<ul>
+<li><code>-a -b -c</code></li>
+<li><code>-abc</code></li>
+</ul>
+</li>
+</ul>
+<h3><a id="user-content-ambiguous-values" class="deep-link" href="#ambiguous-values" aria-hidden="true"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Ambiguous values</h3>
+<p>Imagine we are using "grep-tool" to search for the string <code>'-f'</code>:</p>
+<pre><code>$ grep-tool --search -f
+</code></pre><p>We have an issue here: command-line-args will assume we are setting two options (<code>--search</code> and <code>-f</code>). In actuality, we are passing one option (<code>--search</code>) and one value (<code>-f</code>). In cases like this, avoid ambiguity by using <code>--option=value</code> notation:</p>
+<pre><code>$ grep-tool --search=-f
+</code></pre><h3><a id="user-content-partial-parsing" class="deep-link" href="#partial-parsing" aria-hidden="true"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Partial parsing</h3>
+<p>By default, if the user sets an option without a valid <a href="#exp_module_definition--OptionDefinition">definition</a> an <code>UNKNOWN_OPTION</code>
+ exception is thrown. However, in some cases you may only be interested 
+in a subset of the options wishing to pass the remainder to another 
+library. See <a href="https://github.com/75lb/command-line-args/blob/master/example/mocha.js">here</a> for a example showing where this might be necessary.</p>
+<p>To enable partial parsing, set <code>partial: true</code> in the method options:</p>
+<div class="highlight js"><pre class="editor editor-colors"><div class="line"><span class="source js"><span class="storage modifier js"><span>const</span></span><span>&nbsp;</span><span class="constant other js"><span>optionDefinitions</span></span><span>&nbsp;</span><span class="keyword operator assignment js"><span>=</span></span><span>&nbsp;</span><span class="meta brace square js"><span>[</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;name</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>value</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;type</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="support class js"><span>Number</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>}</span></span></span></div><div class="line"><span class="source js"><span class="meta brace square js"><span>]</span></span></span></div><div class="line"><span class="source js"><span class="storage modifier js"><span>const</span></span><span>&nbsp;</span><span class="constant other js"><span>options</span></span><span>&nbsp;</span><span class="keyword operator assignment js"><span>=</span></span><span>&nbsp;</span><span class="meta function-call js"><span class="entity name function js"><span>commandLineArgs</span></span><span class="meta js"><span class="punctuation definition begin round js"><span>(</span></span><span>optionDefinitions</span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;partial</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="constant language boolean true js"><span>true</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>}</span></span><span class="punctuation definition end round js"><span>)</span></span></span></span></span></div></pre></div>
+<p>Now, should any unknown args be passed at the command line:</p>
+<pre><code>$ example --milk --value 2 --bread cheese
+</code></pre><p>They will be returned in the <code>_unknown</code> property of the <code>commandLineArgs</code> output with no exceptions thrown:</p>
+<div class="highlight js"><pre class="editor editor-colors"><div class="line"><span class="source js"><span class="meta brace curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;value</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="constant numeric decimal js"><span>2</span></span><span class="meta delimiter object comma js"><span>,</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;_unknown</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="meta brace square js"><span>[</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>--milk</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>--bread</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>cheese</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="meta brace square js"><span>]</span></span></span></div><div class="line"><span class="source js"><span class="meta brace curly js"><span>}</span></span></span></div></pre></div>
+<h2><a id="user-content-install" class="deep-link" href="#install" aria-hidden="true"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Install</h2>
+<div class="highlight sh"><pre class="editor editor-colors"><div class="line"><span class="source shell"><span>$&nbsp;npm&nbsp;install&nbsp;</span><span class="support function builtin shell"><span>command</span></span><span>-line-args&nbsp;--save</span></span></div></pre></div>
+<h1><a id="user-content-api-reference" class="deep-link" href="#api-reference" aria-hidden="true"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>API Reference</h1>
+<p><a name="exp_module_command-line-args--commandLineArgs"></a></p>
+<h3><a id="user-content-commandlineargsoptiondefinitions-options-⇒-object-" class="deep-link" href="#commandlineargsoptiondefinitions-options-%E2%87%92-object-" aria-hidden="true"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>commandLineArgs(optionDefinitions, [options]) ⇒ <code>object</code> ⏏</h3>
+<p>Returns an object containing all options set on the command line. By default it parses the global  <a href="https://nodejs.org/api/process.html#process_process_argv"><code>process.argv</code></a> array.</p>
+<p>By default, an exception is thrown if the user sets an unknown option (one without a valid <a href="#exp_module_definition--OptionDefinition">definition</a>). To enable <strong>partial parsing</strong>, invoke <code>commandLineArgs</code> with the <code>partial</code> option - all unknown arguments will be returned in the <code>_unknown</code> property.</p>
+<p><strong>Kind</strong>: Exported function<br>
+<strong>Throws</strong>:</p>
+<ul>
+<li><code>UNKNOWN_OPTION</code> if <code>options.partial</code> is false and the user set an undefined option</li>
+<li><code>NAME_MISSING</code> if an option definition is missing the required <code>name</code> property</li>
+<li><code>INVALID_TYPE</code> if an option definition has a <code>type</code> value that's not a function</li>
+<li><code>INVALID_ALIAS</code> if an alias is numeric, a hyphen or a length other than 1</li>
+<li><code>DUPLICATE_NAME</code> if an option definition name was used more than once</li>
+<li><code>DUPLICATE_ALIAS</code> if an option definition alias was used more than once</li>
+<li><code>DUPLICATE_DEFAULT_OPTION</code> if more than one option definition has <code>defaultOption: true</code></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>optionDefinitions</td>
+<td><code><a href="#module_definition">Array.&lt;definition&gt;</a></code></td>
+<td>An array of <a href="#exp_module_definition--OptionDefinition">OptionDefinition</a> objects</td>
+</tr>
+<tr>
+<td>[options]</td>
+<td><code>object</code></td>
+<td>Options.</td>
+</tr>
+<tr>
+<td>[options.argv]</td>
+<td><code>Array.&lt;string&gt;</code></td>
+<td>An array of strings, which if passed will be parsed instead  of <code>process.argv</code>.</td>
+</tr>
+<tr>
+<td>[options.partial]</td>
+<td><code>boolean</code></td>
+<td>If <code>true</code>, an array of unknown arguments is returned in the <code>_unknown</code> property of the output.</td>
+</tr>
+</tbody>
+</table>
+<p><a name="exp_module_definition--OptionDefinition"></a></p>
+<h2><a id="user-content-optiondefinition-" class="deep-link" href="#optiondefinition-" aria-hidden="true"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>OptionDefinition ⏏</h2>
+<p>Describes a command-line option. Additionally, you can add <code>description</code> and <code>typeLabel</code> properties and make use of <a href="https://github.com/75lb/command-line-usage">command-line-usage</a>.</p>
+<p><strong>Kind</strong>: Exported class</p>
+<ul>
+<li><a href="#exp_module_definition--OptionDefinition">OptionDefinition</a> ⏏
+<ul>
+<li><a href="#module_definition--OptionDefinition.OptionDefinition+name">.name</a> : <code>string</code></li>
+<li><a href="#module_definition--OptionDefinition.OptionDefinition+type">.type</a> : <code>function</code></li>
+<li><a href="#module_definition--OptionDefinition.OptionDefinition+alias">.alias</a> : <code>string</code></li>
+<li><a href="#module_definition--OptionDefinition.OptionDefinition+multiple">.multiple</a> : <code>boolean</code></li>
+<li><a href="#module_definition--OptionDefinition.OptionDefinition+defaultOption">.defaultOption</a> : <code>boolean</code></li>
+<li><a href="#module_definition--OptionDefinition.OptionDefinition+defaultValue">.defaultValue</a> : <code>*</code></li>
+<li><a href="#module_definition--OptionDefinition.OptionDefinition+group">.group</a> : <code>string</code> | <code>Array.&lt;string&gt;</code></li>
+</ul>
+</li>
+</ul>
+<p><a name="module_definition--OptionDefinition.OptionDefinition+name"></a></p>
+<h3><a id="user-content-optionname--string" class="deep-link" href="#optionname--string" aria-hidden="true"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>option.name : <code>string</code></h3>
+<p>The only required definition property is <code>name</code>, so the simplest working example is</p>
+<div class="highlight js"><pre class="editor editor-colors"><div class="line"><span class="source js"><span class="meta brace square js"><span>[</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;name</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted double js"><span class="punctuation definition string begin js"><span>"</span></span><span>file</span><span class="punctuation definition string end js"><span>"</span></span></span><span>&nbsp;</span><span class="meta brace curly js"><span>}</span></span><span class="meta delimiter object comma js"><span>,</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;name</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted double js"><span class="punctuation definition string begin js"><span>"</span></span><span>verbose</span><span class="punctuation definition string end js"><span>"</span></span></span><span>&nbsp;</span><span class="meta brace curly js"><span>}</span></span><span class="meta delimiter object comma js"><span>,</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;name</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted double js"><span class="punctuation definition string begin js"><span>"</span></span><span>depth</span><span class="punctuation definition string end js"><span>"</span></span></span><span class="meta brace curly js"><span>}</span></span></span></div><div class="line"><span class="source js"><span class="meta brace square js"><span>]</span></span></span></div></pre></div>
+<p>In this case, the value of each option will be either a Boolean or string.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Command line args</th>
+<th>.parse() output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>--file</code></td>
+<td><code>{ file: true }</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>--file lib.js --verbose</code></td>
+<td><code>{ file: "lib.js", verbose: true }</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>--verbose very</code></td>
+<td><code>{ verbose: "very" }</code></td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>--depth 2</code></td>
+<td><code>{ depth: "2" }</code></td>
+</tr>
+</tbody>
+</table>
+<p>Unicode option names and aliases are valid, for example:</p>
+<div class="highlight js"><pre class="editor editor-colors"><div class="line"><span class="source js"><span class="meta brace square js"><span>[</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;name</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>один</span><span class="punctuation definition string end js"><span>'</span></span></span><span>&nbsp;</span><span class="meta brace curly js"><span>}</span></span><span class="meta delimiter object comma js"><span>,</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;name</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>两</span><span class="punctuation definition string end js"><span>'</span></span></span><span>&nbsp;</span><span class="meta brace curly js"><span>}</span></span><span class="meta delimiter object comma js"><span>,</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;name</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>три</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;alias</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>т</span><span class="punctuation definition string end js"><span>'</span></span></span><span>&nbsp;</span><span class="meta brace curly js"><span>}</span></span></span></div><div class="line"><span class="source js"><span class="meta brace square js"><span>]</span></span></span></div></pre></div>
+<p><strong>Kind</strong>: instance property of <code><a href="#exp_module_definition--OptionDefinition">OptionDefinition</a></code><br>
+<a name="module_definition--OptionDefinition.OptionDefinition+type"></a></p>
+<h3><a id="user-content-optiontype--function" class="deep-link" href="#optiontype--function" aria-hidden="true"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>option.type : <code>function</code></h3>
+<p>The <code>type</code> value is a setter function (you receive the output from this), enabling you to be specific about the type and value received.</p>
+<p>You can use a class, if you like:</p>
+<div class="highlight js"><pre class="editor editor-colors"><div class="line"><span class="source js"><span class="storage modifier js"><span>const</span></span><span>&nbsp;</span><span class="constant other js"><span>fs</span></span><span>&nbsp;</span><span class="keyword operator assignment js"><span>=</span></span><span>&nbsp;</span><span class="meta function-call js"><span class="support function js"><span>require</span></span><span class="meta js"><span class="punctuation definition begin round js"><span>(</span></span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>fs</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="punctuation definition end round js"><span>)</span></span></span></span></span></div><div class="line"><span class="source js"><span>&nbsp;</span></span></div><div class="line"><span class="source js"><span class="meta function js"><span class="storage type function js"><span>function</span></span><span>&nbsp;</span><span class="entity name function js"><span>FileDetails</span></span><span class="meta js"><span class="punctuation definition begin round js"><span>(</span></span><span class="variable function js"><span>filename</span></span><span class="punctuation definition end round js"><span>)</span></span></span></span><span class="punctuation definition function begin curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="keyword control js"><span>if</span></span><span>&nbsp;</span><span class="meta brace round js"><span>(</span></span><span class="keyword operator logical js"><span>!</span></span><span class="meta brace round js"><span>(</span></span><span class="variable language js"><span>this</span></span><span>&nbsp;</span><span class="keyword operator js"><span>instanceof</span></span><span>&nbsp;FileDetails</span><span class="meta brace round js"><span>)</span><span>)</span></span><span>&nbsp;</span><span class="keyword control js"><span>return</span></span><span>&nbsp;</span><span class="meta class instance constructor"><span class="keyword operator js"><span>new</span></span><span>&nbsp;</span><span class="entity name type instance js"><span>FileDetails</span></span></span><span class="meta brace round js"><span>(</span></span><span>filename</span><span class="meta brace round js"><span>)</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="variable language js"><span>this</span></span><span class="meta delimiter period js"><span>.</span></span><span class="support constant js"><span>filename</span></span><span>&nbsp;</span><span class="keyword operator assignment js"><span>=</span></span><span>&nbsp;filename</span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="variable language js"><span>this</span></span><span class="meta delimiter period js"><span>.</span></span><span class="variable other js"><span>exists</span></span><span>&nbsp;</span><span class="keyword operator assignment js"><span>=</span></span><span>&nbsp;</span><span class="variable other object js"><span>fs</span></span><span class="meta js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>existsSync</span></span><span class="meta js"><span class="punctuation definition begin round js"><span>(</span></span><span>filename</span><span class="punctuation definition end round js"><span>)</span></span></span></span></span></div><div class="line"><span class="source js"><span class="punctuation definition function end curly js"><span>}</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;</span></span></div><div class="line"><span class="source js"><span class="storage modifier js"><span>const</span></span><span>&nbsp;</span><span class="constant other js"><span>cli</span></span><span>&nbsp;</span><span class="keyword operator assignment js"><span>=</span></span><span>&nbsp;</span><span class="meta function-call js"><span class="entity name function js"><span>commandLineArgs</span></span><span class="meta js"><span class="punctuation definition begin round js"><span>(</span></span><span class="meta brace square js"><span>[</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta function-call js"><span class="meta js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;name</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>file</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;type</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;FileDetails&nbsp;</span><span class="meta brace curly js"><span>}</span></span><span class="meta delimiter object comma js"><span>,</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta function-call js"><span class="meta js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;name</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>depth</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;type</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="support class js"><span>Number</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>}</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta function-call js"><span class="meta js"><span class="meta brace square js"><span>]</span></span><span class="punctuation definition end round js"><span>)</span></span></span></span></span></div></pre></div>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Command line args</th>
+<th>.parse() output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>--file asdf.txt</code></td>
+<td><code>{ file: { filename: 'asdf.txt', exists: false } }</code></td>
+</tr>
+</tbody>
+</table>
+<p>The <code>--depth</code> option expects a <code>Number</code>. If no value was set, you will receive <code>null</code>.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Command line args</th>
+<th>.parse() output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td><code>--depth</code></td>
+<td><code>{ depth: null }</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>--depth 2</code></td>
+<td><code>{ depth: 2 }</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Kind</strong>: instance property of <code><a href="#exp_module_definition--OptionDefinition">OptionDefinition</a></code><br>
+<strong>Default</strong>: <code>String</code><br>
+<a name="module_definition--OptionDefinition.OptionDefinition+alias"></a></p>
+<h3><a id="user-content-optionalias--string" class="deep-link" href="#optionalias--string" aria-hidden="true"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>option.alias : <code>string</code></h3>
+<p>getopt-style short option names. Can be any single character (unicode included) except a digit or hypen.</p>
+<div class="highlight js"><pre class="editor editor-colors"><div class="line"><span class="source js"><span class="meta brace square js"><span>[</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;name</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted double js"><span class="punctuation definition string begin js"><span>"</span></span><span>hot</span><span class="punctuation definition string end js"><span>"</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;alias</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted double js"><span class="punctuation definition string begin js"><span>"</span></span><span>h</span><span class="punctuation definition string end js"><span>"</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;type</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="support class js"><span>Boolean</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>}</span></span><span class="meta delimiter object comma js"><span>,</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;name</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted double js"><span class="punctuation definition string begin js"><span>"</span></span><span>discount</span><span class="punctuation definition string end js"><span>"</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;alias</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted double js"><span class="punctuation definition string begin js"><span>"</span></span><span>d</span><span class="punctuation definition string end js"><span>"</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;type</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="support class js"><span>Boolean</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>}</span></span><span class="meta delimiter object comma js"><span>,</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;name</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted double js"><span class="punctuation definition string begin js"><span>"</span></span><span>courses</span><span class="punctuation definition string end js"><span>"</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;alias</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted double js"><span class="punctuation definition string begin js"><span>"</span></span><span>c</span><span class="punctuation definition string end js"><span>"</span></span></span><span>&nbsp;</span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;type</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="support class js"><span>Number</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>}</span></span></span></div><div class="line"><span class="source js"><span class="meta brace square js"><span>]</span></span></span></div></pre></div>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Command line</th>
+<th>.parse() output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>-hcd</code></td>
+<td><code>{ hot: true, courses: null, discount: true }</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>-hdc 3</code></td>
+<td><code>{ hot: true, discount: true, courses: 3 }</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Kind</strong>: instance property of <code><a href="#exp_module_definition--OptionDefinition">OptionDefinition</a></code><br>
+<a name="module_definition--OptionDefinition.OptionDefinition+multiple"></a></p>
+<h3><a id="user-content-optionmultiple--boolean" class="deep-link" href="#optionmultiple--boolean" aria-hidden="true"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>option.multiple : <code>boolean</code></h3>
+<p>Set this flag if the option takes a list of values. You will receive an array of values, each passed through the <code>type</code> function (if specified).</p>
+<div class="highlight js"><pre class="editor editor-colors"><div class="line"><span class="source js"><span class="meta brace square js"><span>[</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;name</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted double js"><span class="punctuation definition string begin js"><span>"</span></span><span>files</span><span class="punctuation definition string end js"><span>"</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;type</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="support class js"><span>String</span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;multiple</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="constant language boolean true js"><span>true</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>}</span></span></span></div><div class="line"><span class="source js"><span class="meta brace square js"><span>]</span></span></span></div></pre></div>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Command line</th>
+<th>.parse() output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>--files one.js two.js</code></td>
+<td><code>{ files: [ 'one.js', 'two.js' ] }</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>--files one.js --files two.js</code></td>
+<td><code>{ files: [ 'one.js', 'two.js' ] }</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>--files *</code></td>
+<td><code>{ files: [ 'one.js', 'two.js' ] }</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Kind</strong>: instance property of <code><a href="#exp_module_definition--OptionDefinition">OptionDefinition</a></code><br>
+<a name="module_definition--OptionDefinition.OptionDefinition+defaultOption"></a></p>
+<h3><a id="user-content-optiondefaultoption--boolean" class="deep-link" href="#optiondefaultoption--boolean" aria-hidden="true"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>option.defaultOption : <code>boolean</code></h3>
+<p>Any unclaimed command-line args will be set on this option. This flag
+ is typically set on the most commonly-used option to make for more 
+concise usage (i.e. <code>$ myapp *.js</code> instead of <code>$ myapp --files *.js</code>).</p>
+<div class="highlight js"><pre class="editor editor-colors"><div class="line"><span class="source js"><span class="meta brace square js"><span>[</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;name</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted double js"><span class="punctuation definition string begin js"><span>"</span></span><span>files</span><span class="punctuation definition string end js"><span>"</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;type</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="support class js"><span>String</span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;multiple</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="constant language boolean true js"><span>true</span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;defaultOption</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="constant language boolean true js"><span>true</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>}</span></span></span></div><div class="line"><span class="source js"><span class="meta brace square js"><span>]</span></span></span></div></pre></div>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Command line</th>
+<th>.parse() output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>--files one.js two.js</code></td>
+<td><code>{ files: [ 'one.js', 'two.js' ] }</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>one.js two.js</code></td>
+<td><code>{ files: [ 'one.js', 'two.js' ] }</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>*</code></td>
+<td><code>{ files: [ 'one.js', 'two.js' ] }</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Kind</strong>: instance property of <code><a href="#exp_module_definition--OptionDefinition">OptionDefinition</a></code><br>
+<a name="module_definition--OptionDefinition.OptionDefinition+defaultValue"></a></p>
+<h3><a id="user-content-optiondefaultvalue--" class="deep-link" href="#optiondefaultvalue--" aria-hidden="true"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>option.defaultValue : <code>*</code></h3>
+<p>An initial value for the option.</p>
+<div class="highlight js"><pre class="editor editor-colors"><div class="line"><span class="source js"><span class="meta brace square js"><span>[</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;name</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted double js"><span class="punctuation definition string begin js"><span>"</span></span><span>files</span><span class="punctuation definition string end js"><span>"</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;type</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="support class js"><span>String</span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;multiple</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="constant language boolean true js"><span>true</span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;defaultValue</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="meta brace square js"><span>[</span></span><span>&nbsp;</span><span class="string quoted double js"><span class="punctuation definition string begin js"><span>"</span></span><span>one.js</span><span class="punctuation definition string end js"><span>"</span></span></span><span>&nbsp;</span><span class="meta brace square js"><span>]</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>}</span></span><span class="meta delimiter object comma js"><span>,</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;name</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted double js"><span class="punctuation definition string begin js"><span>"</span></span><span>max</span><span class="punctuation definition string end js"><span>"</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;type</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="support class js"><span>Number</span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;defaultValue</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="constant numeric decimal js"><span>3</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>}</span></span></span></div><div class="line"><span class="source js"><span class="meta brace square js"><span>]</span></span></span></div></pre></div>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Command line</th>
+<th>.parse() output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td></td>
+<td><code>{ files: [ 'one.js' ], max: 3 }</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>--files two.js</code></td>
+<td><code>{ files: [ 'two.js' ], max: 3 }</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>--max 4</code></td>
+<td><code>{ files: [ 'one.js' ], max: 4 }</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Kind</strong>: instance property of <code><a href="#exp_module_definition--OptionDefinition">OptionDefinition</a></code><br>
+<a name="module_definition--OptionDefinition.OptionDefinition+group"></a></p>
+<h3><a id="user-content-optiongroup--string--arraystring" class="deep-link" href="#optiongroup--string--arraystring" aria-hidden="true"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>option.group : <code>string</code> | <code>Array.&lt;string&gt;</code></h3>
+<p>When your app has a large amount of options it makes sense to organise them in groups.</p>
+<p>There are two automatic groups: <code>_all</code> (contains all options) and <code>_none</code> (contains options without a <code>group</code> specified in their definition).</p>
+<div class="highlight js"><pre class="editor editor-colors"><div class="line"><span class="source js"><span class="meta brace square js"><span>[</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;name</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted double js"><span class="punctuation definition string begin js"><span>"</span></span><span>verbose</span><span class="punctuation definition string end js"><span>"</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;group</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted double js"><span class="punctuation definition string begin js"><span>"</span></span><span>standard</span><span class="punctuation definition string end js"><span>"</span></span></span><span>&nbsp;</span><span class="meta brace curly js"><span>}</span></span><span class="meta delimiter object comma js"><span>,</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;name</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted double js"><span class="punctuation definition string begin js"><span>"</span></span><span>help</span><span class="punctuation definition string end js"><span>"</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;group</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="meta brace square js"><span>[</span></span><span>&nbsp;</span><span class="string quoted double js"><span class="punctuation definition string begin js"><span>"</span></span><span>standard</span><span class="punctuation definition string end js"><span>"</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;</span><span class="string quoted double js"><span class="punctuation definition string begin js"><span>"</span></span><span>main</span><span class="punctuation definition string end js"><span>"</span></span></span><span>&nbsp;</span><span class="meta brace square js"><span>]</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>}</span></span><span class="meta delimiter object comma js"><span>,</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;name</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted double js"><span class="punctuation definition string begin js"><span>"</span></span><span>compress</span><span class="punctuation definition string end js"><span>"</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;group</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="meta brace square js"><span>[</span></span><span>&nbsp;</span><span class="string quoted double js"><span class="punctuation definition string begin js"><span>"</span></span><span>server</span><span class="punctuation definition string end js"><span>"</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;</span><span class="string quoted double js"><span class="punctuation definition string begin js"><span>"</span></span><span>main</span><span class="punctuation definition string end js"><span>"</span></span></span><span>&nbsp;</span><span class="meta brace square js"><span>]</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>}</span></span><span class="meta delimiter object comma js"><span>,</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;name</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted double js"><span class="punctuation definition string begin js"><span>"</span></span><span>static</span><span class="punctuation definition string end js"><span>"</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;group</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted double js"><span class="punctuation definition string begin js"><span>"</span></span><span>server</span><span class="punctuation definition string end js"><span>"</span></span></span><span>&nbsp;</span><span class="meta brace curly js"><span>}</span></span><span class="meta delimiter object comma js"><span>,</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;name</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted double js"><span class="punctuation definition string begin js"><span>"</span></span><span>debug</span><span class="punctuation definition string end js"><span>"</span></span></span><span>&nbsp;</span><span class="meta brace curly js"><span>}</span></span></span></div><div class="line"><span class="source js"><span class="meta brace square js"><span>]</span></span></span></div></pre></div>
+<table>
+ <tbody><tr>
+   <th>#</th><th>Command Line</th><th>.parse() output</th>
+ </tr>
+ <tr>
+   <td>1</td><td><code>--verbose</code></td><td><pre><code>
+{
+ _all: { verbose: true },
+ standard: { verbose: true }
+}
+</code></pre></td>
+ </tr>
+ <tr>
+   <td>2</td><td><code>--debug</code></td><td><pre><code>
+{
+ _all: { debug: true },
+ _none: { debug: true }
+}
+</code></pre></td>
+ </tr>
+ <tr>
+   <td>3</td><td><code>--verbose --debug --compress</code></td><td><pre><code>
+{
+ _all: {
+   verbose: true,
+   debug: true,
+   compress: true
+ },
+ standard: { verbose: true },
+ server: { compress: true },
+ main: { compress: true },
+ _none: { debug: true }
+}
+</code></pre></td>
+ </tr>
+ <tr>
+   <td>4</td><td><code>--compress</code></td><td><pre><code>
+{
+ _all: { compress: true },
+ server: { compress: true },
+ main: { compress: true }
+}
+</code></pre></td>
+ </tr>
+</tbody></table>
+<p><strong>Kind</strong>: instance property of <code><a href="#exp_module_definition--OptionDefinition">OptionDefinition</a></code></p>
+<hr>
+<p>© 2014-17 Lloyd Brookes &lt;<a href="mailto:75pound@gmail.com">75pound@gmail.com</a>&gt;. Documented by <a href="https://github.com/75lb/jsdoc-to-markdown">jsdoc-to-markdown</a>.</p>
+
+  </div>
+
+</div>
+
+<div class="sidebar">
+
+    <div class="promotion" data-promotion-id="726" data-promotion-spot="packagePage"><div class="marketing">
+<h3 id="marketing-texthed">
+<a href="https://www.npmjs.com/enterprise" title="npm Enterprise">Use this within your firewall</a></h3>
+
+<p>Combine open-source packages with your private code and publish to a private registry behind the firewall. <a href="https://www.npmjs.com/enterprise" title="npm Enterprise" target="_blank">npm ♥ enterprise developers</a></p></div></div>
+
+    <div class="autoselect-wrapper npm-install icon-download">
+      <input value="npm i command-line-args" readonly="readonly" type="text">
+      <p><a href="https://www.npmjs.com/package/command-line-args/tutorial">how? learn more</a></p>
+    </div>
+
+  <ul class="box">
+
+      <li class="last-publisher">
+          <a href="https://www.npmjs.com/%7E75lb">
+            <img src="command-line-args_files/52f1e8b892219286115385d26bfa8944.png" alt="75lb">
+            <span>75lb</span>
+          </a>
+          published
+          <span data-date="2017-08-09T22:48:24.685Z" data-date-format="relative">3 days ago</span>
+      </li>
+
+    <li>
+      <strong>4.0.7</strong>
+      is the latest
+        of 60 releases
+    </li>
+
+      <li>
+        <a href="https://github.com/75lb/command-line-args">github.com/75lb/command-line-args</a>
+      </li>
+
+
+      <li>
+          <a href="http://spdx.org/licenses/MIT.html">MIT</a>
+          <img class="osi" alt="Licensed on OSI-approved terms" src="command-line-args_files/osi.svg">®
+      </li>
+
+  </ul>
+
+    <h3 title="collaborators">
+      Collaborators
+      <small><a href="https://www.npmjs.com/package/command-line-args/access">list</a></small>
+    </h3>
+
+    <ul class="humans collaborators">
+        <li>
+            <a original-title="75lb" href="https://www.npmjs.com/%7E75lb" rel="tipsy">
+                <img src="command-line-args_files/52f1e8b892219286115385d26bfa8944.png" alt="75lb">
+            </a>
+        </li>
+
+
+    </ul>
+
+    <h3>Stats</h3>
+    <ul class="box">
+
+        <li>
+          <strong class="pretty-number daily-downloads">7,313</strong>
+          downloads in the last day
+        </li>
+        <li>
+          <strong class="pretty-number weekly-downloads">93,698</strong>
+          downloads in the last week
+        </li>
+        <li>
+          <strong class="pretty-number monthly-downloads">396,151</strong>
+          downloads in the last month
+        </li>
+
+        <li id="issues" data-ghapi="https://api.github.com/repos/75lb/command-line-args">
+          <span style="display: none;" class="original">Have an issue? <a href="https://github.com/75lb/command-line-args/issues">3 open issues</a></span>
+            <span class="enhanced" style="">
+              <a href="https://github.com/75lb/command-line-args/issues">3 open issues</a> on GitHub
+            </span>
+        </li>
+
+        <li id="pull_requests" style="">
+          <a href="https://github.com/75lb/command-line-args/pulls">3 open pull requests</a> on GitHub
+        </li>
+
+    </ul>
+
+        <h3>Try it out</h3>
+        <ul class="box">
+          <li class="runkit"><a href="https://runkit.com/npm/command-line-args" target="_blank">Test command-line-args in your browser.</a></li>
+        </ul>
+
+
+  <h3>Keywords</h3>
+  <p class="list-of-links">
+        <a href="https://www.npmjs.com/browse/keyword/argv">argv</a>, 
+        <a href="https://www.npmjs.com/browse/keyword/parse">parse</a>, 
+        <a href="https://www.npmjs.com/browse/keyword/argument">argument</a>, 
+        <a href="https://www.npmjs.com/browse/keyword/args">args</a>, 
+        <a href="https://www.npmjs.com/browse/keyword/option">option</a>, 
+        <a href="https://www.npmjs.com/browse/keyword/options">options</a>, 
+        <a href="https://www.npmjs.com/browse/keyword/parser">parser</a>, 
+        <a href="https://www.npmjs.com/browse/keyword/parsing">parsing</a>, 
+        <a href="https://www.npmjs.com/browse/keyword/cli">cli</a>, 
+        <a href="https://www.npmjs.com/browse/keyword/command">command</a>, 
+        <a href="https://www.npmjs.com/browse/keyword/line">line</a>
+  </p>
+
+  <h3>Dependencies (3)</h3>
+  <p class="list-of-links">
+          <a href="https://www.npmjs.com/package/array-back">array-back</a>,
+          <a href="https://www.npmjs.com/package/find-replace">find-replace</a>,
+                <a href="https://www.npmjs.com/package/typical">typical</a>
+  </p>
+
+    <h3><a href="https://www.npmjs.com/browse/depended/command-line-args">Dependents (531)</a></h3>
+    <p class="list-of-links dependents">
+
+          <a href="https://www.npmjs.com/package/batch-indent">batch-indent</a>,
+        
+          <a href="https://www.npmjs.com/package/@passmarked/crawlable">@passmarked/crawlable</a>,
+        
+          <a href="https://www.npmjs.com/package/break-cache">break-cache</a>,
+        
+          <a href="https://www.npmjs.com/package/elm-format-download">elm-format-download</a>,
+        
+          <a href="https://www.npmjs.com/package/conoha-dns">conoha-dns</a>,
+        
+          <a href="https://www.npmjs.com/package/mk-res-pkg">mk-res-pkg</a>,
+        
+          <a href="https://www.npmjs.com/package/polyserve">polyserve</a>,
+        
+          <a href="https://www.npmjs.com/package/semver-extended-webpack-plugin">semver-extended-webpack-plugin</a>,
+        
+          <a href="https://www.npmjs.com/package/tattoo">tattoo</a>,
+        
+          <a href="https://www.npmjs.com/package/eventsd-server">eventsd-server</a>,
+        
+          <a href="https://www.npmjs.com/package/hls-thumb-gen">hls-thumb-gen</a>,
+        
+          <a href="https://www.npmjs.com/package/morsecmd">morsecmd</a>,
+        
+          <a href="https://www.npmjs.com/package/cubx-wct-scaffolder">cubx-wct-scaffolder</a>,
+        
+          <a href="https://www.npmjs.com/package/parameter-tool">parameter-tool</a>,
+        
+          <a href="https://www.npmjs.com/package/parse-on-buddy">parse-on-buddy</a>,
+        
+          <a href="https://www.npmjs.com/package/aws-deploy-tools">aws-deploy-tools</a>,
+        
+          <a href="https://www.npmjs.com/package/nyi">nyi</a>,
+        
+          <a href="https://www.npmjs.com/package/tru-pokemongo">tru-pokemongo</a>,
+        
+          <a href="https://www.npmjs.com/package/webdriver-client-test-runner">webdriver-client-test-runner</a>,
+        
+          <a href="https://www.npmjs.com/package/typedef-converter">typedef-converter</a>,
+        
+          <a href="https://www.npmjs.com/package/geojson2postgres">geojson2postgres</a>,
+        
+          <a href="https://www.npmjs.com/package/aparat">aparat</a>,
+        
+          <a href="https://www.npmjs.com/package/tileshrink">tileshrink</a>,
+        
+          <a href="https://www.npmjs.com/package/sutr">sutr</a>,
+        
+          <a href="https://www.npmjs.com/package/xref">xref</a>,
+        
+          <a href="https://www.npmjs.com/package/sn-script-executor">sn-script-executor</a>,
+        
+          <a href="https://www.npmjs.com/package/polymer-css-build">polymer-css-build</a>,
+        
+          <a href="https://www.npmjs.com/package/merino">merino</a>,
+        
+          <a href="https://www.npmjs.com/package/orphan">orphan</a>,
+        
+          <a href="https://www.npmjs.com/package/cobalt-base">cobalt-base</a>,
+        
+          <a href="https://www.npmjs.com/package/cast-cli">cast-cli</a>,
+        
+          <a href="https://www.npmjs.com/package/dashing-reporter">dashing-reporter</a>,
+        
+          <a href="https://www.npmjs.com/package/ffffng">ffffng</a>,
+        
+          <a href="https://www.npmjs.com/package/urbano">urbano</a>,
+        
+          <a href="https://www.npmjs.com/package/chemical-data-parser">chemical-data-parser</a>,
+        
+          <a href="https://www.npmjs.com/package/big-bertha">big-bertha</a>,
+        
+          <a href="https://www.npmjs.com/package/cb_document_generator">cb_document_generator</a>,
+        
+          <a href="https://www.npmjs.com/package/prefix-rename">prefix-rename</a>,
+        
+          <a href="https://www.npmjs.com/package/mapsquare">mapsquare</a>,
+        
+          <a href="https://www.npmjs.com/package/debugview">debugview</a>,
+        
+          <a href="https://www.npmjs.com/package/json-exchange">json-exchange</a>,
+        
+          <a href="https://www.npmjs.com/package/command-line-tool">command-line-tool</a>,
+        
+          <a href="https://www.npmjs.com/package/mocked-api">mocked-api</a>,
+        
+          <a href="https://www.npmjs.com/package/firecrypt-tools">firecrypt-tools</a>,
+        
+          <a href="https://www.npmjs.com/package/vixonic-module-packager">vixonic-module-packager</a>,
+        
+          <a href="https://www.npmjs.com/package/netdiag">netdiag</a>,
+        
+          <a href="https://www.npmjs.com/package/tam">tam</a>,
+        
+          <a href="https://www.npmjs.com/package/edn2json">edn2json</a>,
+        
+          <a href="https://www.npmjs.com/package/pushtodeploy">pushtodeploy</a>,
+                  <a href="https://www.npmjs.com/package/args-usage-env">args-usage-env</a>,
+        <a href="https://www.npmjs.com/browse/depended/command-line-args">and more</a>
+    </p>
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "command-line-args",
+      "description": "A mature, feature-complete library to parse command-line options.",
+      "url": "https://www.npmjs.com/package/command-line-args",
+      "keywords": "argv,parse,argument,args,option,options,parser,parsing,cli,command,line",
+      "applicationCategory": "DeveloperApplication",
+      "offers": {
+         "@type": "Offer",
+         "price": "0.00"
+      }
+    }
+  </script>
+
+    <div class="hiring-container" data-template="sidebar"><div class="ad">
+  <p>
+    <a href="https://www.lob.com/jobs" title="lob.com">lob.com</a> is hiring.
+    <a class="quiet" href="https://www.npmjs.com/whoshiring">View more…</a>
+  </p>
+</div></div>
+</div>
+
+
+    </div>
+
+  <footer class="pane bg-npm-navy-1">
+  
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h3 class="h4 type-npm-pastel-3">You Need Help</h3>
+          <hr class="divider-1">
+          <ul class="list-unstyled h6 em-default">
+            <li class="pbl"><a class="type-neutral-11" href="https://docs.npmjs.com/">Documentation</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="https://www.npmjs.com/support">Support / Contact Us</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="http://status.npmjs.org/">Registry Status</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="https://github.com/npm/www/issues">Website Issues</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="https://github.com/npm/npm/issues">CLI Issues</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="https://www.npmjs.com/policies/security">Security</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-md-6 col-md-offset-1">
+          <h3 class="h4 type-npm-pastel-3">About npm</h3>
+          <hr class="divider-1">
+          <ul class="list-unstyled h6 em-default">
+            <li class="pbl"><a class="type-neutral-11" href="https://www.npmjs.com/about">About npm, Inc</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="https://www.npmjs.com/jobs">Jobs</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="https://www.npmjs.com/npm-weekly">npm Weekly</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="http://blog.npmjs.org/">Blog</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="https://twitter.com/npmjs">Twitter</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="https://github.com/npm">GitHub</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-md-6 col-md-offset-1">
+          <h3 class="h4 type-npm-pastel-3">Legal Stuff</h3>
+          <hr class="divider-1">
+          <ul class="list-unstyled h6 em-default">
+            <li class="pbl"><a class="type-neutral-11" href="https://www.npmjs.com/policies/terms">Terms of Use</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="https://www.npmjs.com/policies/conduct">Code of Conduct</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="https://www.npmjs.com/policies/disputes">Package Name Disputes</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="https://www.npmjs.com/policies/privacy">Privacy Policy</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="https://www.npmjs.com/policies/receiving-reports">Reporting Abuse</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="https://www.npmjs.com/policies/">Other policies</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="txt-c container">
+      <a class="npm-loves-you type-neutral-11" href="https://www.npmjs.com/">
+        npm loves you
+      </a>
+    </div>
+  </footer>
+
+  <script defer="defer" async="" src="command-line-args_files/3318080746.js"></script>
+  <script defer="defer" async="" src="command-line-args_files/elqCfg.js"></script><!-- Eloqua -->
+
+
+
+
+<div class="drop-down-menu-overlay" data-drop-down-menu="product-navigation"></div><div style="position: absolute; display: none; max-height: 400px; z-index: 9999;" class="autocomplete-container"><div style="position: absolute; display: none; max-height: 400px; z-index: 9999;" class="autocomplete-suggestions"></div></div></body></html>
+<!-- pid&#x3D;25956 80a22d9a07821623ac3f0937f8ee2b5b681f8f8b https://www.npmjs.com www-16-west.internal.npmjs.com  -->
